@@ -37,13 +37,12 @@
                   <Icon name="heroicons:map-pin" class="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 class="font-display font-bold text-lg text-dark-800 mb-2">Adresse</h3>
+                  <h3 class="font-display font-bold text-lg text-dark-800 mb-2">Hauptsitz</h3>
                   <p class="text-dark-500">
                     IC-RESULTING<br>
-                    Dipl.-Inf. Ibrahim Canakci<br>
                     Obere Webergasse 58<br>
                     65183 Wiesbaden<br>
-                    Germany
+                    Deutschland
                   </p>
                 </div>
               </div>
@@ -72,8 +71,8 @@
                 </div>
                 <div>
                   <h3 class="font-display font-bold text-lg text-dark-800 mb-2">E-Mail</h3>
-                  <a href="mailto:canakci.ibrahim@gmail.com" class="text-primary-600 hover:text-primary-700 transition-colors font-medium">
-                    canakci.ibrahim@gmail.com
+                  <a href="mailto:info@ic-resulting.de" class="text-primary-600 hover:text-primary-700 transition-colors font-medium">
+                    info@ic-resulting.de
                   </a>
                 </div>
               </div>
@@ -86,11 +85,30 @@
                   <Icon name="heroicons:clock" class="w-6 h-6" />
                 </div>
                 <div>
-                  <h3 class="font-display font-bold text-lg text-dark-800 mb-2">Öffnungszeiten</h3>
+                  <h3 class="font-display font-bold text-lg text-dark-800 mb-2">Erreichbarkeit</h3>
                   <p class="text-dark-500">
                     Mo - Fr: 09:00 - 18:00 Uhr<br>
                     Sa - So: Geschlossen
                   </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Additional Locations -->
+            <div class="card-hover bg-dark-50">
+              <h3 class="font-display font-bold text-lg text-dark-800 mb-3">Weitere Standorte</h3>
+              <div class="space-y-2 text-sm text-dark-500">
+                <div class="flex items-center gap-2">
+                  <Icon name="heroicons:map-pin" class="w-4 h-4 text-primary-600" />
+                  <span>Berlin (Delivery)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <Icon name="heroicons:map-pin" class="w-4 h-4 text-primary-600" />
+                  <span>Köln (Partner: makroh GmbH)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                  <Icon name="heroicons:academic-cap" class="w-4 h-4 text-accent-600" />
+                  <span>Istanbul (R&D / AyDeep Ltd.)</span>
                 </div>
               </div>
             </div>
@@ -99,9 +117,12 @@
           <!-- Contact Form -->
           <div class="lg:col-span-2">
             <div class="bg-white rounded-3xl shadow-soft border border-dark-100 p-8 md:p-10">
-              <h2 class="text-2xl font-display font-bold text-dark-800 mb-6">
+              <h2 class="text-2xl font-display font-bold text-dark-800 mb-2">
                 Schreiben Sie uns
               </h2>
+              <p class="text-dark-500 mb-6">
+                Alle mit * gekennzeichneten Felder sind Pflichtfelder.
+              </p>
 
               <form @submit.prevent="submitForm" class="space-y-6">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -160,13 +181,12 @@
                   <!-- Phone -->
                   <div>
                     <label for="phone" class="block text-sm font-medium text-dark-700 mb-2">
-                      Telefon *
+                      Telefon
                     </label>
                     <input 
                       type="tel" 
                       id="phone" 
                       v-model="form.phone"
-                      required
                       class="w-full px-4 py-3 rounded-xl border border-dark-200 
                              focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 
                              transition-all duration-200 outline-none"
@@ -178,7 +198,7 @@
                 <!-- Subject -->
                 <div>
                   <label for="subject" class="block text-sm font-medium text-dark-700 mb-2">
-                    Betreff
+                    Thema
                   </label>
                   <select 
                     id="subject" 
@@ -188,9 +208,14 @@
                            transition-all duration-200 outline-none bg-white"
                   >
                     <option value="">Bitte wählen...</option>
-                    <option value="it-solutions">IT Solutions</option>
-                    <option value="travel-solutions">Travel Solutions</option>
-                    <option value="karriere">Karriere</option>
+                    <option value="it-verantwortung">IT-Verantwortung übergeben</option>
+                    <option value="projektleitung">IT-Projektleitung</option>
+                    <option value="softwareentwicklung">Softwareentwicklung</option>
+                    <option value="ki-automatisierung">KI & Automatisierung</option>
+                    <option value="devops-cloud">DevOps & Cloud</option>
+                    <option value="webseiten">Webseiten & CMS</option>
+                    <option value="schulungen">Schulungen</option>
+                    <option value="karriere">Karriere / Bewerbung</option>
                     <option value="sonstiges">Sonstiges</option>
                   </select>
                 </div>
@@ -212,37 +237,47 @@
                   ></textarea>
                 </div>
 
-                <!-- Privacy Checkbox -->
-                <div class="flex items-start gap-3">
-                  <input 
-                    type="checkbox" 
-                    id="privacy" 
-                    v-model="form.privacy"
-                    required
-                    class="mt-1 w-5 h-5 rounded border-dark-300 text-primary-600 
-                           focus:ring-primary-500 cursor-pointer"
-                  >
-                  <label for="privacy" class="text-sm text-dark-500 cursor-pointer">
-                    Ich habe die 
-                    <NuxtLink to="/datenschutz" class="text-primary-600 hover:underline">
-                      Datenschutzerklärung
-                    </NuxtLink> 
-                    zur Kenntnis genommen und akzeptiert. Ich stimme zu, dass meine 
-                    Formularangaben zur Kontaktaufnahme bzw. zur Bearbeitung meines 
-                    Anliegens gespeichert werden. *
-                  </label>
+                <!-- DSGVO Consent Checkbox -->
+                <div class="p-4 bg-dark-50 rounded-xl">
+                  <div class="flex items-start gap-3">
+                    <input 
+                      type="checkbox" 
+                      id="privacy" 
+                      v-model="form.privacy"
+                      required
+                      class="mt-1 w-5 h-5 rounded border-dark-300 text-primary-600 
+                             focus:ring-primary-500 cursor-pointer"
+                    >
+                    <label for="privacy" class="text-sm text-dark-600 cursor-pointer">
+                      <strong>Einwilligung zur Datenverarbeitung (DSGVO) *</strong><br>
+                      Ich willige ein, dass meine Angaben zur Kontaktaufnahme und Bearbeitung 
+                      meiner Anfrage elektronisch erhoben und gespeichert werden. Die Daten 
+                      werden nicht an Dritte weitergegeben, außer es ist zur Bearbeitung der 
+                      Anfrage erforderlich. Ich kann meine Einwilligung jederzeit mit Wirkung 
+                      für die Zukunft per E-Mail an 
+                      <a href="mailto:info@ic-resulting.de" class="text-primary-600 hover:underline">info@ic-resulting.de</a> 
+                      widerrufen. Weitere Informationen finden Sie in unserer 
+                      <NuxtLink to="/datenschutz" class="text-primary-600 hover:underline">
+                        Datenschutzerklärung</NuxtLink>.
+                    </label>
+                  </div>
                 </div>
 
                 <!-- Submit Button -->
-                <button 
-                  type="submit" 
-                  class="btn-primary w-full md:w-auto"
-                  :disabled="isSubmitting"
-                >
-                  <Icon v-if="isSubmitting" name="heroicons:arrow-path" class="w-5 h-5 mr-2 animate-spin" />
-                  <Icon v-else name="heroicons:paper-airplane" class="w-5 h-5 mr-2" />
-                  {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
-                </button>
+                <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                  <button 
+                    type="submit" 
+                    class="btn-primary"
+                    :disabled="isSubmitting"
+                  >
+                    <Icon v-if="isSubmitting" name="heroicons:arrow-path" class="w-5 h-5 mr-2 animate-spin" />
+                    <Icon v-else name="heroicons:paper-airplane" class="w-5 h-5 mr-2" />
+                    {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
+                  </button>
+                  <span class="text-sm text-dark-400">
+                    Antwort i.d.R. innerhalb von 24 Stunden
+                  </span>
+                </div>
               </form>
 
               <!-- Success Message -->
@@ -254,9 +289,14 @@
                 <div v-if="showSuccess" class="mt-6 p-4 bg-green-50 border border-green-200 rounded-xl">
                   <div class="flex items-center gap-3">
                     <Icon name="heroicons:check-circle" class="w-6 h-6 text-green-600" />
-                    <p class="text-green-700 font-medium">
-                      Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.
-                    </p>
+                    <div>
+                      <p class="text-green-700 font-medium">
+                        Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.
+                      </p>
+                      <p class="text-green-600 text-sm mt-1">
+                        Wir melden uns schnellstmöglich bei Ihnen.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </Transition>
@@ -272,7 +312,7 @@
         <div class="text-center mb-12">
           <h2 class="section-title mb-4">So finden Sie uns</h2>
           <p class="section-subtitle mx-auto">
-            Unser Büro im Herzen von Frankfurt am Main
+            Unser Hauptsitz in Wiesbaden
           </p>
         </div>
 
@@ -304,8 +344,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Kontakt - IC-RESULTING | Wiesbaden',
-  description: 'Kontaktieren Sie IC-RESULTING in Wiesbaden. Tel: +49 (0) 176 618 659 80, E-Mail: canakci.ibrahim@gmail.com. Obere Webergasse 58, 65183 Wiesbaden.'
+  title: 'Kontakt - IC-RESULTING | Wiesbaden, Berlin, Köln',
+  description: 'Kontaktieren Sie IC-RESULTING in Wiesbaden. Tel: +49 (0) 176 618 659 80, E-Mail: info@ic-resulting.de. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
 })
 
 const form = reactive({

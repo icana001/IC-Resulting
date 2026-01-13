@@ -27,8 +27,8 @@
             </div>
           </div>
           <p class="text-dark-300 mb-6 leading-relaxed">
-            Resulting statt Beratung – Wir begleiten IT-Projekte bis zum Ergebnis. 
-            IT-Projektleitung, Softwareentwicklung & Digitale Transformation.
+            IT-Komplettlösungen für Unternehmen: Wir übernehmen Ihre IT-Verantwortung 
+            mit klarer Verantwortung und messbaren Ergebnissen.
           </p>
           <div class="flex gap-3">
             <a 
@@ -65,7 +65,7 @@
 
         <!-- Services -->
         <div>
-          <h4 class="font-display font-semibold text-lg mb-6">Services</h4>
+          <h4 class="font-display font-semibold text-lg mb-6">Lösungen</h4>
           <ul class="space-y-4">
             <li v-for="link in serviceLinks" :key="link.path">
               <NuxtLink 
@@ -105,8 +105,8 @@
               <div class="w-10 h-10 rounded-lg bg-dark-800 flex items-center justify-center flex-shrink-0">
                 <Icon name="heroicons:envelope" class="w-5 h-5 text-primary-400" />
               </div>
-              <a href="mailto:canakci.ibrahim@gmail.com" class="text-dark-300 hover:text-primary-400 transition-colors">
-                canakci.ibrahim@gmail.com
+              <a href="mailto:info@ic-resulting.de" class="text-dark-300 hover:text-primary-400 transition-colors">
+                info@ic-resulting.de
               </a>
             </div>
           </div>
@@ -119,13 +119,19 @@
           <p class="text-dark-400 text-sm">
             © {{ new Date().getFullYear() }} IC-RESULTING. Alle Rechte vorbehalten.
           </p>
-          <div class="flex gap-6">
+          <div class="flex flex-wrap justify-center gap-6">
             <NuxtLink to="/impressum" class="text-dark-400 hover:text-white text-sm transition-colors">
               Impressum
             </NuxtLink>
             <NuxtLink to="/datenschutz" class="text-dark-400 hover:text-white text-sm transition-colors">
               Datenschutz
             </NuxtLink>
+            <button 
+              @click="openCookieSettings"
+              class="text-dark-400 hover:text-white text-sm transition-colors"
+            >
+              Cookie-Einstellungen
+            </button>
           </div>
         </div>
       </div>
@@ -134,25 +140,31 @@
 </template>
 
 <script setup>
+const openCookieSettingsFunc = inject('openCookieSettings', null)
+
+function openCookieSettings() {
+  if (openCookieSettingsFunc) {
+    openCookieSettingsFunc()
+  }
+}
+
 const socials = [
   { name: 'LinkedIn', icon: 'mdi:linkedin', url: '#' },
-  { name: 'Xing', icon: 'mdi:xing', url: '#' },
-  { name: 'Twitter', icon: 'mdi:twitter', url: '#' }
+  { name: 'Xing', icon: 'mdi:xing', url: '#' }
 ]
 
 const companyLinks = [
   { name: 'Über uns', path: '/ueber-uns' },
+  { name: 'Referenzen', path: '/referenzen' },
   { name: 'Karriere', path: '/karriere' },
-  { name: 'Kontakt', path: '/kontakt' },
-  { name: 'Impressum', path: '/impressum' },
-  { name: 'Datenschutz', path: '/datenschutz' }
+  { name: 'Kontakt', path: '/kontakt' }
 ]
 
 const serviceLinks = [
-  { name: 'IT Solutions', path: '/it-solutions' },
-  { name: 'Travel Solutions', path: '/travel-solutions' },
-  { name: 'Projektmanagement', path: '/it-solutions' },
-  { name: 'Service Desk', path: '/it-solutions' },
-  { name: 'Entwicklung', path: '/it-solutions' }
+  { name: 'IT-Verantwortung', path: '/loesungen#it-verantwortung' },
+  { name: 'IT-Projektleitung', path: '/loesungen#projektleitung' },
+  { name: 'Softwareentwicklung', path: '/loesungen#softwareentwicklung' },
+  { name: 'KI & Automatisierung', path: '/loesungen#ki-automatisierung' },
+  { name: 'Webseiten & CMS', path: '/loesungen#webseiten' }
 ]
 </script>

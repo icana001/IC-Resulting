@@ -23,13 +23,13 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Lamberth GmbH - IT & Travel Solutions',
+      title: 'IC-RESULTING | Resulting statt Beratung',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'Lamberth ist der erfahrene Partner für Travel- und IT Solutions. 35+ Jahre Erfahrung in der Digitalisierung.' 
+          content: 'IC-RESULTING: IT-Verantwortung abgeben, Ergebnisse erhalten. IT-Projektleitung, Softwareentwicklung, KI & Automatisierung. PRINCE2, ITIL, SÜ2.' 
         },
         { name: 'format-detection', content: 'telephone=no' }
       ],
@@ -42,5 +42,5 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  compatibilityDate: '2026-01-11'
+  compatibilityDate: '2026-01-13'
 })

@@ -4,6 +4,15 @@
     <section class="relative pt-32 pb-20 overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900"></div>
       <div class="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <!-- Hero Background Image -->
+      <div class="absolute inset-0 opacity-15">
+        <img 
+          src="https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=1200&q=80" 
+          alt="" 
+          aria-hidden="true"
+          class="w-full h-full object-cover"
+        />
+      </div>
       
       <!-- Floating Elements -->
       <div class="absolute top-20 right-20 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
@@ -17,18 +26,22 @@
           </div>
           
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            Wir bringen Ihre <br class="hidden md:block" />
-            <span class="text-accent-400">IT voran</span>
+            IT-Verantwortung <br class="hidden md:block" />
+            <span class="text-accent-400">abgeben</span>
           </h1>
           
           <p class="text-xl text-white/80 max-w-2xl mb-8">
-            Seit über 35 Jahren setzen wir erfolgreich IT Projekte um. 
-            Dabei stehen Sie und Ihre spezifischen Anforderungen immer im Fokus.
+            Resulting statt Beratung: Wir übernehmen Verantwortung für Ihre IT 
+            und liefern messbare Ergebnisse – mit klarer Verantwortung und einem Single Point of Accountability.
           </p>
 
           <div class="flex flex-wrap gap-4">
             <NuxtLink to="/kontakt" class="btn-white">
               Projekt besprechen
+              <Icon name="heroicons:arrow-right" class="w-5 h-5 ml-2" />
+            </NuxtLink>
+            <NuxtLink to="/loesungen" class="inline-flex items-center px-6 py-3 text-white border border-white/30 rounded-xl hover:bg-white/10 transition-all">
+              Alle Lösungen
               <Icon name="heroicons:arrow-right" class="w-5 h-5 ml-2" />
             </NuxtLink>
           </div>
@@ -48,7 +61,7 @@
           </h2>
           <p class="section-subtitle mx-auto">
             Wir kümmern uns um Ihre IT-Projekte mit erfahrenen Projektleitern 
-            und optimalem Einsatz von preisgünstigen Entwickler-Teams.
+            und einem effizienten Delivery-Modell.
           </p>
         </div>
 
@@ -118,18 +131,18 @@
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
-              Unsere Standorte
+              Delivery-Modell
             </span>
             <h2 class="section-title mb-6">
-              Zwei Standorte, ein Team
+              Projektleitung in Deutschland, effizientes Delivery
             </h2>
             <p class="text-dark-500 text-lg mb-8 leading-relaxed">
-              25 Mitarbeiter am Standort Frankfurt und 30 am Standort Istanbul 
-              setzen die Projekte mit den neuesten Technologien um.
+              Unser Delivery-Modell kombiniert deutsche Projektleitung mit einem 
+              internationalen Entwicklerteam – unter strengen DSGVO- und Security-Leitplanken.
             </p>
 
             <div class="grid sm:grid-cols-2 gap-6">
-              <!-- Frankfurt -->
+              <!-- Deutschland -->
               <div class="p-6 rounded-2xl bg-primary-50 border border-primary-100">
                 <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center mb-4">
                   <Icon name="heroicons:building-office" class="w-6 h-6 text-white" />
@@ -137,45 +150,45 @@
                 <h4 class="font-display font-bold text-lg text-dark-800 mb-2">
                   Deutschland
                 </h4>
-                <p class="text-sm text-dark-500 mb-3">Frankfurt am Main</p>
+                <p class="text-sm text-dark-500 mb-3">Wiesbaden, Berlin, Köln</p>
                 <ul class="space-y-1 text-sm text-dark-600">
+                  <li>• Projektleitung</li>
+                  <li>• Kundenverantwortung</li>
                   <li>• Consulting</li>
-                  <li>• Projektmanagement</li>
-                  <li>• Service Desk</li>
-                  <li>• Entwicklung</li>
-                  <li>• Service</li>
+                  <li>• Delivery</li>
                 </ul>
               </div>
 
               <!-- Istanbul -->
               <div class="p-6 rounded-2xl bg-accent-50 border border-accent-100">
                 <div class="w-12 h-12 rounded-xl bg-accent-600 flex items-center justify-center mb-4">
-                  <Icon name="heroicons:code-bracket" class="w-6 h-6 text-white" />
+                  <Icon name="heroicons:academic-cap" class="w-6 h-6 text-white" />
                 </div>
                 <h4 class="font-display font-bold text-lg text-dark-800 mb-2">
                   Türkei
                 </h4>
-                <p class="text-sm text-dark-500 mb-3">Istanbul</p>
+                <p class="text-sm text-dark-500 mb-3">Istanbul (R&D)</p>
                 <ul class="space-y-1 text-sm text-dark-600">
                   <li>• Entwicklung</li>
                   <li>• Academy</li>
                   <li>• Research</li>
+                  <li>• Uni-Kooperationen</li>
                 </ul>
               </div>
             </div>
           </div>
 
-          <!-- Academy Info -->
+          <!-- Qualifikationen -->
           <div class="bg-gradient-to-br from-dark-800 to-dark-900 rounded-3xl p-8 md:p-10 text-white">
             <div class="flex items-center gap-4 mb-6">
               <div class="w-14 h-14 rounded-2xl bg-primary-500 flex items-center justify-center">
-                <Icon name="heroicons:academic-cap" class="w-7 h-7" />
+                <Icon name="heroicons:shield-check" class="w-7 h-7" />
               </div>
-              <h3 class="text-2xl font-display font-bold">Zertifizierungen</h3>
+              <h3 class="text-2xl font-display font-bold">Qualifikationen</h3>
             </div>
             <p class="text-dark-300 leading-relaxed mb-6">
               Mit fundierten Zertifizierungen und einer Sicherheitsüberprüfung 
-              durch das Bundesamt für Verfassungsschutz biete ich Ihnen 
+              durch das Bundesamt für Verfassungsschutz bieten wir Ihnen 
               höchste Qualitäts- und Sicherheitsstandards.
             </p>
             <div class="grid grid-cols-2 gap-4">
@@ -184,8 +197,16 @@
                 <div class="text-sm text-dark-400">Sicherheitsüberprüfung</div>
               </div>
               <div class="p-4 bg-dark-700/50 rounded-xl">
-                <div class="text-2xl font-bold text-accent-400 mb-1">PRINCE2®</div>
+                <div class="text-2xl font-bold text-accent-400 mb-1">PRINCE2</div>
                 <div class="text-sm text-dark-400">Project Management</div>
+              </div>
+              <div class="p-4 bg-dark-700/50 rounded-xl">
+                <div class="text-2xl font-bold text-primary-400 mb-1">ITIL</div>
+                <div class="text-sm text-dark-400">Service Management</div>
+              </div>
+              <div class="p-4 bg-dark-700/50 rounded-xl">
+                <div class="text-2xl font-bold text-accent-400 mb-1">Dipl.-Inf.</div>
+                <div class="text-sm text-dark-400">RheinMain (FH)</div>
               </div>
             </div>
           </div>
@@ -286,7 +307,7 @@
 <script setup>
 useSeoMeta({
   title: 'IT Solutions - IC-RESULTING | Projektleitung & Entwicklung',
-  description: 'IT-Projektleitung, Softwareentwicklung, KI-gestützte Prozessautomatisierung, DevOps-Teams. PRINCE2® & ITIL V3® zertifiziert. Wiesbaden.'
+  description: 'IT-Projektleitung, Softwareentwicklung, KI-gestützte Prozessautomatisierung, DevOps. PRINCE2 & ITIL zertifiziert. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
 })
 
 const services = [
@@ -294,7 +315,7 @@ const services = [
     icon: 'heroicons:briefcase',
     title: 'IT-Projektleitung',
     description: 'Professionelle Leitung Ihrer IT-Projekte bis zum erfolgreichen Abschluss.',
-    items: ['PRINCE2® Methodik', 'Ressourcenmanagement', 'Risikomanagement', 'Stakeholder-Kommunikation']
+    items: ['PRINCE2 Methodik', 'Ressourcenmanagement', 'Risikomanagement', 'Stakeholder-Kommunikation']
   },
   {
     icon: 'heroicons:code-bracket',
@@ -306,24 +327,24 @@ const services = [
     icon: 'heroicons:cpu-chip',
     title: 'KI & Automatisierung',
     description: 'KI-gestützte Prozessautomatisierung für mehr Effizienz.',
-    items: ['Prozessoptimierung', 'Machine Learning', 'Workflow-Automatisierung', 'Datenanalyse']
+    items: ['Prozessoptimierung', 'Machine Learning', 'Workflow-Automatisierung', 'Intelligente Agenten']
   },
   {
     icon: 'heroicons:users',
-    title: 'DevOps-Teams',
-    description: 'Aufbau und Leitung von Entwickler- & DevOps-Teams.',
-    items: ['Team-Aufbau', 'CI/CD Pipelines', 'Agile Methoden', 'Code Reviews']
+    title: 'DevOps & Cloud',
+    description: 'Aufbau und Betrieb moderner Cloud-Infrastruktur.',
+    items: ['CI/CD Pipelines', 'Container & Kubernetes', 'Cloud Migration', 'Infrastructure as Code']
   },
   {
     icon: 'heroicons:shield-check',
-    title: 'DSGVO & IT-Sicherheit',
+    title: 'DSGVO & IT-Security',
     description: 'Datenschutz & DSGVO-konforme IT-Infrastruktur.',
     items: ['Datenschutz-Audits', 'Sicherheitskonzepte', 'Compliance', 'Penetrationstests']
   },
   {
     icon: 'heroicons:academic-cap',
     title: 'Schulungen',
-    description: 'Mitarbeiterschulung & Awareness in IT-Sicherheit.',
+    description: 'Mitarbeiterschulung & Security Awareness.',
     items: ['Security Awareness', 'Entwickler-Schulungen', 'Best Practices', 'Workshops']
   }
 ]
@@ -356,14 +377,14 @@ const qualityItems = [
   'Dokumentation aller Projektphasen',
   'Transparente Kommunikation',
   'Professionelle Projektmanagement-Werkzeuge',
-  'Preiskontrolle durch bewährte Tools',
-  'Regelmäßige Status-Reports'
+  'Regelmäßige Status-Reports',
+  'DSGVO-konforme Prozesse'
 ]
 
 const certifications = [
-  { name: 'ITIL', icon: 'heroicons:shield-check' },
-  { name: 'ISO 9001', icon: 'heroicons:document-check' },
+  { name: 'ITIL', icon: 'heroicons:cog-6-tooth' },
+  { name: 'DSGVO', icon: 'heroicons:shield-check' },
   { name: 'Agile/Scrum', icon: 'heroicons:arrow-path' },
-  { name: 'DevOps', icon: 'heroicons:cog-6-tooth' }
+  { name: 'DevOps', icon: 'heroicons:cloud' }
 ]
 </script>

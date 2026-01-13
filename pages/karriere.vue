@@ -4,6 +4,15 @@
     <section class="relative pt-32 pb-20 overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-primary-600 via-primary-700 to-primary-900"></div>
       <div class="absolute inset-0 bg-hero-pattern opacity-10"></div>
+      <!-- Hero Background Image -->
+      <div class="absolute inset-0 opacity-20">
+        <img 
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80" 
+          alt="" 
+          aria-hidden="true"
+          class="w-full h-full object-cover"
+        />
+      </div>
 
       <div class="container-custom relative z-10">
         <div class="max-w-3xl mx-auto text-center">
@@ -18,7 +27,8 @@
           
           <p class="text-xl text-white/80">
             Wir suchen motivierte Talente, die gemeinsam mit uns die 
-            Digitalisierung vorantreiben möchten.
+            Digitalisierung vorantreiben möchten – an unseren Standorten in 
+            Deutschland und Istanbul.
           </p>
         </div>
       </div>
@@ -36,7 +46,7 @@
           </h2>
           <p class="section-subtitle mx-auto">
             Bei IC-RESULTING erwartet Sie ein dynamisches Arbeitsumfeld 
-            mit spannenden Projekten und tollen Kollegen.
+            mit spannenden Projekten und einem internationalen Team.
           </p>
         </div>
 
@@ -121,6 +131,51 @@
       </div>
     </section>
 
+    <!-- Standorte -->
+    <section class="py-24 bg-white">
+      <div class="container-custom">
+        <div class="text-center mb-16">
+          <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
+            Standorte
+          </span>
+          <h2 class="section-title mb-4">
+            Wo wir arbeiten
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div class="p-6 bg-dark-50 rounded-2xl text-center">
+            <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center mx-auto mb-4">
+              <Icon name="heroicons:building-office" class="w-6 h-6 text-white" />
+            </div>
+            <h3 class="font-display font-bold text-dark-800 mb-1">Wiesbaden</h3>
+            <p class="text-dark-500 text-sm">Hauptsitz & Projektleitung</p>
+          </div>
+          <div class="p-6 bg-dark-50 rounded-2xl text-center">
+            <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center mx-auto mb-4">
+              <Icon name="heroicons:map-pin" class="w-6 h-6 text-white" />
+            </div>
+            <h3 class="font-display font-bold text-dark-800 mb-1">Berlin</h3>
+            <p class="text-dark-500 text-sm">Delivery & Entwicklung</p>
+          </div>
+          <div class="p-6 bg-dark-50 rounded-2xl text-center">
+            <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center mx-auto mb-4">
+              <Icon name="heroicons:map-pin" class="w-6 h-6 text-white" />
+            </div>
+            <h3 class="font-display font-bold text-dark-800 mb-1">Köln</h3>
+            <p class="text-dark-500 text-sm">Partner-Standort</p>
+          </div>
+          <div class="p-6 bg-dark-50 rounded-2xl text-center">
+            <div class="w-12 h-12 rounded-xl bg-accent-600 flex items-center justify-center mx-auto mb-4">
+              <Icon name="heroicons:academic-cap" class="w-6 h-6 text-white" />
+            </div>
+            <h3 class="font-display font-bold text-dark-800 mb-1">Istanbul</h3>
+            <p class="text-dark-500 text-sm">R&D & Academy</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- IC-RESULTING Academy -->
     <section class="py-24 bg-gradient-to-br from-dark-800 to-dark-900 text-white">
       <div class="container-custom">
@@ -132,10 +187,14 @@
               </div>
               <h2 class="text-3xl md:text-4xl font-display font-bold">IC-RESULTING Academy</h2>
             </div>
-            <p class="text-dark-300 text-lg leading-relaxed mb-8">
-              Unsere Academy bietet jungen und motivierten Talenten die Möglichkeit, 
+            <p class="text-dark-300 text-lg leading-relaxed mb-4">
+              Unsere Academy in Istanbul bietet jungen und motivierten Talenten die Möglichkeit, 
               von erfahrenen Experten zu lernen. Mit europäischen Standards und 
               modernsten Methoden bereiten wir Sie optimal auf Ihre Karriere vor.
+            </p>
+            <p class="text-dark-300 text-lg leading-relaxed mb-8">
+              In Kooperation mit türkischen Universitäten fördern wir den Nachwuchs 
+              und verbinden akademische Ausbildung mit praxisnaher Projekterfahrung.
             </p>
 
             <div class="space-y-4">
@@ -161,8 +220,8 @@
               <div class="text-dark-400">Scrum & Kanban</div>
             </div>
             <div class="p-6 bg-dark-700/50 rounded-2xl text-center">
-              <div class="text-4xl font-bold text-accent-400 mb-2">Cloud</div>
-              <div class="text-dark-400">AWS & Azure</div>
+              <div class="text-4xl font-bold text-accent-400 mb-2">KI</div>
+              <div class="text-dark-400">AI & Machine Learning</div>
             </div>
           </div>
         </div>
@@ -198,14 +257,14 @@
 <script setup>
 useSeoMeta({
   title: 'Karriere - IC-RESULTING | Jobs in IT & Softwareentwicklung',
-  description: 'Karriere bei IC-RESULTING. IT-Projektleitung, Softwareentwicklung, DevOps. Wiesbaden.'
+  description: 'Karriere bei IC-RESULTING. IT-Projektleitung, Softwareentwicklung, DevOps, KI. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
 })
 
 const benefits = [
   {
     icon: 'heroicons:rocket-launch',
     title: 'Spannende Projekte',
-    description: 'Arbeiten Sie an innovativen IT- und Travel-Projekten für namhafte Kunden.'
+    description: 'Arbeiten Sie an innovativen IT-Projekten für namhafte Kunden aus verschiedenen Branchen.'
   },
   {
     icon: 'heroicons:academic-cap',
@@ -215,49 +274,49 @@ const benefits = [
   {
     icon: 'heroicons:globe-alt',
     title: 'Internationales Team',
-    description: 'Arbeiten Sie in einem multinationalen Team mit Kollegen aus verschiedenen Ländern.'
+    description: 'Arbeiten Sie in einem multinationalen Team mit Kollegen in Deutschland und der Türkei.'
   },
   {
     icon: 'heroicons:home-modern',
     title: 'Modernes Arbeitsumfeld',
-    description: 'Genießen Sie moderne Büros und flexible Arbeitszeiten.'
+    description: 'Genießen Sie moderne Arbeitsmittel und flexible Arbeitszeiten.'
   },
   {
     icon: 'heroicons:heart',
     title: 'Work-Life-Balance',
-    description: 'Flexible Arbeitsmodelle und Home-Office Möglichkeiten.'
+    description: 'Flexible Arbeitsmodelle und Home-Office Möglichkeiten für eine gute Balance.'
   },
   {
     icon: 'heroicons:chart-bar',
     title: 'Karrierechancen',
-    description: 'Vielfältige Aufstiegsmöglichkeiten in einem wachsenden Unternehmen.'
+    description: 'Vielfältige Entwicklungsmöglichkeiten in einem wachsenden Unternehmen.'
   }
 ]
 
 const jobs = [
   {
     title: 'Senior Software Developer (m/w/d)',
-    location: 'Frankfurt am Main',
+    location: 'Wiesbaden / Remote',
     type: 'Vollzeit',
-    department: 'IT Solutions'
+    department: 'Entwicklung'
   },
   {
-    title: 'Projektmanager IT (m/w/d)',
-    location: 'Frankfurt am Main',
+    title: 'IT-Projektmanager (m/w/d)',
+    location: 'Wiesbaden',
     type: 'Vollzeit',
-    department: 'IT Solutions'
+    department: 'Projektleitung'
   },
   {
     title: 'Junior Developer (m/w/d)',
     location: 'Istanbul',
     type: 'Vollzeit',
-    department: 'Development'
+    department: 'Entwicklung'
   },
   {
-    title: 'Travel Solutions Consultant (m/w/d)',
-    location: 'Frankfurt am Main',
+    title: 'DevOps Engineer (m/w/d)',
+    location: 'Berlin / Remote',
     type: 'Vollzeit',
-    department: 'Travel Solutions'
+    department: 'Infrastruktur'
   }
 ]
 
@@ -265,6 +324,7 @@ const academyFeatures = [
   'Schulung nach europäischen Standards',
   'Praxisnahe Projekte von Anfang an',
   'Mentoring durch erfahrene Entwickler',
-  'Moderne Technologien und Methoden'
+  'Moderne Technologien und Methoden',
+  'Kooperationen mit türkischen Universitäten'
 ]
 </script>

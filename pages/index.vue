@@ -19,27 +19,28 @@
           <!-- Content -->
           <div class="text-center lg:text-left">
             <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-              <Icon name="heroicons:sparkles" class="w-4 h-4" />
-              35+ Jahre Erfahrung
+              <Icon name="heroicons:shield-check" class="w-4 h-4" />
+              Resulting statt Beratung
             </div>
             
             <h1 class="section-title mb-6 text-balance">
-              Wir bringen Ihre
-              <span class="gradient-text"> IT voran</span>
+              IT-Verantwortung
+              <span class="gradient-text"> abgeben. Ergebnisse</span> erhalten.
             </h1>
             
             <p class="section-subtitle mx-auto lg:mx-0 mb-8">
-              Resulting statt Beratung – Wir begleiten IT-Projekte bis zum Ergebnis. 
-              IT-Projektleitung, Softwareentwicklung & KI-gestützte Digitale Transformation.
+              Wir übernehmen Ihre IT-Verantwortung – von der Projektleitung über Softwareentwicklung 
+              bis hin zu KI-Automatisierung. Mit klarer Verantwortung, messbaren Ergebnissen und 
+              einem Single Point of Accountability.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <NuxtLink to="/kontakt" class="btn-primary">
-                <Icon name="heroicons:arrow-right" class="w-5 h-5 mr-2" />
-                Jetzt starten
+                <Icon name="heroicons:chat-bubble-left-right" class="w-5 h-5 mr-2" />
+                Kontakt aufnehmen
               </NuxtLink>
-              <NuxtLink to="/it-solutions" class="btn-secondary">
-                Mehr erfahren
+              <NuxtLink to="/loesungen" class="btn-secondary">
+                Lösungen ansehen
               </NuxtLink>
             </div>
 
@@ -59,27 +60,35 @@
             <div class="relative">
               <!-- Main Card -->
               <div class="bg-white rounded-3xl shadow-2xl p-8 transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                <div class="flex items-center gap-4 mb-6">
+                <div class="aspect-video rounded-2xl overflow-hidden mb-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" 
+                    alt="IT-Team arbeitet gemeinsam an einem Projekt – moderne Büroumgebung mit Monitoren und Code"
+                    class="w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="flex items-center gap-4 mb-4">
                   <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center">
                     <Icon name="heroicons:cpu-chip" class="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 class="font-semibold text-dark-800">IT Solutions</h3>
-                    <p class="text-sm text-dark-400">Digitale Transformation</p>
+                    <h3 class="font-semibold text-dark-800">IT-Komplettlösungen</h3>
+                    <p class="text-sm text-dark-400">Verantwortung & Ergebnisse</p>
                   </div>
                 </div>
                 <div class="space-y-3">
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                    <span class="text-sm text-dark-600">Projektmanagement</span>
+                    <span class="text-sm text-dark-600">IT-Projektleitung (PRINCE2)</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                    <span class="text-sm text-dark-600">Software-Entwicklung</span>
+                    <span class="text-sm text-dark-600">Softwareentwicklung & DevOps</span>
                   </div>
                   <div class="flex items-center gap-3">
                     <div class="w-2 h-2 rounded-full bg-green-500"></div>
-                    <span class="text-sm text-dark-600">Service Desk</span>
+                    <span class="text-sm text-dark-600">KI & Automatisierung</span>
                   </div>
                 </div>
               </div>
@@ -87,11 +96,11 @@
               <!-- Floating Cards -->
               <div class="absolute -top-6 -right-6 bg-white rounded-2xl shadow-xl p-4 animate-float">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-accent-100 flex items-center justify-center">
-                    <Icon name="heroicons:globe-alt" class="w-5 h-5 text-accent-600" />
+                  <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                    <Icon name="heroicons:building-office" class="w-5 h-5 text-primary-600" />
                   </div>
                   <div>
-                    <div class="font-semibold text-dark-800">Frankfurt</div>
+                    <div class="font-semibold text-dark-800">Wiesbaden</div>
                     <div class="text-xs text-dark-400">Hauptsitz</div>
                   </div>
                 </div>
@@ -99,12 +108,12 @@
 
               <div class="absolute -bottom-4 -left-6 bg-white rounded-2xl shadow-xl p-4 animate-float" style="animation-delay: 2s;">
                 <div class="flex items-center gap-3">
-                  <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
-                    <Icon name="heroicons:building-office-2" class="w-5 h-5 text-primary-600" />
+                  <div class="w-10 h-10 rounded-lg bg-accent-100 flex items-center justify-center">
+                    <Icon name="heroicons:academic-cap" class="w-5 h-5 text-accent-600" />
                   </div>
                   <div>
-                    <div class="font-semibold text-dark-800">Istanbul</div>
-                    <div class="text-xs text-dark-400">Development Hub</div>
+                    <div class="font-semibold text-dark-800">R&D Istanbul</div>
+                    <div class="text-xs text-dark-400">Uni-Kooperationen</div>
                   </div>
                 </div>
               </div>
@@ -121,114 +130,188 @@
       </div>
     </section>
 
+    <!-- Trust Strip -->
+    <section class="py-8 bg-white border-y border-dark-100">
+      <div class="container-custom">
+        <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10">
+          <div v-for="trust in trustItems" :key="trust.label" class="flex items-center gap-2 text-dark-500">
+            <Icon :name="trust.icon" class="w-5 h-5 text-primary-600" />
+            <span class="text-sm font-medium">{{ trust.label }}</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section class="py-24 bg-white relative overflow-hidden">
       <div class="container-custom">
         <div class="text-center mb-16">
           <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
-            Unsere Leistungen
+            Unsere IT-Leistungen
           </span>
           <h2 class="section-title mb-4">
-            Zwei starke Säulen für Ihren Erfolg
+            Konzentrieren Sie sich auf Ihr Kerngeschäft
           </h2>
           <p class="section-subtitle mx-auto">
-            Von IT-Projektmanagement bis hin zu spezialisierten Travel-Lösungen – 
-            wir bieten maßgeschneiderte Services für Ihre Branche.
+            Wir übernehmen Ihre IT-Verantwortung – modular oder als Komplettlösung. 
+            Mit klarer Verantwortung und messbaren Ergebnissen.
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- IT Solutions Card -->
-          <NuxtLink to="/it-solutions" class="group">
-            <div class="relative bg-gradient-to-br from-primary-600 to-primary-800 rounded-3xl p-8 md:p-10 
-                        text-white overflow-hidden transition-all duration-500 
-                        hover:shadow-glow-lg hover:-translate-y-2">
-              <!-- Background Pattern -->
-              <div class="absolute inset-0 opacity-10">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full translate-x-1/2 -translate-y-1/2"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-white rounded-full -translate-x-1/2 translate-y-1/2"></div>
-              </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div v-for="service in services" :key="service.title" class="card-hover group">
+            <div class="icon-box mb-6 group-hover:scale-110 transition-transform duration-300">
+              <Icon :name="service.icon" class="w-6 h-6" />
+            </div>
+            <h3 class="text-xl font-display font-bold text-dark-800 mb-3">
+              {{ service.title }}
+            </h3>
+            <p class="text-dark-500 leading-relaxed mb-4">
+              {{ service.description }}
+            </p>
+            <ul class="space-y-2">
+              <li v-for="item in service.items" :key="item" class="flex items-center gap-2 text-sm text-dark-600">
+                <Icon name="heroicons:check" class="w-4 h-4 text-primary-500" />
+                {{ item }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="relative z-10">
-                <div class="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6 
-                            group-hover:scale-110 transition-transform duration-300">
-                  <Icon name="heroicons:cpu-chip" class="w-8 h-8" />
-                </div>
-                
-                <h3 class="text-2xl md:text-3xl font-display font-bold mb-4">
-                  IT Solutions
-                </h3>
-                
-                <p class="text-white/80 mb-6 leading-relaxed">
-                  Wir kümmern uns um Ihre IT-Projekte. Konzentrieren Sie sich auf 
-                  Ihre Kernprozesse während wir mit erfahrenen Teams Ihre 
-                  Digitalisierung vorantreiben.
-                </p>
+    <!-- Webseiten & CMS Section -->
+    <section class="py-24 bg-dark-50 relative">
+      <div class="container-custom">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
+              Webseiten & CMS
+            </span>
+            <h2 class="section-title mb-6">
+              Schnell online, dauerhaft erfolgreich
+            </h2>
+            <p class="text-dark-500 text-lg mb-8 leading-relaxed">
+              Professionelle Webseiten mit schnellen CMS-Systemen – von der Konzeption bis zum Launch. 
+              Mit Performance-Optimierung, SEO-Basics und DSGVO-konformer Umsetzung.
+            </p>
 
-                <ul class="space-y-3 mb-8">
-                  <li v-for="item in itServices" :key="item" class="flex items-center gap-3">
-                    <Icon name="heroicons:check-circle" class="w-5 h-5 text-accent-400 flex-shrink-0" />
-                    <span>{{ item }}</span>
-                  </li>
-                </ul>
-
-                <div class="flex items-center gap-2 text-white font-semibold 
-                            group-hover:gap-4 transition-all duration-300">
-                  Mehr erfahren
-                  <Icon name="heroicons:arrow-right" class="w-5 h-5" />
-                </div>
+            <div class="space-y-4 mb-8">
+              <div v-for="item in websiteFeatures" :key="item" 
+                   class="flex items-center gap-3 p-4 bg-white rounded-xl shadow-soft">
+                <Icon name="heroicons:check-circle" class="w-6 h-6 text-primary-600 flex-shrink-0" />
+                <span class="font-medium text-dark-700">{{ item }}</span>
               </div>
             </div>
-          </NuxtLink>
 
-          <!-- Travel Solutions Card -->
-          <NuxtLink to="/travel-solutions" class="group">
-            <div class="relative bg-gradient-to-br from-accent-600 to-accent-800 rounded-3xl p-8 md:p-10 
-                        text-white overflow-hidden transition-all duration-500 
-                        hover:shadow-xl hover:-translate-y-2">
-              <!-- Background Pattern -->
-              <div class="absolute inset-0 opacity-10">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full translate-x-1/2 -translate-y-1/2"></div>
-                <div class="absolute bottom-0 left-0 w-48 h-48 bg-white rounded-full -translate-x-1/2 translate-y-1/2"></div>
+            <h4 class="font-display font-bold text-lg text-dark-800 mb-4">Webseiten-Referenzen</h4>
+            <div class="flex flex-wrap gap-3">
+              <a 
+                v-for="site in websiteShowcase" 
+                :key="site.url"
+                :href="site.url" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="px-4 py-2 bg-white rounded-lg text-sm text-primary-600 hover:bg-primary-50 
+                       transition-colors border border-primary-200"
+              >
+                {{ site.name }}
+                <Icon name="heroicons:arrow-top-right-on-square" class="w-3 h-3 inline ml-1" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Website Mockup -->
+          <div class="relative">
+            <div class="bg-white rounded-3xl shadow-2xl p-6">
+              <div class="flex items-center gap-2 mb-4">
+                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <div class="w-3 h-3 rounded-full bg-green-400"></div>
               </div>
-
-              <div class="relative z-10">
-                <div class="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-sm flex items-center justify-center mb-6 
-                            group-hover:scale-110 transition-transform duration-300">
-                  <Icon name="heroicons:globe-alt" class="w-8 h-8" />
-                </div>
-                
-                <h3 class="text-2xl md:text-3xl font-display font-bold mb-4">
-                  Travel Solutions
-                </h3>
-                
-                <p class="text-white/80 mb-6 leading-relaxed">
-                  Spezialisierte Lösungen für Reiseveranstalter und Airlines. 
-                  Wir bringen Reiseveranstalter mit innovativen digitalen 
-                  Services voran.
-                </p>
-
-                <ul class="space-y-3 mb-8">
-                  <li v-for="item in travelServices" :key="item" class="flex items-center gap-3">
-                    <Icon name="heroicons:check-circle" class="w-5 h-5 text-primary-300 flex-shrink-0" />
-                    <span>{{ item }}</span>
-                  </li>
-                </ul>
-
-                <div class="flex items-center gap-2 text-white font-semibold 
-                            group-hover:gap-4 transition-all duration-300">
-                  Mehr erfahren
-                  <Icon name="heroicons:arrow-right" class="w-5 h-5" />
-                </div>
+              <div class="aspect-video rounded-xl overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" 
+                  alt="Moderne Webseite auf Laptop-Bildschirm mit Analytics-Dashboard"
+                  class="w-full h-full object-cover"
+                  loading="lazy"
+                />
               </div>
             </div>
-          </NuxtLink>
+            <div class="absolute -bottom-4 -right-4 bg-primary-600 text-white px-4 py-2 rounded-xl shadow-lg">
+              <span class="font-semibold text-sm">Schnell live</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder Kurzprofil -->
+    <section class="py-24 bg-dark-50">
+      <div class="container-custom">
+        <div class="max-w-5xl mx-auto">
+          <div class="bg-white rounded-3xl shadow-soft p-8 md:p-12">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+              <!-- Portrait -->
+              <div class="md:col-span-1">
+                <div class="relative">
+                  <div class="rounded-2xl overflow-hidden aspect-square shadow-lg max-w-[280px] mx-auto">
+                    <!-- HINWEIS: Bild später durch /images/ibrahim-canakci-portrait.webp ersetzen -->
+                    <img 
+                      :src="founderImage" 
+                      alt="Dipl.-Inf.(FH) Ibrahim Canakci – IT-Projektleiter und Software-Unternehmer"
+                      class="w-full h-full object-cover object-top"
+                      loading="lazy"
+                      width="280"
+                      height="280"
+                      @error="handleImageError"
+                    />
+                  </div>
+                  <div class="absolute -bottom-3 -right-3 bg-primary-600 text-white px-3 py-1.5 rounded-lg text-xs font-semibold shadow-lg">
+                    Dipl.-Inf. (FH)
+                  </div>
+                </div>
+              </div>
+
+              <!-- Bio Short -->
+              <div class="md:col-span-2">
+                <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-2 block">
+                  Gründer & Geschäftsführer
+                </span>
+                <h3 class="text-2xl md:text-3xl font-display font-bold text-dark-800 mb-2">
+                  Ibrahim Canakci
+                </h3>
+                <p class="text-primary-600 font-medium mb-4">IT-Projektleiter & Software-Unternehmer</p>
+                
+                <p class="text-dark-500 leading-relaxed mb-6">
+                  Dipl.-Inf.(FH) Ibrahim Canakci ist IT-Projektleiter und IT-Architekt mit Schwerpunkt auf 
+                  der Planung, Steuerung und Umsetzung komplexer IT-Vorhaben. Er verbindet Management-Verantwortung 
+                  mit technischer Umsetzung – von Architekturentscheidungen über Teamaufbau bis zur Stabilisierung 
+                  von Betrieb und Services. Ein besonderer Fokus liegt auf DSGVO-konformer Umsetzung, 
+                  Security-by-Design und KI-gestützter Prozessautomatisierung.
+                </p>
+
+                <div class="flex flex-wrap gap-3 mb-6">
+                  <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">PRINCE2</span>
+                  <span class="px-3 py-1 bg-accent-100 text-accent-700 rounded-full text-sm font-medium">ITIL</span>
+                  <span class="px-3 py-1 bg-primary-100 text-primary-700 rounded-full text-sm font-medium">DevSecOps</span>
+                  <span class="px-3 py-1 bg-accent-100 text-accent-700 rounded-full text-sm font-medium">KI & Automatisierung</span>
+                  <span class="px-3 py-1 bg-dark-100 text-dark-700 rounded-full text-sm font-medium">SÜ2</span>
+                </div>
+
+                <NuxtLink to="/ueber-uns" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+                  Mehr erfahren
+                  <Icon name="heroicons:arrow-right" class="w-5 h-5 ml-2" />
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Why IC-RESULTING Section -->
-    <section class="py-24 bg-dark-50 relative">
+    <section class="py-24 bg-white relative">
       <div class="container-custom">
         <div class="text-center mb-16">
           <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
@@ -238,8 +321,8 @@
             Ihr Vorteil mit uns
           </h2>
           <p class="section-subtitle mx-auto">
-            Profitieren Sie von unserer langjährigen Erfahrung und 
-            unserem internationalen Team.
+            Profitieren Sie von klarer Verantwortung, deutschem Projektmanagement 
+            und einem skalierbaren internationalen Team.
           </p>
         </div>
 
@@ -261,84 +344,84 @@
       </div>
     </section>
 
-    <!-- Locations Section -->
-    <section class="py-24 bg-white">
+    <!-- Delivery Model Section -->
+    <section class="py-24 bg-dark-900 text-white">
       <div class="container-custom">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
-              Unsere Standorte
-            </span>
-            <h2 class="section-title mb-6">
-              Global denken, lokal handeln
-            </h2>
-            <p class="text-dark-500 text-lg mb-8 leading-relaxed">
-              Mit unseren Standorten in Frankfurt und Istanbul bieten wir Ihnen 
-              das Beste aus beiden Welten: Deutsche Qualitätsstandards kombiniert 
-              mit kosteneffizienten Entwicklerteams.
-            </p>
+        <div class="text-center mb-16">
+          <span class="text-primary-400 font-semibold text-sm tracking-wide uppercase mb-4 block">
+            Unser Delivery-Modell
+          </span>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
+            Deutsche Steuerung, internationales Delivery
+          </h2>
+          <p class="text-xl text-dark-300 max-w-3xl mx-auto">
+            Projektleitung und Kundenverantwortung in Deutschland – effiziente Umsetzung 
+            durch unser internationales Team unter strengen DSGVO- und Security-Leitplanken.
+          </p>
+        </div>
 
-            <div class="space-y-6">
-              <!-- Frankfurt -->
-              <div class="flex gap-4 p-5 rounded-2xl bg-dark-50 hover:bg-primary-50 transition-colors group">
-                <div class="w-14 h-14 rounded-xl bg-primary-600 flex items-center justify-center flex-shrink-0
-                            group-hover:scale-110 transition-transform">
-                  <Icon name="heroicons:building-office" class="w-7 h-7 text-white" />
-                </div>
-                <div>
-                  <h4 class="font-display font-bold text-lg text-dark-800 mb-1">
-                    Frankfurt am Main
-                  </h4>
-                  <p class="text-dark-500 text-sm mb-2">
-                    Consulting • Projektmanagement • Service Desk • Service
-                  </p>
-                  <p class="text-primary-600 font-medium text-sm">25 Mitarbeiter</p>
-                </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 bg-dark-800/50 rounded-2xl border border-dark-700">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center">
+                <Icon name="heroicons:building-office" class="w-6 h-6" />
               </div>
-
-              <!-- Istanbul -->
-              <div class="flex gap-4 p-5 rounded-2xl bg-dark-50 hover:bg-accent-50 transition-colors group">
-                <div class="w-14 h-14 rounded-xl bg-accent-600 flex items-center justify-center flex-shrink-0
-                            group-hover:scale-110 transition-transform">
-                  <Icon name="heroicons:code-bracket" class="w-7 h-7 text-white" />
-                </div>
-                <div>
-                  <h4 class="font-display font-bold text-lg text-dark-800 mb-1">
-                    Istanbul
-                  </h4>
-                  <p class="text-dark-500 text-sm mb-2">
-                    Entwicklung • Academy • Research & Development
-                  </p>
-                  <p class="text-accent-600 font-medium text-sm">30 Mitarbeiter</p>
-                </div>
-              </div>
+              <h3 class="text-xl font-display font-bold">Wiesbaden</h3>
             </div>
+            <p class="text-dark-300 text-sm mb-3">Hauptsitz & Projektleitung</p>
+            <ul class="space-y-2 text-sm text-dark-400">
+              <li>• Single Point of Accountability</li>
+              <li>• DACH-Kundenverantwortung</li>
+              <li>• Projektmanagement</li>
+            </ul>
           </div>
 
-          <!-- Map Illustration -->
-          <div class="relative">
-            <div class="bg-gradient-to-br from-primary-100 to-accent-100 rounded-3xl p-8 aspect-square 
-                        flex items-center justify-center">
-              <div class="relative w-full h-full">
-                <!-- Abstract Globe -->
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-64 h-64 rounded-full border-4 border-dashed border-primary-300 animate-spin" 
-                       style="animation-duration: 30s;"></div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-48 h-48 rounded-full border-2 border-primary-200"></div>
-                </div>
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="w-32 h-32 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 
-                              shadow-glow flex items-center justify-center">
-                    <Icon name="heroicons:globe-europe-africa" class="w-16 h-16 text-white" />
-                  </div>
-                </div>
-                
-                <!-- Location Markers -->
-                <div class="absolute top-1/4 left-1/3 w-4 h-4 bg-primary-600 rounded-full animate-pulse shadow-lg"></div>
-                <div class="absolute top-1/2 right-1/4 w-4 h-4 bg-accent-500 rounded-full animate-pulse shadow-lg" 
-                     style="animation-delay: 1s;"></div>
+          <div class="p-6 bg-dark-800/50 rounded-2xl border border-dark-700">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-primary-600 flex items-center justify-center">
+                <Icon name="heroicons:map-pin" class="w-6 h-6" />
+              </div>
+              <h3 class="text-xl font-display font-bold">Berlin & Köln</h3>
+            </div>
+            <p class="text-dark-300 text-sm mb-3">Umsetzung & Delivery</p>
+            <ul class="space-y-2 text-sm text-dark-400">
+              <li>• Softwareentwicklung</li>
+              <li>• DevOps & Cloud</li>
+              <li>• Kundenworkshops</li>
+            </ul>
+          </div>
+
+          <div class="p-6 bg-dark-800/50 rounded-2xl border border-dark-700">
+            <div class="flex items-center gap-4 mb-4">
+              <div class="w-12 h-12 rounded-xl bg-accent-600 flex items-center justify-center">
+                <Icon name="heroicons:academic-cap" class="w-6 h-6" />
+              </div>
+              <h3 class="text-xl font-display font-bold">Istanbul (R&D)</h3>
+            </div>
+            <p class="text-dark-300 text-sm mb-3">Forschung & Entwicklung</p>
+            <ul class="space-y-2 text-sm text-dark-400">
+              <li>• Uni-Kooperationen</li>
+              <li>• KI-Forschung</li>
+              <li>• Academy & Schulungen</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-12 pt-12 border-t border-dark-700">
+          <h4 class="text-center text-dark-400 text-sm uppercase tracking-wide mb-6">Unsere Partner</h4>
+          <div class="flex flex-wrap justify-center gap-8">
+            <div class="flex items-center gap-3 px-6 py-3 bg-dark-800 rounded-xl">
+              <Icon name="heroicons:building-office-2" class="w-6 h-6 text-primary-400" />
+              <div>
+                <span class="font-semibold text-white">makroh GmbH</span>
+                <span class="text-dark-400 text-sm block">Köln, Deutschland</span>
+              </div>
+            </div>
+            <div class="flex items-center gap-3 px-6 py-3 bg-dark-800 rounded-xl">
+              <Icon name="heroicons:building-office-2" class="w-6 h-6 text-accent-400" />
+              <div>
+                <span class="font-semibold text-white">AyDeep Ltd.</span>
+                <span class="text-dark-400 text-sm block">Istanbul, Türkei</span>
               </div>
             </div>
           </div>
@@ -346,37 +429,40 @@
       </div>
     </section>
 
-    <!-- Clients Section -->
-    <section class="py-24 bg-dark-900 text-white overflow-hidden">
+    <!-- Projekterfahrung Teaser -->
+    <section class="py-24 bg-dark-50">
       <div class="container-custom">
-        <div class="text-center mb-16">
-          <span class="text-primary-400 font-semibold text-sm tracking-wide uppercase mb-4 block">
-            Unsere Kunden
+        <div class="text-center mb-12">
+          <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
+            Projekterfahrung
           </span>
-          <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4">
-            Langjährige Partnerschaften
+          <h2 class="section-title mb-4">
+            Vertrauen führender Unternehmen
           </h2>
-          <p class="text-xl text-dark-300 max-w-2xl mx-auto">
-            Führende Unternehmen aus der Reise- und IT-Branche vertrauen auf unsere Expertise.
+          <p class="section-subtitle mx-auto">
+            Von Behörden über Luftfahrt bis Industrie – wir liefern Ergebnisse.
           </p>
         </div>
 
-        <!-- Client Logos Marquee -->
-        <div class="relative">
-          <div class="flex gap-12 items-center justify-center flex-wrap">
-            <div v-for="client in clients" :key="client" 
-                 class="px-8 py-4 bg-dark-800 rounded-xl text-dark-300 font-semibold 
-                        hover:bg-dark-700 hover:text-white transition-all duration-300">
-              {{ client }}
-            </div>
+        <div class="flex flex-wrap justify-center gap-6 mb-8">
+          <div v-for="client in clients" :key="client" 
+               class="px-8 py-4 bg-white rounded-xl text-dark-600 font-semibold 
+                      border border-dark-100 hover:border-primary-200 hover:shadow-soft transition-all">
+            {{ client }}
           </div>
+        </div>
+
+        <div class="text-center">
+          <NuxtLink to="/referenzen" class="btn-secondary">
+            Alle Referenzen ansehen
+            <Icon name="heroicons:arrow-right" class="w-4 h-4 ml-2" />
+          </NuxtLink>
         </div>
       </div>
     </section>
 
     <!-- CTA Section -->
     <section class="py-24 bg-gradient-to-r from-primary-600 via-primary-700 to-primary-800 relative overflow-hidden">
-      <!-- Background Elements -->
       <div class="absolute inset-0">
         <div class="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
         <div class="absolute bottom-0 right-0 w-80 h-80 bg-white/10 rounded-full translate-x-1/2 translate-y-1/2"></div>
@@ -385,11 +471,11 @@
       <div class="container-custom relative z-10">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
-            Bereit für den nächsten Schritt?
+            Lassen Sie uns sprechen
           </h2>
           <p class="text-xl text-white/80 mb-10">
-            Lassen Sie uns gemeinsam Ihre digitalen Projekte zum Erfolg führen. 
-            Kontaktieren Sie uns für ein unverbindliches Beratungsgespräch.
+            Wir freuen uns auf ein Gespräch mit Ihnen. 
+            Kontaktieren Sie uns für eine unverbindliche Beratung.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <NuxtLink to="/kontakt" class="btn-white">
@@ -409,63 +495,113 @@
 
 <script setup>
 useSeoMeta({
-  title: 'IC-RESULTING | IT-Projektleitung & Softwareentwicklung | Wiesbaden',
-  description: 'Resulting statt Beratung – Wir begleiten IT-Projekte bis zum Ergebnis. IT-Projektleitung, Softwareentwicklung, KI-gestützte Prozessautomatisierung & Digitale Transformation.'
+  title: 'IC-RESULTING | IT-Verantwortung & Projektleitung | Resulting statt Beratung',
+  description: 'IT-Komplettlösungen für Unternehmen: IT-Projektleitung (PRINCE2), Softwareentwicklung, KI-Automatisierung, DevOps & Cloud. Klare Verantwortung, messbare Ergebnisse. DSGVO-konform.'
 })
 
+// Founder Image mit Fallback (unterstützt .webp und .jpg)
+const founderImage = ref('/images/Dipl-Inf_Ibrahim_Canakci.png')
+const fallbackImage = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80'
+
+const handleImageError = (e) => {
+  e.target.src = fallbackImage
+}
+
 const stats = [
-  { value: '35+', label: 'Jahre Erfahrung' },
-  { value: '55+', label: 'Mitarbeiter' },
-  { value: '2', label: 'Standorte' }
+  { value: 'PRINCE2', label: 'Zertifiziert' },
+  { value: 'ITIL', label: 'Best Practices' },
+  { value: 'SÜ2', label: 'Sicherheitsgeprüft' }
 ]
 
-const itServices = [
-  'IT-Projektleitung & Servicemanagement',
-  'Softwareentwicklung & technische Umsetzung',
-  'KI-gestützte Prozessautomatisierung',
-  'Aufbau von Entwickler- & DevOps-Teams'
+const trustItems = [
+  { icon: 'heroicons:clipboard-document-check', label: 'PRINCE2' },
+  { icon: 'heroicons:cog-6-tooth', label: 'ITIL' },
+  { icon: 'heroicons:shield-check', label: 'SÜ2' },
+  { icon: 'heroicons:lock-closed', label: 'DSGVO' },
+  { icon: 'heroicons:building-office', label: 'Wiesbaden • Berlin • Köln' },
+  { icon: 'heroicons:academic-cap', label: 'R&D Istanbul' }
 ]
 
-const travelServices = [
-  'Digitale Transformation',
-  'DSGVO-konforme IT-Infrastruktur',
-  'Mitarbeiterschulung & IT-Sicherheit',
-  'Cloud & DevOps Lösungen'
+const services = [
+  {
+    icon: 'heroicons:briefcase',
+    title: 'IT-Projektleitung',
+    description: 'Professionelle Steuerung Ihrer IT-Projekte mit klarer Verantwortung und messbaren Ergebnissen.',
+    items: ['PRINCE2-zertifizierte Methodik', 'Single Point of Accountability', 'Transparente Kommunikation', 'Risikomanagement']
+  },
+  {
+    icon: 'heroicons:code-bracket',
+    title: 'Softwareentwicklung',
+    description: 'Maßgeschneiderte Lösungen – von Web-Anwendungen über APIs bis hin zu cloud-fähigen Architekturen.',
+    items: ['Web- & API-Entwicklung', 'Cloud-native Architekturen', 'Integrationen & Schnittstellen', 'Code-Reviews & Qualitätssicherung']
+  },
+  {
+    icon: 'heroicons:cpu-chip',
+    title: 'KI & Automatisierung',
+    description: 'KI-gestützte Prozessautomatisierung für effiziente Workflows und intelligente Agenten.',
+    items: ['Workflow-Automatisierung', 'KI-Agenten & Chatbots', 'Prozessoptimierung', 'Datenanalyse & ML']
+  },
+  {
+    icon: 'heroicons:cloud',
+    title: 'DevOps & Cloud',
+    description: 'Aufbau und Betrieb von Plattformen, CI/CD-Pipelines und cloud-basierter Infrastruktur.',
+    items: ['CI/CD-Pipelines', 'Container & Kubernetes', 'Cloud-Infrastruktur', 'Monitoring & Betrieb']
+  },
+  {
+    icon: 'heroicons:shield-check',
+    title: 'DSGVO & IT-Security',
+    description: 'DSGVO-konforme Lösungen für den deutschen Markt – Security wird mit KI immer wichtiger.',
+    items: ['DSGVO-Compliance', 'Security-Konzepte', 'Penetrationstests', 'Security Awareness']
+  },
+  {
+    icon: 'heroicons:academic-cap',
+    title: 'Schulungen',
+    description: 'Interne Mitarbeiterschulungen, Workshops und Security Awareness-Programme.',
+    items: ['Security Awareness', 'Entwickler-Workshops', 'Best Practices', 'Individuelle Trainings']
+  }
+]
+
+const websiteFeatures = [
+  'Schnelle Umsetzung – schnell live',
+  'Wartbare CMS-Systeme',
+  'Performance & SEO-Optimierung',
+  'DSGVO-konforme Umsetzung'
+]
+
+const websiteShowcase = [
+  { name: 'bahnmotors.be', url: 'https://bahnmotors.be/' },
+  { name: 'avanorth.ca', url: 'https://avanorth.ca/fr' },
+  { name: 'quattroshopping.com', url: 'https://quattroshopping.com/en' }
 ]
 
 const features = [
   {
     icon: 'heroicons:shield-check',
     title: 'SÜ2 Sicherheitsüberprüfung',
-    description: 'Sicherheitsüberprüfung durch das Bundesamt für Verfassungsschutz.'
+    description: 'Sicherheitsüberprüfung durch das Bundesamt für Verfassungsschutz für sensible Projekte.'
   },
   {
     icon: 'heroicons:clipboard-document-check',
-    title: 'PRINCE2® Zertifiziert',
-    description: 'Zertifiziertes Projektmanagement nach PRINCE2® Standard (AXELOS).'
+    title: 'PRINCE2 Zertifiziert',
+    description: 'Zertifiziertes Projektmanagement nach PRINCE2-Standard für strukturierte Projektabwicklung.'
   },
   {
     icon: 'heroicons:cog-6-tooth',
-    title: 'ITIL V3® Zertifiziert',
-    description: 'IT Service Management nach ITIL V3® Best Practices (AXELOS).'
+    title: 'ITIL Best Practices',
+    description: 'IT Service Management nach ITIL Best Practices für nachhaltige IT-Prozesse.'
   },
   {
-    icon: 'heroicons:cpu-chip',
-    title: 'KI & Automatisierung',
-    description: 'KI-gestützte Prozessautomatisierung für effiziente Workflows.'
+    icon: 'heroicons:user-group',
+    title: 'Single Point of Accountability',
+    description: 'Klare Verantwortung in Deutschland – verlässliche Kommunikation und Ergebnisse.'
   }
 ]
 
 const clients = [
+  'ITZBund (G2X)',
   'Lufthansa',
-  'Iberia',
-  'Luxair Tours',
-  'Berge & Meer',
-  'ETI',
-  'Vtours',
-  'LMX',
-  'Tourvital',
-  'nicko cruises',
-  '1 Avista'
+  'LuxairTours',
+  'Bosch Thermotechnik',
+  'Hannover RE'
 ]
 </script>
