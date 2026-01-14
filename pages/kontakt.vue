@@ -124,7 +124,7 @@
                 Alle mit * gekennzeichneten Felder sind Pflichtfelder.
               </p>
 
-              <form @submit.prevent="submitForm" class="space-y-6">
+              <form @submit.prevent="submitForm" class="space-y-6 relative">
                 <div class="grid md:grid-cols-2 gap-6">
                   <!-- Name -->
                   <div>
@@ -237,6 +237,28 @@
                   ></textarea>
                 </div>
 
+                <!-- Honeypot-Feld (unsichtbar für echte User, Bots füllen es aus) -->
+                <div class="absolute -left-[9999px] opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true">
+                  <label for="website">Website (Nicht ausfüllen)</label>
+                  <input 
+                    type="text" 
+                    id="website" 
+                    name="website"
+                    v-model="form.website"
+                    tabindex="-1"
+                    autocomplete="off"
+                  >
+                </div>
+
+                <!-- Cloudflare Turnstile Widget -->
+                <div class="my-4">
+                  <div id="turnstile-container"></div>
+                  <p v-if="!turnstileToken && !isSubmitting" class="text-sm text-dark-400 mt-2">
+                    <Icon name="heroicons:shield-check" class="w-4 h-4 inline mr-1" />
+                    Geschützt durch Cloudflare Turnstile
+                  </p>
+                </div>
+
                 <!-- DSGVO Consent Checkbox -->
                 <div class="p-4 bg-dark-50 rounded-xl">
                   <div class="flex items-start gap-3">
@@ -280,6 +302,24 @@
                 </div>
               </form>
 
+              <!-- Error Message -->
+              <Transition
+                enter-active-class="transition-all duration-300 ease-out"
+                enter-from-class="opacity-0 translate-y-4"
+                enter-to-class="opacity-100 translate-y-0"
+              >
+                <div v-if="errorMessage" class="mt-6 p-4 bg-red-50 border border-red-200 rounded-xl">
+                  <div class="flex items-center gap-3">
+                    <Icon name="heroicons:exclamation-circle" class="w-6 h-6 text-red-600" />
+                    <div>
+                      <p class="text-red-700 font-medium">
+                        {{ errorMessage }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </Transition>
+
               <!-- Success Message -->
               <Transition
                 enter-active-class="transition-all duration-300 ease-out"
@@ -294,7 +334,7 @@
                         Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.
                       </p>
                       <p class="text-green-600 text-sm mt-1">
-                        Wir melden uns schnellstmöglich bei Ihnen.
+                        Wir melden uns schnellstmöglich bei Ihnen. Eine Bestätigung wurde an Ihre E-Mail-Adresse gesendet.
                       </p>
                     </div>
                   </div>
@@ -348,6 +388,10 @@ useSeoMeta({
   description: 'Kontaktieren Sie IC-RESULTING in Wiesbaden. Tel: +49 (0) 176 618 659 80, E-Mail: info@ic-resulting.de. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
 })
 
+// Turnstile Site Key aus runtimeConfig.public
+const config = useRuntimeConfig()
+const turnstileSiteKey = config.public.turnstileSiteKey
+
 const form = reactive({
   name: '',
   company: '',
@@ -355,35 +399,121 @@ const form = reactive({
   phone: '',
   subject: '',
   message: '',
-  privacy: false
+  privacy: false,
+  // Honeypot-Feld (unsichtbar für User, Bots füllen es aus)
+  website: ''
 })
 
 const isSubmitting = ref(false)
 const showSuccess = ref(false)
+const errorMessage = ref('')
+const turnstileToken = ref('')
+const turnstileWidgetId = ref(null)
+
+// Turnstile Widget laden
+onMounted(() => {
+  // Turnstile Script laden falls noch nicht vorhanden
+  if (!document.getElementById('turnstile-script')) {
+    const script = document.createElement('script')
+    script.id = 'turnstile-script'
+    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onTurnstileLoad'
+    script.async = true
+    script.defer = true
+    document.head.appendChild(script)
+  }
+  
+  // Callback für Turnstile
+  window.onTurnstileLoad = () => {
+    if (window.turnstile && document.getElementById('turnstile-container')) {
+      turnstileWidgetId.value = window.turnstile.render('#turnstile-container', {
+        sitekey: turnstileSiteKey,
+        callback: (token) => {
+          turnstileToken.value = token
+        },
+        'expired-callback': () => {
+          turnstileToken.value = ''
+        },
+        'error-callback': () => {
+          turnstileToken.value = ''
+        },
+        theme: 'light',
+        language: 'de'
+      })
+    }
+  }
+  
+  // Falls Turnstile bereits geladen
+  if (window.turnstile) {
+    window.onTurnstileLoad()
+  }
+})
+
+// Turnstile zurücksetzen nach Submit
+function resetTurnstile() {
+  if (window.turnstile && turnstileWidgetId.value !== null) {
+    window.turnstile.reset(turnstileWidgetId.value)
+    turnstileToken.value = ''
+  }
+}
 
 async function submitForm() {
+  // Validierung vor Submit
+  if (!turnstileToken.value) {
+    errorMessage.value = 'Bitte bestätigen Sie, dass Sie kein Roboter sind.'
+    return
+  }
+  
+  if (!form.privacy) {
+    errorMessage.value = 'Bitte akzeptieren Sie die Datenschutzbestimmungen.'
+    return
+  }
+
   isSubmitting.value = true
+  errorMessage.value = ''
   
-  // Simulate form submission
-  await new Promise(resolve => setTimeout(resolve, 1500))
-  
-  isSubmitting.value = false
-  showSuccess.value = true
-  
-  // Reset form
-  Object.assign(form, {
-    name: '',
-    company: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
-    privacy: false
-  })
-  
-  // Hide success message after 5 seconds
-  setTimeout(() => {
-    showSuccess.value = false
-  }, 5000)
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: form.name,
+        company: form.company,
+        email: form.email,
+        phone: form.phone,
+        subject: form.subject,
+        message: form.message,
+        turnstileToken: turnstileToken.value,
+        // Honeypot-Feld mitsenden
+        website: form.website
+      }
+    })
+    
+    showSuccess.value = true
+    
+    // Reset form
+    Object.assign(form, {
+      name: '',
+      company: '',
+      email: '',
+      phone: '',
+      subject: '',
+      message: '',
+      privacy: false,
+      website: ''
+    })
+    
+    // Turnstile zurücksetzen
+    resetTurnstile()
+    
+    // Hide success message after 8 seconds
+    setTimeout(() => {
+      showSuccess.value = false
+    }, 8000)
+  } catch (error) {
+    errorMessage.value = error?.data?.statusMessage || 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.'
+    // Turnstile bei Fehler zurücksetzen
+    resetTurnstile()
+  } finally {
+    isSubmitting.value = false
+  }
 }
 </script>

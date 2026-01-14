@@ -8,6 +8,24 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts'
   ],
 
+  // Runtime Config - SMTP und Secrets NUR serverseitig (NICHT in public!)
+  runtimeConfig: {
+    // Private keys - nur auf dem Server verfügbar
+    smtp: {
+      host: process.env.SMTP_HOST || 'smtp.strato.de',
+      port: parseInt(process.env.SMTP_PORT || '465'),
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASS,
+      from: process.env.MAIL_FROM,
+      to: process.env.MAIL_TO
+    },
+    turnstileSecret: process.env.TURNSTILE_SECRET_KEY,
+    // Public keys - im Client verfügbar (NUR nicht-sensible Daten!)
+    public: {
+      turnstileSiteKey: process.env.TURNSTILE_SITE_KEY || ''
+    }
+  },
+
   tailwindcss: {
     cssPath: '~/assets/css/main.css',
     configPath: 'tailwind.config',
@@ -42,5 +60,6 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  compatibilityDate: '2026-01-13'
+  // @ts-expect-error compatibilityDate ist in neueren Nuxt-Versionen verfügbar
+  compatibilityDate: '2026-01-14'
 })

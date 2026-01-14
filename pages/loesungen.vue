@@ -319,20 +319,105 @@
     <!-- Webseiten & CMS -->
     <section id="webseiten" class="py-24 bg-white scroll-mt-24">
       <div class="container-custom">
+        <div class="text-center mb-16">
+          <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
+            Webseiten & CMS
+          </span>
+          <h2 class="section-title mb-6">
+            Schnell live, dauerhaft wartbar
+          </h2>
+          <p class="text-dark-500 text-lg max-w-3xl mx-auto leading-relaxed">
+            Professionelle Webseiten mit schnellen CMS-Systemen – von der Konzeption 
+            bis zum Launch. Mit Performance-Optimierung, SEO-Basics und DSGVO-konformer 
+            Umsetzung. Schnell online, langfristig erfolgreich.
+          </p>
+        </div>
+
+        <!-- Feature Cards Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <!-- Dashboard & Reports -->
+          <div class="group bg-gradient-to-br from-primary-50 to-white rounded-2xl p-6 border border-primary-100 hover:shadow-lg transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-primary-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <Icon name="heroicons:chart-bar" class="w-7 h-7 text-primary-600" />
+            </div>
+            <h3 class="font-display font-bold text-xl text-dark-800 mb-3">Dashboards & Reports</h3>
+            <ul class="space-y-2 text-dark-600">
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
+                <span>Echtzeit-Besucherstatistiken</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
+                <span>Device Breakdown (Desktop/Mobile)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
+                <span>Performance-Übersichten & KPIs</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-primary-600 flex-shrink-0 mt-0.5" />
+                <span>Top Pages & Traffic-Analyse</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Administration & Editor Mode -->
+          <div class="group bg-gradient-to-br from-accent-50 to-white rounded-2xl p-6 border border-accent-100 hover:shadow-lg transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-accent-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <Icon name="heroicons:pencil-square" class="w-7 h-7 text-accent-600" />
+            </div>
+            <h3 class="font-display font-bold text-xl text-dark-800 mb-3">Administration & Editor Mode</h3>
+            <ul class="space-y-2 text-dark-600">
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" />
+                <span>Live-Editor zum direkten Bearbeiten</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" />
+                <span>Intuitive Oberfläche ohne Programmierkenntnisse</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" />
+                <span>Galerie- & Projektverwaltung</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-accent-600 flex-shrink-0 mt-0.5" />
+                <span>Rollenbasierte Zugriffsverwaltung</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- E-Commerce & Zahlungssysteme -->
+          <div class="group bg-gradient-to-br from-green-50 to-white rounded-2xl p-6 border border-green-100 hover:shadow-lg transition-all duration-300">
+            <div class="w-14 h-14 rounded-2xl bg-green-100 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+              <Icon name="heroicons:shopping-cart" class="w-7 h-7 text-green-600" />
+            </div>
+            <h3 class="font-display font-bold text-xl text-dark-800 mb-3">E-Commerce & Zahlungen</h3>
+            <ul class="space-y-2 text-dark-600">
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span>Vollständige Shop-Integration</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span>SEPA, PayPal, Stripe, Klarna</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span><strong>Krypto-Zahlungen</strong> (Bitcoin & mehr)</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <span>SSL & PCI DSS-konform</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Basis-Features & Referenzen -->
         <div class="grid lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
-              Webseiten & CMS
-            </span>
-            <h2 class="section-title mb-6">
-              Schnell live, dauerhaft wartbar
-            </h2>
-            <p class="text-dark-500 text-lg mb-6 leading-relaxed">
-              Professionelle Webseiten mit schnellen CMS-Systemen – von der Konzeption 
-              bis zum Launch. Mit Performance-Optimierung, SEO-Basics und DSGVO-konformer 
-              Umsetzung. Schnell online, langfristig erfolgreich.
-            </p>
-            
+            <h3 class="text-2xl font-display font-bold text-dark-800 mb-6">Basis-Features inklusive</h3>
             <div class="space-y-4 mb-8">
               <div v-for="item in websiteItems" :key="item" 
                    class="flex items-center gap-3 p-3 bg-dark-50 rounded-xl">
@@ -342,7 +427,7 @@
             </div>
 
             <p class="text-dark-800 font-medium">
-              <strong>Ergebnis:</strong> Eine schnelle, wartbare Website, die bei Ihren Kunden ankommt.
+              <strong>Ergebnis:</strong> Eine schnelle, wartbare Website mit allen Features, die Sie brauchen.
             </p>
           </div>
 
@@ -362,7 +447,7 @@
                   loading="lazy"
                 />
               </div>
-              <h4 class="font-display font-bold text-dark-800 mb-3">Referenz-Webseiten</h4>
+              <h4 class="font-display font-bold text-dark-800 mb-3">Live-Referenzen</h4>
               <div class="flex flex-wrap gap-2">
                 <a 
                   v-for="site in websiteShowcase" 
@@ -376,6 +461,10 @@
                   <Icon name="heroicons:arrow-top-right-on-square" class="w-3 h-3 inline ml-1" />
                 </a>
               </div>
+              <p class="text-xs text-dark-400 mt-3">
+                <Icon name="heroicons:information-circle" class="w-4 h-4 inline mr-1" />
+                Mit Dashboard, Editor Mode & Crypto-Zahlungen
+              </p>
             </div>
           </div>
         </div>
