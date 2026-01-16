@@ -42,7 +42,7 @@
                 <p>Germany</p>
                 <p class="mt-4">
                   Telefon: +49 (0) 176 618 659 80<br>
-                  E-Mail: canakci.ibrahim@gmail.com
+                  E-Mail: info@ic-resulting.de
                 </p>
               </div>
             </div>

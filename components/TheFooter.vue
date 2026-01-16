@@ -149,8 +149,8 @@ function openCookieSettings() {
 }
 
 const socials = [
-  { name: 'LinkedIn', icon: 'mdi:linkedin', url: '#' },
-  { name: 'Xing', icon: 'mdi:xing', url: '#' }
+  { name: 'LinkedIn', icon: 'mdi:linkedin', url: 'https://www.linkedin.com/in/ibrahim-canakci-5a68ab53' },
+  { name: 'Xing', icon: 'mdi:xing', url: 'https://www.xing.com/profile/Ibrahim_Canakci/web_profiles' }
 ]
 
 const companyLinks = [

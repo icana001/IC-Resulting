@@ -39,8 +39,8 @@
 
                 <div class="flex items-center gap-3">
                   <Icon name="heroicons:envelope" class="w-5 h-5 text-primary-600 flex-shrink-0" />
-                  <a href="mailto:canakci.ibrahim@gmail.com" class="text-primary-600 hover:underline">
-                    canakci.ibrahim@gmail.com
+                  <a href="mailto:info@ic-resulting.de" class="text-primary-600 hover:underline">
+                    info@ic-resulting.de
                   </a>
                 </div>
               </div>
@@ -50,14 +50,6 @@
               <h3 class="text-xl font-display font-bold text-dark-800 mb-4">Inhaber</h3>
               <p class="text-dark-600">Dipl.-Inf. Ibrahim Canakci</p>
               <p class="text-dark-500 text-sm mt-1">IT-Projektleiter & Software-Unternehmer</p>
-            </div>
-
-            <div class="card mb-8">
-              <h3 class="text-xl font-display font-bold text-dark-800 mb-4">Handelsregister</h3>
-              <div class="space-y-2 text-dark-600">
-                <p>Amtsgericht Frankfurt am Main</p>
-                <p>HRB 45873</p>
-              </div>
             </div>
 
            
