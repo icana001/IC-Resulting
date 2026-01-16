@@ -62,10 +62,9 @@
               <div class="bg-white rounded-3xl shadow-2xl p-8 transform rotate-2 hover:rotate-0 transition-transform duration-500">
                 <div class="aspect-video rounded-2xl overflow-hidden mb-6">
                   <img 
-                    src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" 
-                    alt="IT-Team arbeitet gemeinsam an einem Projekt – moderne Büroumgebung mit Monitoren und Code"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80" 
+                    alt="IT-Team bei der Arbeit"
                     class="w-full h-full object-cover"
-                    loading="lazy"
                   />
                 </div>
                 <div class="flex items-center gap-4 mb-4">

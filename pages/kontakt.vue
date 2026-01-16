@@ -370,8 +370,8 @@
         </div>
 
         <div class="bg-white rounded-3xl shadow-soft overflow-hidden">
-          <!-- Map Placeholder -->
-          <div class="relative h-96 bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
+          <!-- Map Info -->
+          <div class="relative h-64 bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
             <div class="text-center">
               <div class="w-20 h-20 rounded-full bg-primary-600 flex items-center justify-center mx-auto mb-4 shadow-glow">
                 <Icon name="heroicons:map-pin" class="w-10 h-10 text-white" />
