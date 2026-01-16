@@ -120,7 +120,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Datenschutzerklärung - IC-RESULTING',
-  description: 'Datenschutzerklärung von IC-RESULTING. Informationen zur Datenerfassung und Ihren Rechten.'
+  title: 'Datenschutzerklärung – IC-RESULTING',
+  description: 'Datenschutzerklärung nach DSGVO. Informationen zur Datenverarbeitung, Cookies und Ihren Rechten bei IC-RESULTING.'
 })
 </script>

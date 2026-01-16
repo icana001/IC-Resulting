@@ -13,12 +13,12 @@
           </div>
           
           <h1 class="section-title mb-6">
-            Projekterfahrung (Auszug)
+            Projekterfahrung – ausgewählte Referenzen
           </h1>
           
           <p class="section-subtitle mx-auto">
-            Von Behörden über Luftfahrt bis Industrie und Finance – wir liefern 
-            Ergebnisse in unterschiedlichsten Branchen und Projektumgebungen.
+            Behörden, Luftfahrt, Industrie, Finance: Wir haben in unterschiedlichsten 
+            Branchen nachweisbare Ergebnisse geliefert.
           </p>
         </div>
       </div>
@@ -30,8 +30,9 @@
         <div class="max-w-3xl mx-auto text-center">
           <p class="text-lg text-dark-600 leading-relaxed">
             IC-RESULTING hat in den vergangenen Jahren zahlreiche IT-Projekte in verschiedenen 
-            Branchen erfolgreich umgesetzt. Die folgende Auswahl zeigt einen Auszug unserer 
-            Projekterfahrung – <strong class="text-dark-800">weitere Referenzen auf Anfrage</strong>.
+            Branchen erfolgreich umgesetzt. Wir arbeiten nicht mit Konzeptpapieren, die in Schubladen 
+            verstauben – unsere Projekte werden umgesetzt, stabilisiert und in den Betrieb überführt. 
+            <strong class="text-dark-800">Detaillierte Projektbeschreibungen und weitere Referenzen erhalten Sie auf Anfrage.</strong>
           </p>
         </div>
       </div>
@@ -68,8 +69,8 @@
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
-              IT-Projektleitung und technische Umsetzung im Behördenumfeld mit höchsten 
-              Sicherheitsanforderungen (SÜ2). Komplexe Digitalisierungsprojekte für die 
+              IT-Projektleitung und Dienstekonsolidierung im Behördenumfeld (SÜ2-zertifiziert). 
+              Komplexe Digitalisierungsprojekte für die 
               öffentliche Verwaltung.
             </p>
             <!-- Referenz Bild -->
@@ -101,8 +102,8 @@
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
-              Digitalisierung von Airline- und Reiseveranstalter-Lösungen. Entwicklung und 
-              Integration von Buchungssystemen, Kundenportalen und Backend-Systemen für 
+              Buchungssysteme und Backend-Integrationen für Airlines und Reiseveranstalter. Entwicklung und 
+              Integration von Kundenportalen für 
               führende Unternehmen der Branche.
             </p>
             <!-- Referenz Bild -->
@@ -497,7 +498,7 @@
             Qualifikationen
           </span>
           <h2 class="section-title mb-4">
-            Warum Kunden uns vertrauen
+            Qualifikationen, die Vertrauen schaffen
           </h2>
         </div>
 
@@ -547,7 +548,7 @@
       <div class="container-custom relative z-10">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
-            Ihr Projekt in guten Händen
+            Ihr nächstes Projekt – in guten Händen
           </h2>
           <p class="text-xl text-white/80 mb-10">
             Lassen Sie uns über Ihre Anforderungen sprechen. 
@@ -565,7 +566,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Referenzen - IC-RESULTING | Projekterfahrung & Portfolio',
-  description: 'Projekterfahrung: ITZBund G2X, Hannover RE, Toyota Material Handling, WWF, Lufthansa, Bosch, 1&1, Samson AG. PM-Lösungen, IT-Projektleitung und Softwareentwicklung.'
+  title: 'Projekterfahrung: ITZBund, Hannover RE, Bosch – IC-RESULTING',
+  description: 'IT-Projekte für Behörden, Luftfahrt, Industrie und Finance. Referenzen: ITZBund G2X, Lufthansa, Toyota, WWF. Weitere auf Anfrage.'
 })
 </script>

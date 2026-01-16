@@ -5,8 +5,22 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/sitemap'
   ],
+
+  // Sitemap Configuration
+  // @ts-ignore - sitemap module adds this config
+  sitemap: {
+    hostname: 'https://ic-resulting.de',
+    gzip: true,
+    exclude: ['/api/**'],
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString()
+    }
+  },
 
   // Runtime Config - SMTP und Secrets NUR serverseitig (NICHT in public!)
   runtimeConfig: {
@@ -42,6 +56,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: 'IC-RESULTING | Resulting statt Beratung',
+      htmlAttrs: {
+        lang: 'de'
+      },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -49,10 +66,15 @@ export default defineNuxtConfig({
           name: 'description', 
           content: 'IC-RESULTING: IT-Verantwortung abgeben, Ergebnisse erhalten. IT-Projektleitung, Softwareentwicklung, KI & Automatisierung. PRINCE2, ITIL, SÜ2.' 
         },
-        { name: 'format-detection', content: 'telephone=no' }
+        { name: 'format-detection', content: 'telephone=no' },
+        { name: 'author', content: 'IC-RESULTING - Dipl.-Inf. Ibrahim Canakci' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:locale', content: 'de_DE' },
+        { property: 'og:site_name', content: 'IC-RESULTING' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'canonical', href: 'https://ic-resulting.de' }
       ]
     },
     pageTransition: { name: 'page', mode: 'out-in' }
@@ -60,6 +82,5 @@ export default defineNuxtConfig({
 
   css: ['~/assets/css/main.css'],
 
-  // @ts-expect-error compatibilityDate ist in neueren Nuxt-Versionen verfügbar
   compatibilityDate: '2026-01-14'
 })

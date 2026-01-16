@@ -13,8 +13,8 @@
           </div>
           
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            IT-Lösungen für <br class="hidden md:block" />
-            <span class="text-accent-400">messbare Ergebnisse</span>
+            IT-Lösungen mit <br class="hidden md:block" />
+            <span class="text-accent-400">Ergebnisverantwortung</span>
           </h1>
           
           <p class="text-xl text-white/80 max-w-2xl mb-8">
@@ -40,7 +40,7 @@
             IC-RESULTING bietet Ihnen IT-Komplettlösungen für Unternehmen, die ihre IT-Verantwortung 
             extern abgeben möchten, um sich auf Ihre Kernprozesse zu konzentrieren. 
             <strong class="text-dark-800">Resulting statt Beratung</strong> – wir übernehmen Verantwortung 
-            und liefern messbare Ergebnisse.
+            und liefern messbare Ergebnisse. Jede Leistung ist einzeln buchbar – oder als Komplettpaket mit einem festen Ansprechpartner.
           </p>
         </div>
       </div>
@@ -58,7 +58,7 @@
               Managed IT & Operating Model
             </h2>
             <p class="text-dark-500 text-lg mb-6 leading-relaxed">
-              Übertragen Sie die Verantwortung für Ihre IT an uns. Wir etablieren ein passendes 
+              Geben Sie die Verantwortung für Ihre IT ab – wir kümmern uns um den Rest. Wir etablieren ein passendes 
               Operating Model und Service Management nach ITIL Best Practices – mit klarer 
               Verantwortung und verlässlicher Kommunikation.
             </p>
@@ -148,7 +148,7 @@
               Web, APIs & cloud-fähige Architekturen
             </h2>
             <p class="text-dark-500 text-lg mb-6 leading-relaxed">
-              Maßgeschneiderte Softwarelösungen – von Web-Anwendungen über APIs bis hin zu 
+              Individuelle Softwarelösungen nach Ihren Anforderungen – von Web-Anwendungen über APIs bis hin zu 
               komplexen Integrationen und cloud-fähigen Architekturen. Mit modernsten Technologien 
               und bewährten Entwicklungsprozessen.
             </p>
@@ -206,8 +206,8 @@
             </h2>
             <p class="text-dark-300 text-lg mb-6 leading-relaxed">
               KI-gestützte Automatisierung für effiziente Workflows – von intelligenten Agenten 
-              über Chatbots bis hin zu komplexer Prozessautomatisierung. Wir machen Ihre Prozesse 
-              schneller und effizienter.
+              über Chatbots bis hin zu komplexer Prozessautomatisierung. Wir automatisieren Ihre Prozesse – 
+              für mehr Effizienz und weniger manuelle Arbeit.
             </p>
             
             <div class="space-y-4 mb-8">
@@ -252,7 +252,7 @@
             </div>
 
             <p class="text-dark-800 font-medium">
-              <strong>Ergebnis:</strong> Stabile Infrastruktur mit schnellen Deployment-Zyklen.
+              <strong>Ergebnis:</strong> Stabile Infrastruktur, schnelle Deployments, kontinuierliche Verbesserung.
             </p>
           </div>
 
@@ -309,7 +309,7 @@
             </div>
 
             <p class="text-dark-800 font-medium">
-              <strong>Ergebnis:</strong> Rechtssichere, geschützte IT-Systeme und Prozesse.
+              <strong>Ergebnis:</strong> Rechtssichere IT: DSGVO-Compliance und Security von Anfang an.
             </p>
           </div>
         </div>
@@ -324,12 +324,12 @@
             Webseiten & CMS
           </span>
           <h2 class="section-title mb-6">
-            Schnell live, dauerhaft wartbar
+            Schnell online – dauerhaft wartbar und performant
           </h2>
           <p class="text-dark-500 text-lg max-w-3xl mx-auto leading-relaxed">
             Professionelle Webseiten mit schnellen CMS-Systemen – von der Konzeption 
-            bis zum Launch. Mit Performance-Optimierung, SEO-Basics und DSGVO-konformer 
-            Umsetzung. Schnell online, langfristig erfolgreich.
+            bis zum Launch. Ob Unternehmenswebseite, Shop oder Kundenportal: Wir liefern performante 
+            Lösungen mit klarem Fokus auf Geschwindigkeit und Nutzerfreundlichkeit. DSGVO-konform.
           </p>
         </div>
 
@@ -544,8 +544,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'IT-Lösungen - IC-RESULTING | Managed IT, Projektleitung, Entwicklung',
-  description: 'Modular oder Komplettlösung: IT-Verantwortung, Projektleitung (PRINCE2), Softwareentwicklung, KI-Automatisierung, DevOps, DSGVO & Security, Webseiten, Schulungen.'
+  title: 'IT-Lösungen für Unternehmen – Modular oder Komplett | IC-RESULTING',
+  description: 'IT-Projektleitung, Managed IT, Softwareentwicklung, KI & Automatisierung, DevOps, DSGVO-Compliance – modulare oder Komplettlösungen.'
 })
 
 const managedItItems = [

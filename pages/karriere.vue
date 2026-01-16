@@ -22,11 +22,11 @@
           </div>
           
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            Werden Sie Teil unseres Teams
+            Werden Sie Teil von IC-RESULTING
           </h1>
           
           <p class="text-xl text-white/80">
-            Wir suchen motivierte Talente, die gemeinsam mit uns die 
+            Wir suchen erfahrene IT-Profis und motivierte Nachwuchstalente, die gemeinsam mit uns die 
             Digitalisierung vorantreiben möchten – an unseren Standorten in 
             Deutschland und Istanbul.
           </p>
@@ -42,12 +42,27 @@
             Warum IC-RESULTING?
           </span>
           <h2 class="section-title mb-4">
-            Das bieten wir Ihnen
+            Was Sie bei uns erwartet
           </h2>
           <p class="section-subtitle mx-auto">
             Bei IC-RESULTING erwartet Sie ein dynamisches Arbeitsumfeld 
             mit spannenden Projekten und einem internationalen Team.
           </p>
+        </div>
+
+        <!-- Projekte statt Präsentationen Absatz -->
+        <div class="max-w-3xl mx-auto mb-16">
+          <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-100">
+            <h3 class="text-xl font-display font-bold text-dark-800 mb-4">
+              Projekte statt Präsentationen
+            </h3>
+            <p class="text-dark-600 leading-relaxed">
+              Bei IC-RESULTING arbeiten Sie an echten IT-Projekten: Behördendigitalisierung, 
+              Airline-Systeme, Industrielösungen. Wir liefern Ergebnisse – und erwarten von unseren 
+              Teammitgliedern dieselbe Haltung. Dafür bieten wir Ihnen Verantwortung, Weiterentwicklung 
+              und ein Team, das zusammenarbeitet statt konkurriert.
+            </p>
+          </div>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -238,11 +253,11 @@
       <div class="container-custom relative z-10">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-6">
-            Bereit für den nächsten Karriereschritt?
+            Bereit für echte IT-Projekte?
           </h2>
           <p class="text-xl text-white/80 mb-10">
-            Senden Sie uns Ihre Bewerbungsunterlagen – wir freuen uns darauf, 
-            Sie kennenzulernen.
+            Schreiben Sie uns – mit oder ohne klassische Bewerbungsmappe. 
+            Wir freuen uns darauf, Sie kennenzulernen.
           </p>
           <NuxtLink to="/kontakt" class="btn-white">
             <Icon name="heroicons:envelope" class="w-5 h-5 mr-2" />
@@ -256,15 +271,15 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Karriere - IC-RESULTING | Jobs in IT & Softwareentwicklung',
-  description: 'Karriere bei IC-RESULTING. IT-Projektleitung, Softwareentwicklung, DevOps, KI. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
+  title: 'Karriere bei IC-RESULTING – IT-Jobs in Wiesbaden & Remote',
+  description: 'IT-Jobs: Senior Developer, Projektmanager, DevOps Engineer. Standorte: Wiesbaden, Berlin, Istanbul. Academy & Weiterbildung.'
 })
 
 const benefits = [
   {
     icon: 'heroicons:rocket-launch',
     title: 'Spannende Projekte',
-    description: 'Arbeiten Sie an innovativen IT-Projekten für namhafte Kunden aus verschiedenen Branchen.'
+    description: 'IT-Projekte für Behörden, Industrie und Mittelstand – keine PowerPoint-Schlachten, sondern echte Umsetzung.'
   },
   {
     icon: 'heroicons:academic-cap',
@@ -279,7 +294,7 @@ const benefits = [
   {
     icon: 'heroicons:home-modern',
     title: 'Modernes Arbeitsumfeld',
-    description: 'Genießen Sie moderne Arbeitsmittel und flexible Arbeitszeiten.'
+    description: 'Remote-Option, moderne Arbeitsmittel, flexible Zeiteinteilung.'
   },
   {
     icon: 'heroicons:heart',

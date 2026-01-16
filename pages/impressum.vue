@@ -85,7 +85,7 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Impressum - IC-RESULTING',
-  description: 'Impressum von IC-RESULTING. Inhaber Dipl.-Inf. Ibrahim Canakci. Wiesbaden.'
+  title: 'Impressum – IC-RESULTING | Dipl.-Inf. Ibrahim Canakci',
+  description: 'Impressum von IC-RESULTING. Inhaber: Dipl.-Inf. Ibrahim Canakci, Obere Webergasse 58, 65183 Wiesbaden.'
 })
 </script>

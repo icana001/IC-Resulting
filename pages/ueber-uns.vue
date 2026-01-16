@@ -13,12 +13,12 @@
           </div>
           
           <h1 class="section-title mb-6">
-            Resulting statt Beratung
+            Resulting statt Beratung – Verantwortung übernehmen, Ergebnisse liefern
           </h1>
           
           <p class="section-subtitle mx-auto">
-            Wir übernehmen Verantwortung für Ihre IT und liefern messbare Ergebnisse – 
-            mit klarer Verantwortung und einem Single Point of Accountability.
+            Wir übernehmen Ihre IT-Verantwortung – mit klarer Zuständigkeit 
+            und nachweisbaren Ergebnissen.
           </p>
         </div>
       </div>
@@ -101,10 +101,21 @@
               </ul>
             </div>
 
+            <!-- Verantwortung Absatz -->
+            <div class="bg-white rounded-2xl p-6 mb-8 border border-dark-100 shadow-soft">
+              <h4 class="font-display font-bold text-dark-800 mb-3">Verantwortung statt Beratungshonorar</h4>
+              <p class="text-dark-600 leading-relaxed">
+                Bei IC-RESULTING zahlen Sie nicht für Konzeptpapiere oder Beraterstunden ohne Output. 
+                Sie erhalten einen Partner, der Verantwortung übernimmt: Für Projekte, die termingerecht 
+                abgeschlossen werden. Für Software, die stabil läuft. Für Prozesse, die funktionieren. 
+                Ein Ansprechpartner – von der Anforderung bis zum Betrieb.
+              </p>
+            </div>
+
             <!-- CTA Microcopy -->
             <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-6 border border-primary-100">
               <p class="text-dark-700 mb-4">
-                <strong class="text-dark-800">Lassen Sie uns sprechen.</strong> 
+                <strong class="text-dark-800">Reden Sie mit uns – unverbindlich und konkret.</strong> 
                 Wir freuen uns auf ein Gespräch mit Ihnen. Kontaktieren Sie uns für eine unverbindliche Beratung.
               </p>
               <NuxtLink to="/kontakt" class="btn-primary inline-flex">
@@ -622,8 +633,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Über uns - IC-RESULTING | Dipl.-Inf.(FH) Ibrahim Canakci',
-  description: 'IC-RESULTING: Dipl.-Inf.(FH) Ibrahim Canakci – IT-Projektleiter & Software-Unternehmer. PRINCE2, ITIL, SÜ2. Resulting statt Beratung. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
+  title: 'Dipl.-Inf. Ibrahim Canakci – IC-RESULTING Gründer & Team',
+  description: 'Resulting statt Beratung: Ibrahim Canakci verbindet IT-Projektleitung mit technischer Umsetzung. PRINCE2, ITIL, SÜ2-zertifiziert.'
 })
 
 // Founder Image mit Fallback (unterstützt .webp und .jpg)

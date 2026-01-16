@@ -13,12 +13,12 @@
           </div>
           
           <h1 class="section-title mb-6">
-            Sprechen Sie uns an
+            Reden Sie mit uns
           </h1>
           
           <p class="section-subtitle mx-auto">
-            Haben Sie Fragen oder möchten Sie ein Projekt besprechen? 
-            Wir freuen uns auf Ihre Nachricht.
+            Haben Sie ein konkretes Projekt oder eine Frage? 
+            Wir antworten in der Regel innerhalb von 24 Stunden.
           </p>
         </div>
       </div>
@@ -112,16 +112,29 @@
                 </div>
               </div>
             </div>
+
+            <!-- Ihr erster Schritt Absatz -->
+            <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-6 border border-primary-100">
+              <h4 class="font-display font-bold text-dark-800 mb-3 flex items-center gap-2">
+                <Icon name="heroicons:light-bulb" class="w-5 h-5 text-primary-600" />
+                Ihr erster Schritt
+              </h4>
+              <p class="text-dark-600 leading-relaxed text-sm">
+                Ein kurzes Gespräch reicht oft, um festzustellen, ob wir der richtige Partner für Ihr 
+                Vorhaben sind. Erzählen Sie uns von Ihrer Situation – wir hören zu und geben Ihnen 
+                eine ehrliche Einschätzung. Unverbindlich und ohne Verkaufsdruck.
+              </p>
+            </div>
           </div>
 
           <!-- Contact Form -->
           <div class="lg:col-span-2">
             <div class="bg-white rounded-3xl shadow-soft border border-dark-100 p-8 md:p-10">
               <h2 class="text-2xl font-display font-bold text-dark-800 mb-2">
-                Schreiben Sie uns
+                Ihre Nachricht an uns
               </h2>
               <p class="text-dark-500 mb-6">
-                Alle mit * gekennzeichneten Felder sind Pflichtfelder.
+                Beschreiben Sie kurz Ihr Anliegen – wir melden uns. Alle mit * gekennzeichneten Felder sind Pflichtfelder.
               </p>
 
               <form @submit.prevent="submitForm" class="space-y-6 relative">
@@ -294,10 +307,10 @@
                   >
                     <Icon v-if="isSubmitting" name="heroicons:arrow-path" class="w-5 h-5 mr-2 animate-spin" />
                     <Icon v-else name="heroicons:paper-airplane" class="w-5 h-5 mr-2" />
-                    {{ isSubmitting ? 'Wird gesendet...' : 'Nachricht senden' }}
+                    {{ isSubmitting ? 'Wird gesendet...' : 'Absenden' }}
                   </button>
                   <span class="text-sm text-dark-400">
-                    Antwort i.d.R. innerhalb von 24 Stunden
+                    Antwort werktags innerhalb von 24 Stunden
                   </span>
                 </div>
               </form>
@@ -384,8 +397,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'Kontakt - IC-RESULTING | Wiesbaden, Berlin, Köln',
-  description: 'Kontaktieren Sie IC-RESULTING in Wiesbaden. Tel: +49 (0) 176 618 659 80, E-Mail: info@ic-resulting.de. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
+  title: 'Kontakt – IC-RESULTING | Wiesbaden, Berlin, Köln',
+  description: 'Kontaktieren Sie IC-RESULTING: +49 176 618 659 80. Standorte in Wiesbaden, Berlin, Köln. Unverbindliche Beratung anfordern.'
 })
 
 // Turnstile Site Key aus runtimeConfig.public

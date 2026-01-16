@@ -306,8 +306,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'IT Solutions - IC-RESULTING | Projektleitung & Entwicklung',
-  description: 'IT-Projektleitung, Softwareentwicklung, KI-gestützte Prozessautomatisierung, DevOps. PRINCE2 & ITIL zertifiziert. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
+  title: 'IT Solutions & Projektleitung – IC-RESULTING Deutschland',
+  description: 'IT-Projektleitung nach PRINCE2, Softwareentwicklung, KI-Automatisierung und DevOps. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
 })
 
 const services = [

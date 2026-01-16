@@ -25,19 +25,19 @@
             
             <h1 class="section-title mb-6 text-balance">
               IT-Verantwortung
-              <span class="gradient-text"> abgeben. Ergebnisse</span> erhalten.
+              <span class="gradient-text"> abgeben – Ergebnisse</span> erhalten.
             </h1>
             
             <p class="section-subtitle mx-auto lg:mx-0 mb-8">
-              Wir übernehmen Ihre IT-Verantwortung – von der Projektleitung über Softwareentwicklung 
-              bis hin zu KI-Automatisierung. Mit klarer Verantwortung, messbaren Ergebnissen und 
+              Wir übernehmen Ihre komplette IT-Verantwortung: Von der Projektleitung über Softwareentwicklung 
+              bis zu KI-gestützter Automatisierung. Mit klarer Verantwortung, messbaren Ergebnissen und 
               einem Single Point of Accountability.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <NuxtLink to="/kontakt" class="btn-primary">
                 <Icon name="heroicons:chat-bubble-left-right" class="w-5 h-5 mr-2" />
-                Kontakt aufnehmen
+                Reden Sie mit uns
               </NuxtLink>
               <NuxtLink to="/loesungen" class="btn-secondary">
                 Lösungen ansehen
@@ -150,11 +150,11 @@
             Unsere IT-Leistungen
           </span>
           <h2 class="section-title mb-4">
-            Konzentrieren Sie sich auf Ihr Kerngeschäft
+            Konzentrieren Sie sich auf Ihr Kerngeschäft – wir übernehmen den Rest
           </h2>
           <p class="section-subtitle mx-auto">
-            Wir übernehmen Ihre IT-Verantwortung – modular oder als Komplettlösung. 
-            Mit klarer Verantwortung und messbaren Ergebnissen.
+            Wir übernehmen Ihre IT-Verantwortung – modular buchbar oder als Komplettlösung. 
+            Jede Lösung einzeln buchbar – oder als Komplettpaket mit einem Ansprechpartner.
           </p>
         </div>
 
@@ -192,7 +192,7 @@
               Schnell online, dauerhaft erfolgreich
             </h2>
             <p class="text-dark-500 text-lg mb-8 leading-relaxed">
-              Professionelle Webseiten mit schnellen CMS-Systemen – von der Konzeption bis zum Launch. 
+              Schnelle, performante Webseiten mit wartbaren CMS-Systemen – von der Konzeption bis zum Launch. 
               Mit Performance-Optimierung, SEO-Basics und DSGVO-konformer Umsetzung.
             </p>
 
@@ -318,12 +318,28 @@
             Warum IC-RESULTING?
           </span>
           <h2 class="section-title mb-4">
-            Ihr Vorteil mit uns
+            Warum Unternehmen uns vertrauen
           </h2>
           <p class="section-subtitle mx-auto">
             Profitieren Sie von klarer Verantwortung, deutschem Projektmanagement 
             und einem skalierbaren internationalen Team.
           </p>
+        </div>
+
+        <!-- Differenzierung Absatz -->
+        <div class="max-w-4xl mx-auto mb-16">
+          <div class="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-100">
+            <h3 class="text-xl font-display font-bold text-dark-800 mb-4">
+              Was unterscheidet IC-RESULTING von klassischen Beratungen?
+            </h3>
+            <p class="text-dark-600 leading-relaxed">
+              Wir liefern nicht nur Konzepte, sondern übernehmen die Umsetzungsverantwortung. 
+              Mit PRINCE2-zertifizierter Projektleitung, einem eingespielten Entwicklerteam und 
+              ITIL-konformen Betriebsprozessen begleiten wir Ihr Projekt von der ersten Anforderung 
+              bis zum stabilen Betrieb. Die Steuerung erfolgt aus Deutschland – mit einem 
+              Single Point of Accountability, der für Ergebnisse einsteht.
+            </p>
+          </div>
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -440,7 +456,7 @@
             Vertrauen führender Unternehmen
           </h2>
           <p class="section-subtitle mx-auto">
-            Von Behörden über Luftfahrt bis Industrie – wir liefern Ergebnisse.
+            Behörden, Luftfahrt, Industrie, Finance – wir liefern nachweisbare Ergebnisse.
           </p>
         </div>
 
@@ -474,8 +490,8 @@
             Lassen Sie uns sprechen
           </h2>
           <p class="text-xl text-white/80 mb-10">
-            Wir freuen uns auf ein Gespräch mit Ihnen. 
-            Kontaktieren Sie uns für eine unverbindliche Beratung.
+            Haben Sie ein konkretes Projekt? Lassen Sie uns darüber sprechen – 
+            unverbindlich und ohne Verkaufsdruck.
           </p>
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <NuxtLink to="/kontakt" class="btn-white">
@@ -495,8 +511,8 @@
 
 <script setup>
 useSeoMeta({
-  title: 'IC-RESULTING | IT-Verantwortung & Projektleitung | Resulting statt Beratung',
-  description: 'IT-Komplettlösungen für Unternehmen: IT-Projektleitung (PRINCE2), Softwareentwicklung, KI-Automatisierung, DevOps & Cloud. Klare Verantwortung, messbare Ergebnisse. DSGVO-konform.'
+  title: 'IT-Verantwortung abgeben – IC-RESULTING | Wiesbaden',
+  description: 'IT-Projektleitung, Softwareentwicklung, KI-Automatisierung: IC-RESULTING übernimmt Ihre IT-Verantwortung. PRINCE2-zertifiziert. Messbare Ergebnisse.'
 })
 
 // Founder Image mit Fallback (unterstützt .webp und .jpg)
@@ -593,7 +609,7 @@ const features = [
   {
     icon: 'heroicons:user-group',
     title: 'Single Point of Accountability',
-    description: 'Klare Verantwortung in Deutschland – verlässliche Kommunikation und Ergebnisse.'
+    description: 'Ein Ansprechpartner in Deutschland – klare Verantwortung, verlässliche Kommunikation.'
   }
 ]
 
