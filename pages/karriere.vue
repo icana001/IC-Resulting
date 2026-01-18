@@ -22,7 +22,7 @@
           </div>
           
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            Werden Sie Teil von IC-RESULTING
+            Karriere bei IC-RESULTING – IT-Jobs mit Zukunft & Entwicklung
           </h1>
           
           <p class="text-xl text-white/80">
@@ -270,9 +270,28 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/karriere`
+const pageTitle = 'Karriere bei IC-RESULTING – IT-Jobs & Entwicklung'
+const pageDescription = 'IT-Jobs, Karriere & Weiterbildung bei IC-RESULTING. Werden Sie Teil unseres Teams in Wiesbaden, Berlin, Istanbul!'
+
 useSeoMeta({
-  title: 'Karriere bei IC-RESULTING – IT-Jobs in Wiesbaden & Remote',
-  description: 'IT-Jobs: Senior Developer, Projektmanager, DevOps Engineer. Standorte: Wiesbaden, Berlin, Istanbul. Academy & Weiterbildung.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 
 const benefits = [

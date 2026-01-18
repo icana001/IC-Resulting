@@ -7,7 +7,7 @@
 
       <div class="container-custom relative z-10">
         <div class="max-w-3xl mx-auto text-center">
-          <h1 class="section-title mb-6">Impressum</h1>
+          <h1 class="section-title mb-6">Impressum – Rechtliche Angaben zu IC-RESULTING</h1>
         </div>
       </div>
     </section>
@@ -84,8 +84,27 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/impressum`
+const pageTitle = 'Impressum – IC-RESULTING Wiesbaden & Inhaber Ibrahim Canakci'
+const pageDescription = 'Impressum von IC-RESULTING. Inhaber: Dipl.-Inf. Ibrahim Canakci, Obere Webergasse 58, 65183 Wiesbaden.'
+
 useSeoMeta({
-  title: 'Impressum – IC-RESULTING | Dipl.-Inf. Ibrahim Canakci',
-  description: 'Impressum von IC-RESULTING. Inhaber: Dipl.-Inf. Ibrahim Canakci, Obere Webergasse 58, 65183 Wiesbaden.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 </script>

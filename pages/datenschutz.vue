@@ -7,7 +7,7 @@
 
       <div class="container-custom relative z-10">
         <div class="max-w-3xl mx-auto text-center">
-          <h1 class="section-title mb-6">Datenschutzerklärung</h1>
+          <h1 class="section-title mb-6">Datenschutzerklärung – Datenschutz & Datensicherheit bei IC-RESULTING</h1>
         </div>
       </div>
     </section>
@@ -119,8 +119,27 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/datenschutz`
+const pageTitle = 'Datenschutzerklärung – IC-RESULTING Wiesbaden'
+const pageDescription = 'Datenschutzerklärung nach DSGVO. Informationen zur Datenverarbeitung, Cookies und Ihren Rechten bei IC-RESULTING.'
+
 useSeoMeta({
-  title: 'Datenschutzerklärung – IC-RESULTING',
-  description: 'Datenschutzerklärung nach DSGVO. Informationen zur Datenverarbeitung, Cookies und Ihren Rechten bei IC-RESULTING.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 </script>

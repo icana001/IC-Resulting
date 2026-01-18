@@ -70,11 +70,12 @@ export default defineNuxtConfig({
         { name: 'author', content: 'IC-RESULTING - Dipl.-Inf. Ibrahim Canakci' },
         { property: 'og:type', content: 'website' },
         { property: 'og:locale', content: 'de_DE' },
-        { property: 'og:site_name', content: 'IC-RESULTING' }
+        { property: 'og:site_name', content: 'IC-RESULTING' },
+        { property: 'og:see_also', content: 'https://www.linkedin.com/in/ibrahim-canakci-ic-resulting/' },
+        { property: 'og:see_also', content: 'https://www.xing.com/profile/Ibrahim_Canakci/web_profiles?nwt_nav=profile_icon' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'canonical', href: 'https://ic-resulting.de' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ]
     },
     pageTransition: { name: 'page', mode: 'out-in' }

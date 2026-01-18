@@ -13,8 +13,7 @@
           </div>
           
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            IT-Lösungen mit <br class="hidden md:block" />
-            <span class="text-accent-400">Ergebnisverantwortung</span>
+            IT-Lösungen & Digitalisierung für Unternehmen – Verantwortung mit System
           </h1>
           
           <p class="text-xl text-white/80 max-w-2xl mb-8">
@@ -543,9 +542,28 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/loesungen`
+const pageTitle = 'IT-Lösungen & Digitalisierung – IC-RESULTING für Unternehmen'
+const pageDescription = 'Maßgeschneiderte IT-Lösungen, Digitalisierung, Managed IT & Automatisierung für Unternehmen. Jetzt beraten lassen!'
+
 useSeoMeta({
-  title: 'IT-Lösungen für Unternehmen – Modular oder Komplett | IC-RESULTING',
-  description: 'IT-Projektleitung, Managed IT, Softwareentwicklung, KI & Automatisierung, DevOps, DSGVO-Compliance – modulare oder Komplettlösungen.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 
 const managedItItems = [

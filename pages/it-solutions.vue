@@ -26,8 +26,7 @@
           </div>
           
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-6">
-            IT-Verantwortung <br class="hidden md:block" />
-            <span class="text-accent-400">abgeben</span>
+            IT Solutions & Managed Services für Unternehmen – Ihr Digitalisierungspartner
           </h1>
           
           <p class="text-xl text-white/80 max-w-2xl mb-8">
@@ -305,9 +304,28 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/it-solutions`
+const pageTitle = 'IT Solutions & Managed Services – IC-RESULTING Deutschland'
+const pageDescription = 'IT Solutions, Projektleitung, Managed Services, DevOps & KI für Unternehmen. Ihr Partner für digitale Transformation.'
+
 useSeoMeta({
-  title: 'IT Solutions & Projektleitung – IC-RESULTING Deutschland',
-  description: 'IT-Projektleitung nach PRINCE2, Softwareentwicklung, KI-Automatisierung und DevOps. Standorte: Wiesbaden, Berlin, Köln, Istanbul.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 
 const services = [
