@@ -24,8 +24,7 @@
             </div>
             
             <h1 class="section-title mb-6 text-balance">
-              IT-Verantwortung
-              <span class="gradient-text"> abgeben – Ergebnisse</span> erhalten.
+              IT-Beratung & Projektleitung für Unternehmen – Verantwortung abgeben, Ergebnisse erhalten
             </h1>
             
             <p class="section-subtitle mx-auto lg:mx-0 mb-8">
@@ -423,7 +422,7 @@
         </div>
 
         <div class="mt-12 pt-12 border-t border-dark-700">
-          <h4 class="text-center text-dark-400 text-sm uppercase tracking-wide mb-6">Unsere Partner</h4>
+          <h4 class="text-center text-dark-400 text-sm uppercase tracking-wide mb-6">Unser Netzwerk</h4>
           <div class="flex flex-wrap justify-center gap-8">
             <div class="flex items-center gap-3 px-6 py-3 bg-dark-800 rounded-xl">
               <Icon name="heroicons:building-office-2" class="w-6 h-6 text-primary-400" />
@@ -435,7 +434,7 @@
             <div class="flex items-center gap-3 px-6 py-3 bg-dark-800 rounded-xl">
               <Icon name="heroicons:building-office-2" class="w-6 h-6 text-accent-400" />
               <div>
-                <span class="font-semibold text-white">AyDeep Ltd.</span>
+                <span class="font-semibold text-white">Delivery-Partner (R&D)</span>
                 <span class="text-dark-400 text-sm block">Istanbul, Türkei</span>
               </div>
             </div>
@@ -449,13 +448,13 @@
       <div class="container-custom">
         <div class="text-center mb-12">
           <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
-            Projekterfahrung
+            Branchenerfahrung
           </span>
           <h2 class="section-title mb-4">
-            Vertrauen führender Unternehmen
+            Erfahrung aus namhaften Unternehmen
           </h2>
           <p class="section-subtitle mx-auto">
-            Behörden, Luftfahrt, Industrie, Finance – wir liefern nachweisbare Ergebnisse.
+            Behörden, Luftfahrt, Industrie, Versicherung – wir liefern nachweisbare Ergebnisse.
           </p>
         </div>
 
@@ -509,9 +508,27 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageTitle = 'IT-Beratung & Projektleitung für Unternehmen – IC-RESULTING Wiesbaden'
+const pageDescription = 'IC-RESULTING übernimmt Ihre IT-Projekte: Beratung, Entwicklung, Automatisierung, KI. PRINCE2-zertifiziert. Jetzt unverbindlich anfragen!'
+
 useSeoMeta({
-  title: 'IT-Verantwortung abgeben – IC-RESULTING | Wiesbaden',
-  description: 'IT-Projektleitung, Softwareentwicklung, KI-Automatisierung: IC-RESULTING übernimmt Ihre IT-Verantwortung. PRINCE2-zertifiziert. Messbare Ergebnisse.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: siteUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: siteUrl }]
 })
 
 // Founder Image mit Fallback (unterstützt .webp und .jpg)
@@ -613,10 +630,10 @@ const features = [
 ]
 
 const clients = [
-  'ITZBund (G2X)',
-  'Lufthansa',
-  'LuxairTours',
-  'Bosch Thermotechnik',
-  'Hannover RE'
+  'Öffentliche Verwaltung & Behörden',
+  'Luftfahrt & Reise',
+  'Industrie & Mittelstand',
+  'Versicherung & Rückversicherung',
+  'Automobil & Logistik'
 ]
 </script>

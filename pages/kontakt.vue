@@ -13,7 +13,7 @@
           </div>
           
           <h1 class="section-title mb-6">
-            Reden Sie mit uns
+            Kontakt zu IC-RESULTING – Ihr direkter Draht zu IT-Experten
           </h1>
           
           <p class="section-subtitle mx-auto">
@@ -108,7 +108,7 @@
                 </div>
                 <div class="flex items-center gap-2">
                   <Icon name="heroicons:academic-cap" class="w-4 h-4 text-accent-600" />
-                  <span>Istanbul (R&D / AyDeep Ltd.)</span>
+                  <span>Istanbul (R&D)</span>
                 </div>
               </div>
             </div>
@@ -396,9 +396,28 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/kontakt`
+const pageTitle = 'Kontakt zu IC-RESULTING – IT-Beratung & Projektanfrage'
+const pageDescription = 'Kontaktieren Sie IC-RESULTING für IT-Beratung, Projektanfragen und Support. Wir antworten schnell und persönlich!'
+
 useSeoMeta({
-  title: 'Kontakt – IC-RESULTING | Wiesbaden, Berlin, Köln',
-  description: 'Kontaktieren Sie IC-RESULTING: +49 176 618 659 80. Standorte in Wiesbaden, Berlin, Köln. Unverbindliche Beratung anfordern.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 
 // Turnstile Site Key aus runtimeConfig.public

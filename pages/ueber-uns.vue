@@ -13,7 +13,7 @@
           </div>
           
           <h1 class="section-title mb-6">
-            Resulting statt Beratung – Verantwortung übernehmen, Ergebnisse liefern
+            Über IC-RESULTING – IT-Expertise & Verantwortung für Ihr Unternehmen
           </h1>
           
           <p class="section-subtitle mx-auto">
@@ -416,7 +416,7 @@
                   <Icon name="heroicons:building-office-2" class="w-6 h-6" />
                 </div>
                 <div>
-                  <h4 class="font-bold text-white">AyDeep Ltd.</h4>
+                  <h4 class="font-bold text-white">Delivery-Partner (R&D)</h4>
                   <p class="text-dark-400 text-sm">Istanbul, Türkei</p>
                 </div>
               </div>
@@ -632,9 +632,28 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/ueber-uns`
+const pageTitle = 'Über IC-RESULTING – IT-Expertise & Verantwortung aus Wiesbaden'
+const pageDescription = 'IC-RESULTING: IT-Expertise, Projektleitung, Softwareentwicklung, KI & Automatisierung. Ihr Partner für nachhaltige IT-Ergebnisse.'
+
 useSeoMeta({
-  title: 'Dipl.-Inf. Ibrahim Canakci – IC-RESULTING Gründer & Team',
-  description: 'Resulting statt Beratung: Ibrahim Canakci verbindet IT-Projektleitung mit technischer Umsetzung. PRINCE2, ITIL, SÜ2-zertifiziert.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 
 // Founder Image mit Fallback (unterstützt .webp und .jpg)
@@ -657,12 +676,12 @@ const founderHighlights = [
 
 // Experience Fields
 const experienceFields = [
+  { icon: 'heroicons:building-library', title: 'Öffentliche Verwaltung & Behörden' },
+  { icon: 'heroicons:paper-airplane', title: 'Luftfahrt & Reise' },
   { icon: 'heroicons:building-office-2', title: 'Industrie & Mittelstand' },
-  { icon: 'heroicons:building-library', title: 'Öffentlicher Sektor' },
-  { icon: 'heroicons:paper-airplane', title: 'Luftfahrt & Touristik' },
-  { icon: 'heroicons:shield-check', title: 'Versicherung & Finance' },
-  { icon: 'heroicons:truck', title: 'Automotive' },
-  { icon: 'heroicons:globe-alt', title: 'E-Government' }
+  { icon: 'heroicons:shield-check', title: 'Versicherung & Rückversicherung' },
+  { icon: 'heroicons:heart', title: 'Hilfsorganisationen' },
+  { icon: 'heroicons:truck', title: 'Automobil & Logistik' }
 ]
 
 // Karriere Timeline
@@ -679,9 +698,9 @@ const careerTimeline = [
   {
     period: 'Seit 2020',
     title: 'IT-Projektleiter & Technische Koordination',
-    company: 'makroh GmbH (ITZBund, G2X-Projekt)',
+    company: 'makroh GmbH (Behördenprojekt)',
     location: 'Region Köln/Bonn · Remote',
-    description: 'Dienstekonsolidierung und G2X-Kommunikations-Dienst im Behördenumfeld. Technische Projektleitung unter SÜ2-Sicherheitsanforderungen für das Informationstechnikzentrum Bund.',
+    description: 'Dienstekonsolidierung und sichere Kommunikationsdienste im Behördenumfeld. Technische Projektleitung unter erhöhten Sicherheitsanforderungen für den zentralen IT-Dienstleister des Bundes.',
     skills: ['PRINCE2', 'E-Government', 'SÜ2', 'Dienstekonsolidierung'],
     current: true
   },
@@ -697,9 +716,9 @@ const careerTimeline = [
   {
     period: '2017 – 2020',
     title: 'Manager IT & Services',
-    company: 'Lamberth GmbH',
+    company: 'IT Solutions (Airlines & Travel)',
     location: 'Frankfurt am Main',
-    description: 'Produktentwicklung, IT-Projektleitung, Aufbau von Serviceprozessen. Booking Management System, Schnittstellen-Integration, Kreditkartenabrechnungen. Aufbau von Entwicklerteams für Lufthansa, Luxair, Singapore Airlines.',
+    description: 'Produktentwicklung, IT-Projektleitung, Aufbau von Serviceprozessen. Booking Management System, Schnittstellen-Integration, Kreditkartenabrechnungen. Aufbau von Entwicklerteams für namhafte internationale Airlines.',
     skills: ['.NET', 'MSSQL', 'REST API', 'Service Desk', 'Team-Aufbau'],
     current: false
   },

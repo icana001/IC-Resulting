@@ -13,7 +13,7 @@
           </div>
           
           <h1 class="section-title mb-6">
-            Projekterfahrung – ausgewählte Referenzen
+            IT-Projekte & Referenzen – Nachweisbare Ergebnisse für Unternehmen
           </h1>
           
           <p class="section-subtitle mx-auto">
@@ -28,12 +28,17 @@
     <section class="py-12 bg-white border-b border-dark-100">
       <div class="container-custom">
         <div class="max-w-3xl mx-auto text-center">
-          <p class="text-lg text-dark-600 leading-relaxed">
+          <p class="text-lg text-dark-600 leading-relaxed mb-6">
             IC-RESULTING hat in den vergangenen Jahren zahlreiche IT-Projekte in verschiedenen 
             Branchen erfolgreich umgesetzt. Wir arbeiten nicht mit Konzeptpapieren, die in Schubladen 
-            verstauben – unsere Projekte werden umgesetzt, stabilisiert und in den Betrieb überführt. 
-            <strong class="text-dark-800">Detaillierte Projektbeschreibungen und weitere Referenzen erhalten Sie auf Anfrage.</strong>
+            verstauben – unsere Projekte werden umgesetzt, stabilisiert und in den Betrieb überführt.
           </p>
+          <div class="bg-primary-50 border border-primary-200 rounded-xl p-4 inline-block">
+            <p class="text-primary-800 font-medium">
+              <Icon name="heroicons:shield-check" class="w-5 h-5 inline mr-2" />
+              Aus Gründen der Vertraulichkeit nennen wir konkrete Referenzen und Projektdetails gern auf Anfrage.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -51,27 +56,21 @@
         </div>
 
         <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <!-- ITZBund -->
+          <!-- Behördenprojekt -->
           <div class="card-hover group">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-14 h-14 rounded-xl bg-white border border-dark-200 flex items-center justify-center flex-shrink-0 
-                          group-hover:scale-110 transition-transform overflow-hidden p-2">
-                <img 
-                  src="https://logo.clearbit.com/itzbund.de" 
-                  alt="ITZBund Logo"
-                  class="w-full h-full object-contain"
-                  onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-xs font-bold text-primary-600\'>ITZ</span>';"
-                />
+              <div class="w-14 h-14 rounded-xl bg-primary-100 flex items-center justify-center flex-shrink-0 
+                          group-hover:scale-110 transition-transform">
+                <Icon name="heroicons:building-library" class="w-7 h-7 text-primary-600" />
               </div>
               <div>
-                <span class="text-xs text-primary-600 font-semibold uppercase tracking-wide">Behördenumfeld</span>
-                <h3 class="text-xl font-display font-bold text-dark-800">ITZBund – Projekt G2X</h3>
+                <span class="text-xs text-primary-600 font-semibold uppercase tracking-wide">Öffentliche Verwaltung</span>
+                <h3 class="text-xl font-display font-bold text-dark-800">IT-Großprojekt im Behördenumfeld</h3>
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
-              IT-Projektleitung und Dienstekonsolidierung im Behördenumfeld (SÜ2-zertifiziert). 
-              Komplexe Digitalisierungsprojekte für die 
-              öffentliche Verwaltung.
+              IT-Projektleitung und Dienstekonsolidierung im Behördenumfeld unter erhöhten Sicherheitsanforderungen. 
+              Komplexe Digitalisierungsprojekte für den zentralen IT-Dienstleister des Bundes.
             </p>
             <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
@@ -84,27 +83,21 @@
             </div>
           </div>
 
-          <!-- Lufthansa / LuxairTours -->
+          <!-- Aviation & Travel -->
           <div class="card-hover group">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-14 h-14 rounded-xl bg-white border border-dark-200 flex items-center justify-center flex-shrink-0 
-                          group-hover:scale-110 transition-transform overflow-hidden p-2">
-                <img 
-                  src="https://logo.clearbit.com/luxairtours.lu" 
-                  alt="LuxairTours Logo"
-                  class="w-full h-full object-contain"
-                  onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-xs font-bold text-accent-600\'>LXT</span>';"
-                />
+              <div class="w-14 h-14 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0 
+                          group-hover:scale-110 transition-transform">
+                <Icon name="heroicons:paper-airplane" class="w-7 h-7 text-accent-600" />
               </div>
               <div>
                 <span class="text-xs text-accent-600 font-semibold uppercase tracking-wide">Luftfahrt & Reise</span>
-                <h3 class="text-xl font-display font-bold text-dark-800">Lufthansa, LuxairTours</h3>
+                <h3 class="text-xl font-display font-bold text-dark-800">Namhafte Airlines & Reiseveranstalter</h3>
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
-              Buchungssysteme und Backend-Integrationen für Airlines und Reiseveranstalter. Entwicklung und 
-              Integration von Kundenportalen für 
-              führende Unternehmen der Branche.
+              Buchungssysteme und Backend-Integrationen für international tätige Airlines und Reiseveranstalter. 
+              Entwicklung und Integration von Kundenportalen für führende Unternehmen der Branche.
             </p>
             <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
@@ -117,26 +110,21 @@
             </div>
           </div>
 
-          <!-- Bosch Thermotechnik -->
+          <!-- Industrie -->
           <div class="card-hover group">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-14 h-14 rounded-xl bg-white border border-dark-200 flex items-center justify-center flex-shrink-0 
-                          group-hover:scale-110 transition-transform overflow-hidden p-2">
-                <img 
-                  src="https://logo.clearbit.com/bosch.com" 
-                  alt="Bosch Logo"
-                  class="w-full h-full object-contain"
-                  onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-xs font-bold text-primary-600\'>BOSCH</span>';"
-                />
+              <div class="w-14 h-14 rounded-xl bg-primary-100 flex items-center justify-center flex-shrink-0 
+                          group-hover:scale-110 transition-transform">
+                <Icon name="heroicons:building-office-2" class="w-7 h-7 text-primary-600" />
               </div>
               <div>
                 <span class="text-xs text-primary-600 font-semibold uppercase tracking-wide">Industrie & Mittelstand</span>
-                <h3 class="text-xl font-display font-bold text-dark-800">Bosch Thermotechnik</h3>
+                <h3 class="text-xl font-display font-bold text-dark-800">Führender Technologiekonzern</h3>
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
-              IT-Projektleitung und Softwareentwicklung für einen der führenden Hersteller 
-              in der Heizungs- und Klimatechnik. Integration von Systemen und Prozessoptimierung 
+              IT-Projektleitung und Softwareentwicklung für einen führenden Hersteller 
+              im Bereich Heizungs- und Klimatechnik. Integration von Systemen und Prozessoptimierung 
               im industriellen Umfeld.
             </p>
             <!-- Referenz Bild -->
@@ -150,21 +138,16 @@
             </div>
           </div>
 
-          <!-- Hannover RE -->
+          <!-- Versicherung -->
           <div class="card-hover group">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-14 h-14 rounded-xl bg-white border border-dark-200 flex items-center justify-center flex-shrink-0 
-                          group-hover:scale-110 transition-transform overflow-hidden p-2">
-                <img 
-                  src="https://logo.clearbit.com/hannover-re.com" 
-                  alt="Hannover RE Logo"
-                  class="w-full h-full object-contain"
-                  onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-xs font-bold text-accent-600\'>H RE</span>';"
-                />
+              <div class="w-14 h-14 rounded-xl bg-accent-100 flex items-center justify-center flex-shrink-0 
+                          group-hover:scale-110 transition-transform">
+                <Icon name="heroicons:shield-check" class="w-7 h-7 text-accent-600" />
               </div>
               <div>
-                <span class="text-xs text-accent-600 font-semibold uppercase tracking-wide">Versicherung & Finance</span>
-                <h3 class="text-xl font-display font-bold text-dark-800">Hannover RE</h3>
+                <span class="text-xs text-accent-600 font-semibold uppercase tracking-wide">Versicherungs- & Rückversicherungsumfeld</span>
+                <h3 class="text-xl font-display font-bold text-dark-800">Internationale Rückversicherung</h3>
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
@@ -184,21 +167,16 @@
             </div>
           </div>
 
-          <!-- Toyota Material Handling -->
+          <!-- Automotive -->
           <div class="card-hover group">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-14 h-14 rounded-xl bg-white border border-dark-200 flex items-center justify-center flex-shrink-0 
-                          group-hover:scale-110 transition-transform overflow-hidden p-2">
-                <img 
-                  src="https://logo.clearbit.com/toyota-forklifts.eu" 
-                  alt="Toyota Material Handling Logo"
-                  class="w-full h-full object-contain"
-                  onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-xs font-bold text-primary-600\'>TMH</span>';"
-                />
+              <div class="w-14 h-14 rounded-xl bg-primary-100 flex items-center justify-center flex-shrink-0 
+                          group-hover:scale-110 transition-transform">
+                <Icon name="heroicons:truck" class="w-7 h-7 text-primary-600" />
               </div>
               <div>
-                <span class="text-xs text-primary-600 font-semibold uppercase tracking-wide">Automotive & Industrie</span>
-                <h3 class="text-xl font-display font-bold text-dark-800">Toyota Material Handling, Brüssel</h3>
+                <span class="text-xs text-primary-600 font-semibold uppercase tracking-wide">Automobil & Logistik</span>
+                <h3 class="text-xl font-display font-bold text-dark-800">Global tätiger Automobilkonzern</h3>
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
@@ -217,21 +195,16 @@
             </div>
           </div>
 
-          <!-- WWF -->
+          <!-- NGO -->
           <div class="card-hover group">
             <div class="flex items-start gap-4 mb-4">
-              <div class="w-14 h-14 rounded-xl bg-white border border-dark-200 flex items-center justify-center flex-shrink-0 
-                          group-hover:scale-110 transition-transform overflow-hidden p-2">
-                <img 
-                  src="https://logo.clearbit.com/wwf.de" 
-                  alt="WWF Logo"
-                  class="w-full h-full object-contain"
-                  onerror="this.onerror=null; this.parentElement.innerHTML='<span class=\'text-xs font-bold text-green-600\'>WWF</span>';"
-                />
+              <div class="w-14 h-14 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0 
+                          group-hover:scale-110 transition-transform">
+                <Icon name="heroicons:globe-europe-africa" class="w-7 h-7 text-green-600" />
               </div>
               <div>
-                <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">NGO / International</span>
-                <h3 class="text-xl font-display font-bold text-dark-800">WWF Deutschland / Schweiz</h3>
+                <span class="text-xs text-green-600 font-semibold uppercase tracking-wide">Hilfsorganisation</span>
+                <h3 class="text-xl font-display font-bold text-dark-800">Internationale Umweltorganisation</h3>
               </div>
             </div>
             <p class="text-dark-500 leading-relaxed">
@@ -278,14 +251,14 @@
         </div>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          <!-- Bürkert -->
+          <!-- Industrieautomation -->
           <div class="bg-white rounded-2xl p-6 shadow-soft">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
                 <Icon name="heroicons:cog-6-tooth" class="w-6 h-6 text-primary-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Bürkert GmbH & Co. KG</h3>
+                <h3 class="font-display font-bold text-dark-800">Industrieautomation (Mittelstand)</h3>
                 <span class="text-xs text-dark-400">Industrie / Automatisierung</span>
               </div>
             </div>
@@ -299,14 +272,14 @@
             </div>
           </div>
 
-          <!-- Biotronik -->
+          <!-- Medizintechnik -->
           <div class="bg-white rounded-2xl p-6 shadow-soft">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center">
                 <Icon name="heroicons:heart" class="w-6 h-6 text-accent-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Biotronik SE</h3>
+                <h3 class="font-display font-bold text-dark-800">Medizintechnik-Unternehmen</h3>
                 <span class="text-xs text-dark-400">Medizintechnik</span>
               </div>
             </div>
@@ -320,14 +293,14 @@
             </div>
           </div>
 
-          <!-- 1&1 -->
+          <!-- Telekommunikation -->
           <div class="bg-white rounded-2xl p-6 shadow-soft">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
                 <Icon name="heroicons:globe-alt" class="w-6 h-6 text-primary-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">1&1 Internet AG</h3>
+                <h3 class="font-display font-bold text-dark-800">Großer Telekommunikationsanbieter</h3>
                 <span class="text-xs text-dark-400">Telekommunikation / Internet</span>
               </div>
             </div>
@@ -341,15 +314,15 @@
             </div>
           </div>
 
-          <!-- Samson AG -->
+          <!-- Regeltechnik -->
           <div class="bg-white rounded-2xl p-6 shadow-soft">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center">
                 <Icon name="heroicons:wrench-screwdriver" class="w-6 h-6 text-accent-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Samson AG</h3>
-                <span class="text-xs text-dark-400">Mess- & Regeltechnik, Frankfurt</span>
+                <h3 class="font-display font-bold text-dark-800">Mess- & Regeltechnik (Frankfurt)</h3>
+                <span class="text-xs text-dark-400">Mess- & Regeltechnik</span>
               </div>
             </div>
             <p class="text-dark-500 text-sm leading-relaxed mb-4">
@@ -362,15 +335,15 @@
             </div>
           </div>
 
-          <!-- SWM Stadtwerke München -->
+          <!-- Energieversorger -->
           <div class="bg-white rounded-2xl p-6 shadow-soft">
             <div class="flex items-center gap-3 mb-4">
               <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
                 <Icon name="heroicons:bolt" class="w-6 h-6 text-primary-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">SWM Stadtwerke München</h3>
-                <span class="text-xs text-dark-400">Energieversorger</span>
+                <h3 class="font-display font-bold text-dark-800">Kommunaler Energieversorger</h3>
+                <span class="text-xs text-dark-400">Energieversorgung</span>
               </div>
             </div>
             <p class="text-dark-500 text-sm leading-relaxed mb-4">
@@ -409,7 +382,7 @@
             Webseiten-Referenzen
           </h2>
           <p class="section-subtitle mx-auto">
-            Professionelle Webseiten, die wir für unsere Kunden entwickelt haben – 
+            Professionelle Webseiten aus unserem Portfolio – 
             schnell, performant und DSGVO-konform.
           </p>
         </div>
@@ -565,8 +538,27 @@
 </template>
 
 <script setup>
+const siteUrl = 'https://ic-resulting.de'
+const pageUrl = `${siteUrl}/referenzen`
+const pageTitle = 'IT-Projekte & Referenzen – IC-RESULTING: Behörden, Industrie, Finance'
+const pageDescription = 'Erfolgreiche IT-Projekte für öffentliche Verwaltung, Industrie, Aviation & Finance. Branchenerfahrung aus namhaften Unternehmen. Details auf Anfrage.'
+
 useSeoMeta({
-  title: 'Projekterfahrung: ITZBund, Hannover RE, Bosch – IC-RESULTING',
-  description: 'IT-Projekte für Behörden, Luftfahrt, Industrie und Finance. Referenzen: ITZBund G2X, Lufthansa, Toyota, WWF. Weitere auf Anfrage.'
+  title: pageTitle,
+  description: pageDescription,
+  ogTitle: pageTitle,
+  ogDescription: pageDescription,
+  ogUrl: pageUrl,
+  ogType: 'website',
+  ogImage: `${siteUrl}/images/og-image.png`,
+  ogLocale: 'de_DE',
+  ogSiteName: 'IC-RESULTING',
+  twitterCard: 'summary_large_image',
+  twitterTitle: pageTitle,
+  twitterDescription: pageDescription
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: pageUrl }]
 })
 </script>
