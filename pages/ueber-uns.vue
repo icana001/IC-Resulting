@@ -716,7 +716,7 @@ const careerTimeline = [
   {
     period: '2017 – 2020',
     title: 'Manager IT & Services',
-    company: 'IT Solutions (Airlines & Travel)',
+    company: 'Lamberth GmbH',
     location: 'Frankfurt am Main',
     description: 'Produktentwicklung, IT-Projektleitung, Aufbau von Serviceprozessen. Booking Management System, Schnittstellen-Integration, Kreditkartenabrechnungen. Aufbau von Entwicklerteams für namhafte internationale Airlines.',
     skills: ['.NET', 'MSSQL', 'REST API', 'Service Desk', 'Team-Aufbau'],
