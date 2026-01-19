@@ -1,0 +1,47 @@
+# Caddyfile für IC-RESULTING Website
+# Server: Nuxt 3 SSR auf Port 3000
+
+ic-resulting.de {
+    # Weiterleitung von www auf non-www
+    @www host www.ic-resulting.de
+    redir @www https://ic-resulting.de{uri} permanent
+
+    # Reverse Proxy zu Nuxt
+    reverse_proxy localhost:3000
+
+    # Kompression aktivieren
+    encode gzip zstd
+
+    # Security Headers
+    header {
+        # XSS Protection
+        X-XSS-Protection "1; mode=block"
+        # Clickjacking Protection
+        X-Frame-Options "SAMEORIGIN"
+        # Content Type Sniffing Protection
+        X-Content-Type-Options "nosniff"
+        # Referrer Policy
+        Referrer-Policy "strict-origin-when-cross-origin"
+        # Permissions Policy
+        Permissions-Policy "geolocation=(), microphone=(), camera=()"
+        # HSTS (nach Test aktivieren)
+        # Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    }
+
+    # Admin-Bereich: No Index für Suchmaschinen
+    @admin path /admin/*
+    header @admin X-Robots-Tag "noindex, nofollow"
+
+    # Logging
+    log {
+        output file /var/log/caddy/ic-resulting.log {
+            roll_size 10mb
+            roll_keep 5
+        }
+    }
+}
+
+# WWW Redirect
+www.ic-resulting.de {
+    redir https://ic-resulting.de{uri} permanent
+}
