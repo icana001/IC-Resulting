@@ -337,11 +337,12 @@ Turnstile-Verifizierung: Bestanden
     })
 
     // Bestätigungsmail an Absender
-    await transporter.sendMail({
-      from: `"IC-RESULTING" <${config.smtp.from}>`,
-      to: sanitizedData.email,
-      subject: `Ihre Anfrage bei IC-RESULTING`,
-      text: `
+    try {
+      await transporter.sendMail({
+        from: `"IC-RESULTING" <${config.smtp.from}>`,
+        to: sanitizedData.email,
+        subject: `Ihre Anfrage bei IC-RESULTING`,
+        text: `
 Guten Tag ${sanitizedData.name},
 
 vielen Dank für Ihre Nachricht. Wir haben Ihre Anfrage erhalten und werden uns schnellstmöglich bei Ihnen melden.
@@ -359,59 +360,83 @@ Obere Webergasse 58
 Tel: +49 (0) 176 618 659 80
 E-Mail: info@ic-resulting.de
 Web: www.ic-resulting.de
-      `,
-      html: `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <meta charset="utf-8">
-          <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 30px; border-radius: 8px 8px 0 0; text-align: center; }
-            .content { background: #ffffff; padding: 30px; border: 1px solid #e2e8f0; }
-            .message-box { background: #f8fafc; padding: 15px; border-radius: 8px; margin: 20px 0; }
-            .footer { background: #1e293b; color: #94a3b8; padding: 20px; text-align: center; font-size: 12px; border-radius: 0 0 8px 8px; }
-            .footer a { color: #60a5fa; }
-          </style>
-        </head>
-        <body>
-          <div class="container">
-            <div class="header">
-              <h1 style="margin: 0; font-size: 24px;">Vielen Dank für Ihre Nachricht</h1>
-            </div>
-            <div class="content">
-              <p>Guten Tag ${escapeHtml(sanitizedData.name)},</p>
-              <p>vielen Dank für Ihre Nachricht. Wir haben Ihre Anfrage erhalten und werden uns schnellstmöglich bei Ihnen melden.</p>
-              <div class="message-box">
-                <strong>Ihre Nachricht:</strong><br>
-                "${escapeHtml(sanitizedData.message)}"
+        `,
+        html: `
+          <!DOCTYPE html>
+          <html>
+          <head>
+            <meta charset="utf-8">
+            <style>
+              body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+              .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+              .header { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 30px; border-radius: 8px 8px 0 0; text-align: center; }
+              .content { background: #ffffff; padding: 30px; border: 1px solid #e2e8f0; }
+              .message-box { background: #f8fafc; padding: 15px; border-radius: 8px; margin: 20px 0; }
+              .footer { background: #1e293b; color: #94a3b8; padding: 20px; text-align: center; font-size: 12px; border-radius: 0 0 8px 8px; }
+              .footer a { color: #60a5fa; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">
+                <h1 style="margin: 0; font-size: 24px;">Vielen Dank für Ihre Nachricht</h1>
               </div>
-              <p>Mit freundlichen Grüßen<br><strong>Ihr IC-RESULTING Team</strong></p>
+              <div class="content">
+                <p>Guten Tag ${escapeHtml(sanitizedData.name)},</p>
+                <p>vielen Dank für Ihre Nachricht. Wir haben Ihre Anfrage erhalten und werden uns schnellstmöglich bei Ihnen melden.</p>
+                <div class="message-box">
+                  <strong>Ihre Nachricht:</strong><br>
+                  "${escapeHtml(sanitizedData.message)}"
+                </div>
+                <p>Mit freundlichen Grüßen<br><strong>Ihr IC-RESULTING Team</strong></p>
+              </div>
+              <div class="footer">
+                <p><strong>IC-RESULTING</strong><br>
+                Obere Webergasse 58 • 65183 Wiesbaden<br>
+                Tel: +49 (0) 176 618 659 80<br>
+                <a href="mailto:info@ic-resulting.de">info@ic-resulting.de</a> • 
+                <a href="https://www.ic-resulting.de">www.ic-resulting.de</a></p>
+              </div>
             </div>
-            <div class="footer">
-              <p><strong>IC-RESULTING</strong><br>
-              Obere Webergasse 58 • 65183 Wiesbaden<br>
-              Tel: +49 (0) 176 618 659 80<br>
-              <a href="mailto:info@ic-resulting.de">info@ic-resulting.de</a> • 
-              <a href="https://www.ic-resulting.de">www.ic-resulting.de</a></p>
-            </div>
-          </div>
-        </body>
-        </html>
-      `
-    })
+          </body>
+          </html>
+        `
+      })
+    } catch {
+      // Bestätigungsmail fehlgeschlagen - aber Hauptmail wurde gesendet
+      // Kein Fehler werfen, da die wichtige Mail ankam
+      console.warn('Bestätigungsmail konnte nicht gesendet werden')
+    }
 
     return {
       success: true,
       message: 'Ihre Nachricht wurde erfolgreich gesendet.'
     }
-  } catch {
-    // WICHTIG: Keine SMTP-Details in Fehlermeldung!
-    // Kein console.error mit Credentials
+  } catch (error: unknown) {
+    // SMTP-Fehler analysieren für bessere Fehlermeldung
+    let userMessage = 'Ihre Nachricht konnte leider nicht gesendet werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns telefonisch unter +49 (0) 176 618 659 80.'
+    
+    // Prüfen ob es ein bekannter SMTP-Fehler ist
+    if (error && typeof error === 'object') {
+      const smtpError = error as { code?: string; responseCode?: number; response?: string }
+      
+      // DMARC/SPF/DKIM Fehler (meist 550 oder 553)
+      if (smtpError.responseCode === 550 || smtpError.responseCode === 553) {
+        userMessage = 'Der E-Mail-Versand ist vorübergehend nicht möglich. Bitte kontaktieren Sie uns direkt unter +49 (0) 176 618 659 80 oder info@ic-resulting.de.'
+      }
+      // Authentifizierungsfehler
+      else if (smtpError.code === 'EAUTH' || smtpError.responseCode === 535) {
+        userMessage = 'Es liegt ein technisches Problem vor. Bitte kontaktieren Sie uns telefonisch unter +49 (0) 176 618 659 80.'
+      }
+      // Verbindungsfehler
+      else if (smtpError.code === 'ECONNECTION' || smtpError.code === 'ETIMEDOUT') {
+        userMessage = 'Der E-Mail-Server ist momentan nicht erreichbar. Bitte versuchen Sie es in einigen Minuten erneut.'
+      }
+    }
+    
     throw createError({
       statusCode: 500,
-      statusMessage: 'Ihre Nachricht konnte leider nicht gesendet werden. Bitte versuchen Sie es später erneut oder kontaktieren Sie uns telefonisch.'
+      statusMessage: userMessage
     })
   }
 })
