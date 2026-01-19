@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IC-RESULTING Social Media Kit – Webpakete</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --accent: #06b6d4;
+            --success: #22c55e;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #2563eb 0%, #06b6d4 100%);
+            --gradient-3: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+            --gradient-fire: linear-gradient(135deg, #ff6b6b 0%, #feca57 50%, #ff9ff3 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #1a1a2e;
+            color: white;
+            padding: 40px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 40px;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .card-wrapper {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .card-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding: 0 10px;
+        }
+
+        .platform-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .dimensions {
+            color: #64748b;
+            font-size: 0.8rem;
+        }
+
+        /* ==========================================
+           POST 1: INSTAGRAM/FACEBOOK SQUARE (1080x1080)
+           Marketing: Preisanker + Streichpreis
+           ========================================== */
+        .post-square {
+            width: 400px;
+            height: 400px;
+            background: var(--gradient-2);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .post-square::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .post-square .badge-urgent {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--danger);
+            color: white;
+            padding: 8px 40px;
+            font-weight: 800;
+            font-size: 0.75rem;
+            transform: rotate(45deg);
+            box-shadow: 0 4px 15px rgba(239,68,68,0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: rotate(45deg) scale(1); }
+            50% { transform: rotate(45deg) scale(1.05); }
+        }
+
+        .post-square .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1rem;
+            z-index: 10;
+        }
+
+        .post-square .hook {
+            font-size: 1.1rem;
+            font-weight: 600;
+            opacity: 0.9;
+            margin-bottom: 15px;
+            z-index: 10;
+        }
+
+        .post-square .price-box {
+            z-index: 10;
+            margin-bottom: 20px;
+        }
+
+        .post-square .old-price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            opacity: 0.6;
+            margin-bottom: 5px;
+        }
+
+        .post-square .new-price {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .post-square .new-price span {
+            font-size: 1.5rem;
+            vertical-align: super;
+        }
+
+        .post-square .benefit {
+            font-size: 1rem;
+            font-weight: 600;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 30px;
+            z-index: 10;
+            backdrop-filter: blur(10px);
+        }
+
+        .post-square .cta {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .post-square .cta .arrow {
+            animation: bounce-right 1s ease-in-out infinite;
+        }
+
+        @keyframes bounce-right {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(5px); }
+        }
+
+        /* ==========================================
+           POST 2: STORY/TIKTOK FORMAT (1080x1920)
+           Marketing: FOMO + Countdown
+           ========================================== */
+        .post-story {
+            width: 225px;
+            height: 400px;
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .post-story::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 20%, rgba(37, 99, 235, 0.3) 0%, transparent 40%),
+                radial-gradient(circle at 80% 80%, rgba(6, 182, 212, 0.3) 0%, transparent 40%);
+            z-index: 0;
+        }
+
+        .post-story .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+            margin-bottom: 15px;
+        }
+
+        .post-story .logo-small {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 0.7rem;
+        }
+
+        .post-story .live-badge {
+            background: var(--danger);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.6rem;
+            font-weight: 800;
+            animation: blink 1s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .post-story .countdown {
+            text-align: center;
+            z-index: 10;
+            margin-bottom: 15px;
+        }
+
+        .post-story .countdown-label {
+            font-size: 0.65rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .post-story .countdown-numbers {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .post-story .countdown-box {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 10px;
+            border-radius: 8px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .post-story .countdown-box .num {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .post-story .countdown-box .unit {
+            font-size: 0.5rem;
+            opacity: 0.7;
+        }
+
+        .post-story .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .post-story .hook-text {
+            font-size: 0.75rem;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .post-story .big-price {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 800;
+            background: var(--gradient-2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .post-story .features {
+            font-size: 0.6rem;
+            line-height: 1.8;
+            opacity: 0.9;
+        }
+
+        .post-story .features span {
+            color: var(--success);
+        }
+
+        .post-story .swipe-cta {
+            text-align: center;
+            z-index: 10;
+            padding-top: 15px;
+        }
+
+        .post-story .swipe-icon {
+            font-size: 1.5rem;
+            animation: swipe-up 1.5s ease-in-out infinite;
+        }
+
+        @keyframes swipe-up {
+            0%, 100% { transform: translateY(0); opacity: 1; }
+            50% { transform: translateY(-10px); opacity: 0.5; }
+        }
+
+        .post-story .swipe-text {
+            font-size: 0.6rem;
+            font-weight: 700;
+            margin-top: 5px;
+        }
+
+        /* ==========================================
+           POST 3: LINKEDIN LANDSCAPE (1200x627)
+           Marketing: Authority + Social Proof
+           ========================================== */
+        .post-linkedin {
+            width: 480px;
+            height: 250px;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding: 25px;
+        }
+
+        .post-linkedin::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: var(--gradient-2);
+            opacity: 0.1;
+            clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        .post-linkedin .left-content {
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .post-linkedin .logo-linkedin {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .post-linkedin .verified {
+            background: var(--primary);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+        }
+
+        .post-linkedin .headline {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            line-height: 1.3;
+        }
+
+        .post-linkedin .headline .highlight {
+            color: var(--accent);
+        }
+
+        .post-linkedin .stats {
+            display: flex;
+            gap: 15px;
+        }
+
+        .post-linkedin .stat {
+            text-align: center;
+        }
+
+        .post-linkedin .stat-num {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+
+        .post-linkedin .stat-label {
+            font-size: 0.55rem;
+            opacity: 0.7;
+        }
+
+        .post-linkedin .right-content {
+            z-index: 10;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .post-linkedin .package-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 15px 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        .post-linkedin .package-name {
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 5px;
+        }
+
+        .post-linkedin .package-price {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        .post-linkedin .package-desc {
+            font-size: 0.6rem;
+            opacity: 0.7;
+            margin-top: 5px;
+        }
+
+        .post-linkedin .cta-btn {
+            margin-top: 12px;
+            background: var(--gradient-2);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+        }
+
+        /* ==========================================
+           POST 4: CAROUSEL SLIDE (1080x1080)
+           Marketing: Problem-Agitation-Solution
+           ========================================== */
+        .post-carousel {
+            width: 400px;
+            height: 400px;
+            background: var(--dark);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .post-carousel.slide-problem {
+            background: linear-gradient(180deg, #7f1d1d 0%, #450a0a 100%);
+        }
+
+        .post-carousel.slide-solution {
+            background: linear-gradient(180deg, #14532d 0%, #052e16 100%);
+        }
+
+        .post-carousel .slide-num {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 0.75rem;
+            opacity: 0.5;
+        }
+
+        .post-carousel .big-emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            animation: shake 2s ease-in-out infinite;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: rotate(0deg); }
+            25% { transform: rotate(-5deg); }
+            75% { transform: rotate(5deg); }
+        }
+
+        .post-carousel.slide-solution .big-emoji {
+            animation: celebrate 1s ease-in-out infinite;
+        }
+
+        @keyframes celebrate {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .post-carousel .problem-text {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+
+        .post-carousel .sub-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .post-carousel .solution-price {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #22c55e 0%, #86efac 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin: 15px 0;
+        }
+
+        .post-carousel .checkmarks {
+            text-align: left;
+            font-size: 0.85rem;
+            line-height: 2;
+        }
+
+        .post-carousel .checkmarks span {
+            color: var(--success);
+            margin-right: 8px;
+        }
+
+        /* ==========================================
+           POST 5: COMPARISON POST (1080x1350)
+           Marketing: Us vs. Them
+           ========================================== */
+        .post-comparison {
+            width: 320px;
+            height: 400px;
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            padding: 20px;
+        }
+
+        .post-comparison .header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .post-comparison .vs-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 800;
+        }
+
+        .post-comparison .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            height: calc(100% - 60px);
+        }
+
+        .post-comparison .col {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-comparison .col.bad {
+            border-top: 3px solid var(--danger);
+        }
+
+        .post-comparison .col.good {
+            border-top: 3px solid var(--success);
+        }
+
+        .post-comparison .col-title {
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .post-comparison .col.bad .col-title {
+            color: var(--danger);
+        }
+
+        .post-comparison .col.good .col-title {
+            color: var(--success);
+        }
+
+        .post-comparison .item {
+            font-size: 0.6rem;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .post-comparison .item:last-child {
+            border-bottom: none;
+        }
+
+        .post-comparison .x {
+            color: var(--danger);
+            font-weight: 800;
+        }
+
+        .post-comparison .check {
+            color: var(--success);
+            font-weight: 800;
+        }
+
+        /* ==========================================
+           POST 6: TESTIMONIAL/SOCIAL PROOF
+           ========================================== */
+        .post-testimonial {
+            width: 400px;
+            height: 400px;
+            background: var(--gradient-1);
+            border-radius: 16px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .post-testimonial::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            font-size: 8rem;
+            opacity: 0.1;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+
+        .post-testimonial .quote {
+            font-size: 1.2rem;
+            font-weight: 600;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            z-index: 10;
+        }
+
+        .post-testimonial .author {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        .post-testimonial .avatar {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+
+        .post-testimonial .author-info {
+            text-align: left;
+        }
+
+        .post-testimonial .author-name {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .post-testimonial .author-title {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        .post-testimonial .stars {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            z-index: 10;
+        }
+
+        .post-testimonial .logo-bottom {
+            position: absolute;
+            bottom: 20px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        /* ==========================================
+           EXPORT HINT
+           ========================================== */
+        .export-hint {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 16px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .export-hint h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .export-hint p {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        .export-hint code {
+            background: rgba(255,255,255,0.1);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🚀 IC-RESULTING Social Media Kit</h1>
+    <p class="subtitle">Webpakete Kampagne – Optimiert für maximale Reichweite & Conversions</p>
+
+    <div class="grid">
+
+        <!-- POST 1: Instagram/Facebook Square -->
+        <div class="card-wrapper">
+            <div class="card-label">
+                <span class="platform-badge">📸 Instagram / Facebook Feed</span>
+                <span class="dimensions">1080 × 1080 px</span>
+            </div>
+            <div class="post-square">
+                <div class="badge-urgent">LIMITIERT</div>
+                <div class="logo">IC-RESULTING</div>
+                <div class="hook">Schluss mit Abo-Fallen! 🚫</div>
+                <div class="price-box">
+                    <div class="old-price">1.499 €</div>
+                    <div class="new-price">499<span>€</span></div>
+                </div>
+                <div class="benefit">✨ Professionelle Website – Einmalpreis</div>
+                <div class="cta">
+                    Link in Bio <span class="arrow">→</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- POST 2: Story/TikTok/Reels -->
+        <div class="card-wrapper">
+            <div class="card-label">
+                <span class="platform-badge">📱 Story / Reels / TikTok</span>
+                <span class="dimensions">1080 × 1920 px</span>
+            </div>
+            <div class="post-story">
+                <div class="top-bar">
+                    <div class="logo-small">IC-RESULTING</div>
+                    <div class="live-badge">🔴 NUR NOCH HEUTE</div>
+                </div>
+                <div class="countdown">
+                    <div class="countdown-label">Angebot endet in</div>
+                    <div class="countdown-numbers">
+                        <div class="countdown-box">
+                            <div class="num">02</div>
+                            <div class="unit">Std</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="num">47</div>
+                            <div class="unit">Min</div>
+                        </div>
+                        <div class="countdown-box">
+                            <div class="num">33</div>
+                            <div class="unit">Sek</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content">
+                    <div class="hook-text">Deine Website vom Profi</div>
+                    <div class="big-price">ab 499€</div>
+                    <div class="features">
+                        <span>✓</span> Kein Abo<br>
+                        <span>✓</span> Gehört dir<br>
+                        <span>✓</span> SEO inklusive<br>
+                        <span>✓</span> DSGVO-konform
+                    </div>
+                </div>
+                <div class="swipe-cta">
+                    <div class="swipe-icon">👆</div>
+                    <div class="swipe-text">NACH OBEN WISCHEN</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POST 3: LinkedIn Professional -->
+        <div class="card-wrapper">
+            <div class="card-label">
+                <span class="platform-badge">💼 LinkedIn</span>
+                <span class="dimensions">1200 × 627 px</span>
+            </div>
+            <div class="post-linkedin">
+                <div class="left-content">
+                    <div class="logo-linkedin">
+                        IC-RESULTING
+                        <span class="verified">✓</span>
+                    </div>
+                    <div class="headline">
+                        Webentwicklung mit <span class="highlight">Verantwortung</span> und <span class="highlight">Kompetenz</span>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-num">50+</div>
+                            <div class="stat-label">Projekte</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">100%</div>
+                            <div class="stat-label">Zufriedenheit</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-num">SÜ2</div>
+                            <div class="stat-label">Geprüft</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="package-card">
+                        <div class="package-name">GOLD PAKET</div>
+                        <div class="package-price">999€</div>
+                        <div class="package-desc">Einmaliger Festpreis</div>
+                    </div>
+                    <div class="cta-btn">Kostenlose Beratung →</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POST 4a: Carousel - Problem -->
+        <div class="card-wrapper">
+            <div class="card-label">
+                <span class="platform-badge">🎠 Carousel Slide 1 – Problem</span>
+                <span class="dimensions">1080 × 1080 px</span>
+            </div>
+            <div class="post-carousel slide-problem">
+                <div class="slide-num">1/3</div>
+                <div class="big-emoji">😤</div>
+                <div class="problem-text">
+                    Jeden Monat 33€ für deinen Baukasten zahlen?
+                </div>
+                <div class="sub-text">
+                    IONOS, Wix, Jimdo...<br>
+                    Nach 3 Jahren: <strong>über 1.000€</strong> ausgegeben.<br>
+                    Und die Website gehört dir nicht mal!
+                </div>
+            </div>
+        </div>
+
+        <!-- POST 4b: Carousel - Solution -->
+        <div class="card-wrapper">
+            <div class="card-label">
+                <span class="platform-badge">🎠 Carousel Slide 3 – Lösung</span>
+                <span class="dimensions">1080 × 1080 px</span>
+            </div>
+            <div class="post-carousel slide-solution">
+                <div class="slide-num">3/3</div>
+                <div class="big-emoji">🎉</div>
+                <div class="problem-text">
+                    Die bessere Alternative:
+                </div>
+                <div class="solution-price">499€</div>
+                <div class="checkmarks">
+                    <span>✓</span> Einmalzahlung, kein Abo<br>
+                    <span>✓</span> Die Website gehört DIR<br>
+                    <span>✓</span> Vom Diplom-Informatiker<br>
+                    <span>✓</span> DSGVO & SEO inklusive
+                </div>
+            </div>
+        </div>
+
+        <!-- POST 5: Comparison -->
+        <div class="card-wrapper">
+            <div class="card-label">
+                <span class="platform-badge">⚔️ Vergleichs-Post</span>
+                <span class="dimensions">1080 × 1350 px</span>
+            </div>
+            <div class="post-comparison">
+                <div class="header">
+                    <div class="vs-title">Baukasten vs. Profi 🥊</div>
+                </div>
+                <div class="comparison-grid">
+                    <div class="col bad">
+                        <div class="col-title">❌ Baukästen</div>
+                        <div class="item"><span class="x">✗</span> 12-33€/Monat</div>
+                        <div class="item"><span class="x">✗</span> Template-Look</div>
+                        <div class="item"><span class="x">✗</span> Plattform-Lock</div>
+                        <div class="item"><span class="x">✗</span> Nur Hotline</div>
+                        <div class="item"><span class="x">✗</span> Basis-SEO</div>
+                        <div class="item"><span class="x">✗</span> Cookie-Banner</div>
+                    </div>
+                    <div class="col good">
+                        <div class="col-title">✅ IC-RESULTING</div>
+                        <div class="item"><span class="check">✓</span> 499€ einmalig</div>
+                        <div class="item"><span class="check">✓</span> Individuell</div>
+                        <div class="item"><span class="check">✓</span> Gehört dir</div>
+                        <div class="item"><span class="check">✓</span> Dipl.-Inf.</div>
+                        <div class="item"><span class="check">✓</span> Profi-SEO</div>
+                        <div class="item"><span class="check">✓</span> DSGVO-Experte</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- POST 6: Testimonial -->
+        <div class="card-wrapper">
+            <div class="card-label">
+                <span class="platform-badge">⭐ Social Proof / Testimonial</span>
+                <span class="dimensions">1080 × 1080 px</span>
+            </div>
+            <div class="post-testimonial">
+                <div class="quote">
+                    "Endlich eine Website, die uns gehört! Keine monatlichen Kosten mehr und der Service war erstklassig."
+                </div>
+                <div class="author">
+                    <div class="avatar">👨‍💼</div>
+                    <div class="author-info">
+                        <div class="author-name">Thomas M.</div>
+                        <div class="author-title">Geschäftsführer, KMU</div>
+                    </div>
+                </div>
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <div class="logo-bottom">IC-RESULTING</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="export-hint">
+        <h3>📤 Export-Anleitung</h3>
+        <p>
+            <strong>Methode 1:</strong> Rechtsklick auf Post → <code>Element untersuchen</code> → Rechtsklick auf das Element → <code>Screenshot aufnehmen</code><br><br>
+            <strong>Methode 2:</strong> Browser-Extension wie "GoFullPage" oder "Awesome Screenshot"<br><br>
+            <strong>Methode 3:</strong> Mit Playwright automatisiert: <code>npx playwright screenshot</code><br><br>
+            <strong>Tipp:</strong> Für echte Pixel-Maße den Browser-Zoom auf die korrekten Dimensionen anpassen (z.B. 270% für 1080px bei 400px Basis)
+        </p>
+    </div>
+
+</body>
+</html>

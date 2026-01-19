@@ -1,0 +1,194 @@
+/* Social Template: LinkedIn Document/Carousel (1080x1350) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  min-height: 100vh;
+  padding: 40px;
+}
+
+/* Base Card */
+.card {
+  width: 1080px;
+  height: 1350px;
+  position: relative;
+  overflow: hidden;
+  background: #0F172A;
+}
+
+/* Cover Slide (Dark) */
+.bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+
+.bg-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 70% 30%, rgba(20, 184, 166, 0.1) 0%, transparent 50%);
+}
+
+/* Content Slide (Light) */
+.content-slide {
+  background: #fff;
+}
+
+.bg-light {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  color: #fff;
+}
+
+.content-slide .content {
+  color: #0F172A;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.brand {
+  font-size: 28px;
+  font-weight: 700;
+  color: #14B8A6;
+}
+
+.brand.dark {
+  color: #14B8A6;
+}
+
+.slide-indicator {
+  font-size: 20px;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.slide-indicator.dark {
+  color: #64748B;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Cover Slide */
+.headline {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 40px;
+}
+
+.subheadline {
+  font-size: 32px;
+  color: #94A3B8;
+  line-height: 1.4;
+}
+
+/* Content Slide */
+.number {
+  font-size: 120px;
+  font-weight: 700;
+  color: #14B8A6;
+  opacity: 0.3;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.point-headline {
+  font-size: 56px;
+  font-weight: 700;
+  color: #0F172A;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.point-body {
+  font-size: 32px;
+  color: #64748B;
+  line-height: 1.5;
+}
+
+/* Swipe Hint */
+.swipe-hint {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  font-size: 24px;
+  color: #64748B;
+  margin-bottom: 40px;
+}
+
+.swipe-hint .arrow {
+  font-size: 32px;
+  color: #14B8A6;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.url {
+  font-size: 24px;
+  font-weight: 600;
+  color: #14B8A6;
+}
+
+.url.dark {
+  color: #14B8A6;
+}
+
+/* Responsive preview */
+@media (max-width: 1200px) {
+  .card {
+    width: 432px;
+    height: 540px;
+  }
+  
+  .content { padding: 32px; }
+  .header { margin-bottom: 24px; }
+  .brand { font-size: 14px; }
+  .slide-indicator { font-size: 10px; }
+  .headline { font-size: 28px; margin-bottom: 16px; }
+  .subheadline { font-size: 14px; }
+  .number { font-size: 48px; margin-bottom: 8px; }
+  .point-headline { font-size: 22px; margin-bottom: 12px; }
+  .point-body { font-size: 14px; }
+  .swipe-hint { font-size: 10px; margin-bottom: 16px; }
+  .swipe-hint .arrow { font-size: 14px; }
+  .url { font-size: 12px; }
+}

@@ -1,0 +1,331 @@
+/* IC-RESULTING Onepager A4 - KI-Automatisierung */
+
+@page {
+  size: A4;
+  margin: 12mm;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 10pt;
+  line-height: 1.4;
+  color: #1F2937;
+  background: #fff;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 10mm;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 6mm;
+  border-bottom: 2px solid #14B8A6;
+  margin-bottom: 6mm;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 16pt;
+  font-weight: 700;
+  color: #0F172A;
+  letter-spacing: -0.5px;
+}
+
+.logo-tagline {
+  font-size: 8pt;
+  color: #6B7280;
+  margin-top: 1px;
+}
+
+.header-claim {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #14B8A6;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 8mm 4mm;
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+  color: #fff;
+  border-radius: 3mm;
+  margin-bottom: 6mm;
+}
+
+.hero h1 {
+  font-size: 20pt;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 3mm;
+}
+
+.hero-sub {
+  font-size: 11pt;
+  color: #94A3B8;
+}
+
+/* Problem Section */
+.problem {
+  margin-bottom: 5mm;
+}
+
+.problem h2 {
+  font-size: 11pt;
+  color: #0F172A;
+  margin-bottom: 3mm;
+  padding-left: 2mm;
+  border-left: 3px solid #EF4444;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2mm;
+}
+
+.problem-item {
+  display: flex;
+  align-items: center;
+  gap: 2mm;
+  padding: 2mm 3mm;
+  background: #FEF2F2;
+  border-radius: 2mm;
+  font-size: 9pt;
+  color: #7F1D1D;
+}
+
+.problem-icon {
+  font-size: 12pt;
+}
+
+/* Solution Section */
+.solution {
+  text-align: center;
+  padding: 4mm;
+  background: #F0FDFA;
+  border-radius: 3mm;
+  margin-bottom: 5mm;
+}
+
+.solution h2 {
+  font-size: 12pt;
+  color: #0F172A;
+  margin-bottom: 2mm;
+}
+
+.solution-intro {
+  font-size: 9pt;
+  color: #115E59;
+}
+
+/* Use Cases */
+.usecases {
+  margin-bottom: 5mm;
+}
+
+.usecases h2 {
+  font-size: 11pt;
+  color: #0F172A;
+  margin-bottom: 3mm;
+  text-align: center;
+}
+
+.usecases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3mm;
+}
+
+.usecase {
+  padding: 3mm;
+  background: #F9FAFB;
+  border: 1px solid #E5E7EB;
+  border-radius: 2mm;
+  text-align: center;
+}
+
+.usecase-icon {
+  font-size: 16pt;
+  margin-bottom: 1mm;
+}
+
+.usecase h3 {
+  font-size: 9pt;
+  color: #0F172A;
+  margin-bottom: 1mm;
+}
+
+.usecase p {
+  font-size: 8pt;
+  color: #6B7280;
+  line-height: 1.3;
+}
+
+/* Process Section */
+.process {
+  margin-bottom: 5mm;
+}
+
+.process h2 {
+  font-size: 11pt;
+  color: #0F172A;
+  margin-bottom: 3mm;
+  text-align: center;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  gap: 2mm;
+}
+
+.step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.step-number {
+  width: 8mm;
+  height: 8mm;
+  background: #14B8A6;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 11pt;
+  margin-bottom: 2mm;
+}
+
+.step-content h4 {
+  font-size: 9pt;
+  color: #0F172A;
+  margin-bottom: 1mm;
+}
+
+.step-content p {
+  font-size: 8pt;
+  color: #6B7280;
+}
+
+/* Trust Section */
+.trust {
+  display: flex;
+  justify-content: space-around;
+  padding: 4mm;
+  background: #F3F4F6;
+  border-radius: 2mm;
+  margin-bottom: 5mm;
+}
+
+.trust-item {
+  text-align: center;
+}
+
+.trust-item strong {
+  display: block;
+  font-size: 9pt;
+  color: #0F172A;
+  margin-bottom: 1mm;
+}
+
+.trust-item span {
+  font-size: 8pt;
+  color: #6B7280;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  padding: 5mm;
+  background: #14B8A6;
+  color: #fff;
+  border-radius: 3mm;
+  margin-bottom: 5mm;
+}
+
+.cta-text {
+  font-size: 9pt;
+  margin-bottom: 2mm;
+}
+
+.cta-action {
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #E5E7EB;
+  padding-top: 3mm;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 5mm;
+  margin-bottom: 2mm;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1mm;
+  font-size: 9pt;
+}
+
+.contact-icon {
+  font-size: 10pt;
+}
+
+.address {
+  font-size: 8pt;
+  color: #6B7280;
+  margin-bottom: 1mm;
+}
+
+.certifications {
+  font-size: 8pt;
+  color: #14B8A6;
+  font-weight: 600;
+}
+
+/* Print */
+@media print {
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  .page {
+    width: 100%;
+    min-height: auto;
+    padding: 0;
+  }
+}

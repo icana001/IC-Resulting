@@ -7,5 +7,6 @@ Allow: /
 # Sitemap
 Sitemap: https://ic-resulting.de/sitemap.xml
 
-# Disallow admin/internal paths (if any)
+# Disallow admin/internal paths
 Disallow: /api/
+Disallow: /admin/

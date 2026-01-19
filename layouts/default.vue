@@ -6,6 +6,8 @@
     </main>
     <TheFooter />
     <CookieConsent ref="cookieConsent" />
+    <!-- Live Edit Toolbar für Admins -->
+    <LiveEditToolbar />
   </div>
 </template>
 

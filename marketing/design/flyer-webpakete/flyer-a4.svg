@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595 842" width="595" height="842">
+  <!-- A4 Flyer: IC-RESULTING Webseiten-Pakete -->
+  <!-- Editable Vector Version -->
+  
+  <defs>
+    <style>
+      .bg-dark { fill: #0F172A; }
+      .bg-light { fill: #F9FAFB; }
+      .bg-white { fill: #FFFFFF; }
+      .bg-teal { fill: #14B8A6; }
+      .text-dark { fill: #0F172A; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+      .text-gray { fill: #6B7280; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+      .text-white { fill: #FFFFFF; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+      .text-teal { fill: #14B8A6; font-family: -apple-system, BlinkMacSystemFont, sans-serif; }
+      .border-teal { stroke: #14B8A6; stroke-width: 2; fill: none; }
+      .border-gray { stroke: #E5E7EB; stroke-width: 1; fill: none; }
+    </style>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0F172A"/>
+      <stop offset="100%" style="stop-color:#1E293B"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="595" height="842" fill="#FFFFFF"/>
+  
+  <!-- Header -->
+  <text x="40" y="50" class="text-dark" font-size="24" font-weight="700">IC-RESULTING</text>
+  <text x="40" y="68" class="text-gray" font-size="10">IT-Beratung &amp; Projektleitung</text>
+  <text x="555" y="55" class="text-teal" font-size="12" font-weight="600" text-anchor="end">Resulting statt Beratung</text>
+  <line x1="40" y1="80" x2="555" y2="80" stroke="#14B8A6" stroke-width="2"/>
+  
+  <!-- Hero Section -->
+  <rect x="40" y="100" width="515" height="100" rx="8" fill="url(#heroGrad)"/>
+  <text x="297" y="145" class="text-white" font-size="26" font-weight="700" text-anchor="middle">Professionelle Webseiten</text>
+  <text x="297" y="172" class="text-white" font-size="26" font-weight="700" text-anchor="middle">zum Festpreis</text>
+  <text x="297" y="190" fill="#94A3B8" font-family="sans-serif" font-size="12" text-anchor="middle">Schnell online. SEO-optimiert. DSGVO-konform.</text>
+  
+  <!-- Package: SILBER -->
+  <rect x="40" y="220" width="165" height="220" rx="6" class="bg-light"/>
+  <rect x="40" y="220" width="165" height="220" rx="6" class="border-gray"/>
+  <text x="122" y="245" class="text-gray" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="1">SILBER</text>
+  <text x="122" y="280" class="text-dark" font-size="28" font-weight="700" text-anchor="middle">499 €</text>
+  <text x="55" y="310" class="text-gray" font-size="10">✓ Bis 5 Seiten</text>
+  <text x="55" y="328" class="text-gray" font-size="10">✓ Responsive Design</text>
+  <text x="55" y="346" class="text-gray" font-size="10">✓ Kontaktformular</text>
+  <text x="55" y="364" class="text-gray" font-size="10">✓ DSGVO-konform</text>
+  <text x="55" y="382" class="text-gray" font-size="10">✓ SSL-Zertifikat</text>
+  <line x1="50" y1="405" x2="195" y2="405" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="122" y="425" class="text-gray" font-size="8" font-style="italic" text-anchor="middle">Ideal für: Starter, Freelancer</text>
+  
+  <!-- Package: GOLD (Featured) -->
+  <rect x="215" y="215" width="165" height="230" rx="6" class="bg-white"/>
+  <rect x="215" y="215" width="165" height="230" rx="6" class="border-teal"/>
+  <text x="297" y="240" class="text-teal" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="1">GOLD</text>
+  <text x="297" y="275" class="text-dark" font-size="28" font-weight="700" text-anchor="middle">999 €</text>
+  <text x="297" y="292" class="text-teal" font-size="10" font-weight="600" text-anchor="middle">inkl. SEO</text>
+  <text x="230" y="320" class="text-gray" font-size="10">✓ Bis 10 Seiten</text>
+  <text x="230" y="338" class="text-gray" font-size="10">✓ Alles aus Silber</text>
+  <text x="230" y="356" class="text-dark" font-size="10" font-weight="600">✓ SEO-Optimierung</text>
+  <text x="230" y="374" class="text-gray" font-size="10">✓ Blog-Funktion</text>
+  <text x="230" y="392" class="text-gray" font-size="10">✓ Google Analytics</text>
+  <line x1="225" y1="415" x2="370" y2="415" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="297" y="435" class="text-gray" font-size="8" font-style="italic" text-anchor="middle">Ideal für: KMU, Dienstleister</text>
+  
+  <!-- Package: PLATIN -->
+  <rect x="390" y="220" width="165" height="220" rx="6" class="bg-light"/>
+  <rect x="390" y="220" width="165" height="220" rx="6" class="border-gray"/>
+  <text x="472" y="245" class="text-gray" font-size="9" font-weight="700" text-anchor="middle" letter-spacing="1">PLATIN</text>
+  <text x="472" y="280" class="text-dark" font-size="28" font-weight="700" text-anchor="middle">1.999 €</text>
+  <text x="472" y="297" class="text-teal" font-size="10" font-weight="600" text-anchor="middle">Full Service</text>
+  <text x="405" y="320" class="text-gray" font-size="10">✓ Bis 15 Seiten</text>
+  <text x="405" y="338" class="text-gray" font-size="10">✓ Alles aus Gold</text>
+  <text x="405" y="356" class="text-dark" font-size="10" font-weight="600">✓ Individuelles Design</text>
+  <text x="405" y="374" class="text-dark" font-size="10" font-weight="600">✓ Logo-Erstellung</text>
+  <text x="405" y="392" class="text-gray" font-size="10">✓ Content-Erstellung</text>
+  <line x1="400" y1="405" x2="545" y2="405" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="472" y="425" class="text-gray" font-size="8" font-style="italic" text-anchor="middle">Ideal für: Relaunch, Premium</text>
+  
+  <!-- Hosting Section -->
+  <rect x="40" y="460" width="515" height="70" rx="6" class="bg-light"/>
+  <text x="297" y="485" class="text-dark" font-size="14" font-weight="600" text-anchor="middle">Hosting &amp; Wartung</text>
+  <rect x="120" y="495" width="140" height="28" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="145" y="513" class="text-gray" font-size="9">Standard</text>
+  <text x="230" y="513" class="text-dark" font-size="12" font-weight="700" text-anchor="end">50 €/Mon.</text>
+  <rect x="335" y="495" width="140" height="28" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="360" y="513" class="text-gray" font-size="9">Premium</text>
+  <text x="445" y="513" class="text-dark" font-size="12" font-weight="700" text-anchor="end">100 €/Mon.</text>
+  
+  <!-- Tech & Trust Row -->
+  <text x="100" y="560" class="text-dark" font-size="11" font-weight="600" text-anchor="middle">Technologie</text>
+  <line x1="50" y1="568" x2="150" y2="568" stroke="#14B8A6" stroke-width="1"/>
+  <text x="55" y="585" class="text-gray" font-size="9">• Vue.js / Nuxt.js</text>
+  <text x="55" y="600" class="text-gray" font-size="9">• Tailwind CSS</text>
+  <text x="55" y="615" class="text-gray" font-size="9">• Headless CMS</text>
+  <text x="55" y="630" class="text-gray" font-size="9">• Cloud Hosting</text>
+  
+  <text x="297" y="560" class="text-dark" font-size="11" font-weight="600" text-anchor="middle">Qualität</text>
+  <line x1="247" y1="568" x2="347" y2="568" stroke="#14B8A6" stroke-width="1"/>
+  <text x="252" y="585" class="text-gray" font-size="9">• DSGVO-konform</text>
+  <text x="252" y="600" class="text-gray" font-size="9">• Mobile-optimiert</text>
+  <text x="252" y="615" class="text-gray" font-size="9">• Schnelle Ladezeiten</text>
+  <text x="252" y="630" class="text-gray" font-size="9">• Schulung inklusive</text>
+  
+  <text x="490" y="560" class="text-dark" font-size="11" font-weight="600" text-anchor="middle">Ablauf</text>
+  <line x1="440" y1="568" x2="540" y2="568" stroke="#14B8A6" stroke-width="1"/>
+  <text x="445" y="585" class="text-gray" font-size="9">1. Briefing (30 Min.)</text>
+  <text x="445" y="600" class="text-gray" font-size="9">2. Festpreis-Angebot</text>
+  <text x="445" y="615" class="text-gray" font-size="9">3. Umsetzung</text>
+  <text x="445" y="630" class="text-gray" font-size="9">4. Launch in 2-4 Wochen</text>
+  
+  <!-- CTA Section -->
+  <rect x="40" y="655" width="515" height="55" rx="6" fill="#14B8A6"/>
+  <text x="297" y="680" class="text-white" font-size="11" text-anchor="middle">Keine versteckten Kosten. Keine Überraschungen.</text>
+  <text x="297" y="700" class="text-white" font-size="14" font-weight="700" text-anchor="middle">Jetzt Beratung anfragen!</text>
+  
+  <!-- Footer -->
+  <line x1="40" y1="725" x2="555" y2="725" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="145" y="750" class="text-dark" font-size="11" text-anchor="middle">📧 info@ic-resulting.de</text>
+  <text x="297" y="750" class="text-dark" font-size="11" text-anchor="middle">📞 +49 176 618 659 80</text>
+  <text x="455" y="750" class="text-dark" font-size="11" text-anchor="middle">🌐 ic-resulting.de</text>
+  <text x="297" y="775" class="text-gray" font-size="9" text-anchor="middle">IC-RESULTING · Obere Webergasse 58 · 65183 Wiesbaden</text>
+  <text x="297" y="795" class="text-teal" font-size="9" font-weight="600" text-anchor="middle">PRINCE2 · ITIL · SÜ2 Sicherheitsüberprüft</text>
+</svg>

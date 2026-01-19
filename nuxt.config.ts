@@ -10,16 +10,8 @@ export default defineNuxtConfig({
   ],
 
   // Sitemap Configuration
-  // @ts-ignore - sitemap module adds this config
-  sitemap: {
-    hostname: 'https://ic-resulting.de',
-    gzip: true,
-    exclude: ['/api/**'],
-    defaults: {
-      changefreq: 'weekly',
-      priority: 0.8,
-      lastmod: new Date().toISOString()
-    }
+  site: {
+    url: 'https://ic-resulting.de'
   },
 
   // Runtime Config - SMTP und Secrets NUR serverseitig (NICHT in public!)
@@ -34,6 +26,8 @@ export default defineNuxtConfig({
       to: process.env.MAIL_TO
     },
     turnstileSecret: process.env.TURNSTILE_SECRET_KEY,
+    // Admin-Konfiguration
+    adminPassword: process.env.ADMIN_PASSWORD || 'admin2024!',
     // Public keys - im Client verfügbar (NUR nicht-sensible Daten!)
     public: {
       turnstileSiteKey: process.env.TURNSTILE_SITE_KEY || ''
@@ -82,6 +76,11 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/main.css'],
+
+  // Route Rules für Admin-Bereich
+  routeRules: {
+    '/admin/**': { prerender: false }, // Admin-Bereich nicht pre-rendern
+  },
 
   compatibilityDate: '2026-01-16'
 })

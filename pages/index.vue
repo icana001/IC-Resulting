@@ -20,17 +20,27 @@
           <div class="text-center lg:text-left">
             <div class="inline-flex items-center gap-2 bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Icon name="heroicons:shield-check" class="w-4 h-4" />
-              Resulting statt Beratung
+              <EditableText 
+                block-id="hero-tagline" 
+                :default-content="content.heroTagline" 
+                tag="span"
+              />
             </div>
             
             <h1 class="section-title mb-6 text-balance">
-              IT-Beratung & Projektleitung für Unternehmen – Verantwortung abgeben, Ergebnisse erhalten
+              <EditableText 
+                block-id="hero-headline" 
+                :default-content="content.heroHeadline" 
+                tag="span"
+              />
             </h1>
             
             <p class="section-subtitle mx-auto lg:mx-0 mb-8">
-              Wir übernehmen Ihre komplette IT-Verantwortung: Von der Projektleitung über Softwareentwicklung 
-              bis zu KI-gestützter Automatisierung. Mit klarer Verantwortung, messbaren Ergebnissen und 
-              einem Single Point of Accountability.
+              <EditableText 
+                block-id="hero-description" 
+                :default-content="content.heroDescription" 
+                tag="span"
+              />
             </p>
 
             <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -145,14 +155,25 @@
       <div class="container-custom">
         <div class="text-center mb-16">
           <span class="text-primary-600 font-semibold text-sm tracking-wide uppercase mb-4 block">
-            Unsere IT-Leistungen
+            <EditableText 
+              block-id="services-title" 
+              :default-content="content.servicesTitle" 
+              tag="span"
+            />
           </span>
           <h2 class="section-title mb-4">
-            Konzentrieren Sie sich auf Ihr Kerngeschäft – wir übernehmen den Rest
+            <EditableText 
+              block-id="services-headline" 
+              :default-content="content.servicesHeadline" 
+              tag="span"
+            />
           </h2>
           <p class="section-subtitle mx-auto">
-            Wir übernehmen Ihre IT-Verantwortung – modular buchbar oder als Komplettlösung. 
-            Jede Lösung einzeln buchbar – oder als Komplettpaket mit einem Ansprechpartner.
+            <EditableText 
+              block-id="services-description" 
+              :default-content="content.servicesDescription" 
+              tag="span"
+            />
           </p>
         </div>
 
@@ -529,6 +550,16 @@ useSeoMeta({
 
 useHead({
   link: [{ rel: 'canonical', href: siteUrl }]
+})
+
+// Editierbare Content-Daten mit Standardwerten
+const content = reactive({
+  heroTagline: 'Resulting statt Beratung',
+  heroHeadline: 'IT-Beratung & Projektleitung für Unternehmen – Verantwortung abgeben, Ergebnisse erhalten',
+  heroDescription: 'Wir übernehmen Ihre komplette IT-Verantwortung: Von der Projektleitung über Softwareentwicklung bis zu KI-gestützter Automatisierung. Mit klarer Verantwortung, messbaren Ergebnissen und einem Single Point of Accountability.',
+  servicesTitle: 'Unsere IT-Leistungen',
+  servicesHeadline: 'Konzentrieren Sie sich auf Ihr Kerngeschäft – wir übernehmen den Rest',
+  servicesDescription: 'Wir übernehmen Ihre IT-Verantwortung – modular buchbar oder als Komplettlösung. Jede Lösung einzeln buchbar – oder als Komplettpaket mit einem Ansprechpartner.'
 })
 
 // Founder Image mit Fallback (unterstützt .webp und .jpg)
