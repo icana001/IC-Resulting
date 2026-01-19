@@ -122,7 +122,7 @@ Obere Webergasse 58
 Germany
 
 Phone: +49 (0) 176 618 659 80  
-Email: canakci.ibrahim@gmail.com
+Email: info@ic-resulting.de
 
 ---
 
