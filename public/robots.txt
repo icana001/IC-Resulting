@@ -1,12 +1,28 @@
 # robots.txt for IC-RESULTING
 # https://ic-resulting.de
+# Letzte Aktualisierung: 2026-01-20
 
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://ic-resulting.de/sitemap.xml
+# Sitemap-Referenz (saubere Version ohne Admin-Seiten)
+Sitemap: https://ic-resulting.de/sitemap-clean.xml
 
-# Disallow admin/internal paths
+# Interne Bereiche blockieren
 Disallow: /api/
 Disallow: /admin/
+Disallow: /admin
+
+# Keine unnötigen Ressourcen crawlen
+Disallow: /_nuxt/
+Disallow: /__nuxt_error
+
+# Googlebot-spezifische Regeln
+User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /admin
+
+# Crawl-Delay für respektvolles Crawling (optional)
+# Crawl-delay: 1

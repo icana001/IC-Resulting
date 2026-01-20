@@ -14,6 +14,24 @@ export default defineNuxtConfig({
     url: 'https://ic-resulting.de'
   },
 
+  sitemap: {
+    // Nur manuell definierte URLs verwenden - keine automatische Erkennung
+    autoLastmod: true,
+    urls: [
+      { loc: '/', changefreq: 'weekly', priority: 1.0 },
+      { loc: '/loesungen', changefreq: 'weekly', priority: 0.9 },
+      { loc: '/referenzen', changefreq: 'monthly', priority: 0.9 },
+      { loc: '/kontakt', changefreq: 'monthly', priority: 0.9 },
+      { loc: '/ueber-uns', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/karriere', changefreq: 'monthly', priority: 0.7 },
+      { loc: '/it-solutions', changefreq: 'monthly', priority: 0.7 },
+      { loc: '/impressum', changefreq: 'yearly', priority: 0.3 },
+      { loc: '/datenschutz', changefreq: 'yearly', priority: 0.3 }
+    ],
+    // Automatische App-Quellen deaktivieren
+    excludeAppSources: true
+  },
+
   // Runtime Config - SMTP und Secrets NUR serverseitig (NICHT in public!)
   runtimeConfig: {
     // Private keys - nur auf dem Server verfügbar

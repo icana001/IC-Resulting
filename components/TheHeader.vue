@@ -15,11 +15,20 @@
             />
           </div>
           <div class="flex flex-col">
-            <span class="font-display font-bold text-xl text-dark-900 
-                         group-hover:text-primary-600 transition-colors">
+            <span :class="[
+              'font-display font-bold text-xl transition-colors',
+              scrolled 
+                ? 'text-dark-900 group-hover:text-primary-600' 
+                : 'text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] group-hover:text-white/80'
+            ]">
               IC-RESULTING
             </span>
-            <span class="text-xs text-dark-400 tracking-wide">Resulting statt Beratung</span>
+            <span :class="[
+              'text-xs tracking-wide transition-colors',
+              scrolled ? 'text-dark-400' : 'text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]'
+            ]">
+              Resulting statt Beratung
+            </span>
           </div>
         </NuxtLink>
 
@@ -27,8 +36,7 @@
         <div class="hidden lg:flex items-center gap-8">
           <NuxtLink 
             to="/"
-            class="nav-link"
-            :class="{ 'text-primary-600': route.path === '/' }"
+            :class="[navLinkClass, route.path === '/' ? navLinkActiveClass : '']"
           >
             Start
           </NuxtLink>
@@ -36,8 +44,7 @@
           <!-- Lösungen Dropdown -->
           <div class="relative" @mouseenter="showDropdown = true" @mouseleave="showDropdown = false">
             <button 
-              class="nav-link flex items-center gap-1"
-              :class="{ 'text-primary-600': route.path.includes('/loesungen') || route.path === '/it-solutions' }"
+              :class="[navLinkClass, 'flex items-center gap-1', (route.path.includes('/loesungen') || route.path === '/it-solutions') ? navLinkActiveClass : '']"
             >
               Lösungen
               <Icon name="heroicons:chevron-down" class="w-4 h-4 transition-transform" :class="{ 'rotate-180': showDropdown }" />
@@ -84,24 +91,21 @@
 
           <NuxtLink 
             to="/referenzen"
-            class="nav-link"
-            :class="{ 'text-primary-600': route.path === '/referenzen' }"
+            :class="[navLinkClass, route.path === '/referenzen' ? navLinkActiveClass : '']"
           >
             Referenzen
           </NuxtLink>
           
           <NuxtLink 
             to="/ueber-uns"
-            class="nav-link"
-            :class="{ 'text-primary-600': route.path === '/ueber-uns' }"
+            :class="[navLinkClass, route.path === '/ueber-uns' ? navLinkActiveClass : '']"
           >
             Über uns
           </NuxtLink>
 
           <NuxtLink 
             to="/karriere"
-            class="nav-link"
-            :class="{ 'text-primary-600': route.path === '/karriere' }"
+            :class="[navLinkClass, route.path === '/karriere' ? navLinkActiveClass : '']"
           >
             Karriere
           </NuxtLink>
@@ -118,12 +122,18 @@
         <!-- Mobile Menu Button -->
         <button 
           @click="mobileMenuOpen = !mobileMenuOpen"
-          class="lg:hidden p-2 rounded-lg hover:bg-dark-100 transition-colors"
+          :class="[
+            'lg:hidden p-2 rounded-lg transition-colors',
+            scrolled ? 'hover:bg-dark-100' : 'hover:bg-white/20'
+          ]"
           aria-label="Toggle menu"
         >
           <Icon 
             :name="mobileMenuOpen ? 'heroicons:x-mark' : 'heroicons:bars-3'" 
-            class="w-6 h-6 text-dark-700" 
+            :class="[
+              'w-6 h-6 transition-colors',
+              scrolled ? 'text-dark-700' : 'text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]'
+            ]"
           />
         </button>
       </nav>
@@ -230,6 +240,17 @@ const scrolled = ref(false)
 const mobileMenuOpen = ref(false)
 const mobileSubMenuOpen = ref(false)
 const showDropdown = ref(false)
+
+// Dynamische Navigation-Klassen basierend auf Scroll-Status
+const navLinkClass = computed(() => 
+  scrolled.value 
+    ? 'nav-link' 
+    : 'relative font-medium transition-colors duration-200 text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]'
+)
+
+const navLinkActiveClass = computed(() =>
+  scrolled.value ? 'text-primary-600' : 'text-white font-bold'
+)
 
 const solutions = [
   { name: 'IT-Verantwortung', path: '/loesungen#it-verantwortung', icon: 'heroicons:cog-6-tooth', description: 'Managed IT & Operating Model' },
