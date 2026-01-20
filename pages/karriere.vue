@@ -272,8 +272,8 @@
 <script setup>
 const siteUrl = 'https://ic-resulting.de'
 const pageUrl = `${siteUrl}/karriere`
-const pageTitle = 'Karriere bei IC-RESULTING – IT-Jobs & Entwicklung'
-const pageDescription = 'IT-Jobs, Karriere & Weiterbildung bei IC-RESULTING. Werden Sie Teil unseres Teams in Wiesbaden, Berlin, Istanbul!'
+const pageTitle = 'IT-Jobs & Karriere | Softwareentwicklung, Cloud, KI – IC-RESULTING'
+const pageDescription = 'IT-Karriere bei IC-RESULTING: Jobs in Softwareentwicklung, Cloud, DevOps und KI-Automatisierung. Standorte: Wiesbaden, Berlin, Istanbul.'
 
 useSeoMeta({
   title: pageTitle,

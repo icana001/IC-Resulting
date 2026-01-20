@@ -208,10 +208,11 @@
               Webseiten & CMS
             </span>
             <h2 class="section-title mb-6">
-              Schnell online, dauerhaft erfolgreich
+              Webseiten für Unternehmen in Wiesbaden, Mainz, Frankfurt & Rhein-Main
             </h2>
             <p class="text-dark-500 text-lg mb-8 leading-relaxed">
               Schnelle, performante Webseiten mit wartbaren CMS-Systemen – von der Konzeption bis zum Launch. 
+              Für Unternehmen in Wiesbaden, Mainz, Frankfurt und dem gesamten Rhein-Main-Gebiet. 
               Mit Performance-Optimierung, SEO-Basics und DSGVO-konformer Umsetzung.
             </p>
 
@@ -530,8 +531,8 @@
 
 <script setup>
 const siteUrl = 'https://ic-resulting.de'
-const pageTitle = 'IT-Beratung & Projektleitung für Unternehmen – IC-RESULTING Wiesbaden'
-const pageDescription = 'IC-RESULTING übernimmt Ihre IT-Projekte: Beratung, Entwicklung, Automatisierung, KI. PRINCE2-zertifiziert. Jetzt unverbindlich anfragen!'
+const pageTitle = 'IT-Lösungen, Webseiten & KI-Automatisierung | Wiesbaden, Mainz, Frankfurt – IC-RESULTING'
+const pageDescription = 'IC-RESULTING: IT-Projektleitung, Softwareentwicklung, Webseiten, KI-Automatisierung & Cloud-Lösungen für Unternehmen in Wiesbaden, Mainz, Frankfurt und Rhein-Main. PRINCE2, ITIL, SÜ2.'
 
 useSeoMeta({
   title: pageTitle,
@@ -555,7 +556,7 @@ useHead({
 // Editierbare Content-Daten mit Standardwerten
 const content = reactive({
   heroTagline: 'Resulting statt Beratung',
-  heroHeadline: 'IT-Beratung & Projektleitung für Unternehmen – Verantwortung abgeben, Ergebnisse erhalten',
+  heroHeadline: 'IT-Projektleitung & Lösungen für Unternehmen – Verantwortung abgeben, Ergebnisse erhalten',
   heroDescription: 'Wir übernehmen Ihre komplette IT-Verantwortung: Von der Projektleitung über Softwareentwicklung bis zu KI-gestützter Automatisierung. Mit klarer Verantwortung, messbaren Ergebnissen und einem Single Point of Accountability.',
   servicesTitle: 'Unsere IT-Leistungen',
   servicesHeadline: 'Konzentrieren Sie sich auf Ihr Kerngeschäft – wir übernehmen den Rest',

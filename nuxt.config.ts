@@ -49,7 +49,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'IC-RESULTING | Resulting statt Beratung',
+      title: 'IC-RESULTING | IT-Lösungen & Ergebnisse',
       htmlAttrs: {
         lang: 'de'
       },
@@ -58,8 +58,12 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'IC-RESULTING: IT-Verantwortung abgeben, Ergebnisse erhalten. IT-Projektleitung, Softwareentwicklung, KI & Automatisierung. PRINCE2, ITIL, SÜ2.' 
+          content: 'IC-RESULTING Wiesbaden: IT-Projektleitung, Softwareentwicklung, Webseiten & KI für Unternehmen in Wiesbaden, Mainz, Frankfurt und Rhein-Main. PRINCE2, ITIL, SÜ2.' 
         },
+        { name: 'geo.region', content: 'DE-HE' },
+        { name: 'geo.placename', content: 'Wiesbaden' },
+        { name: 'geo.position', content: '50.0782;8.2398' },
+        { name: 'ICBM', content: '50.0782, 8.2398' },
         { name: 'format-detection', content: 'telephone=no' },
         { name: 'author', content: 'IC-RESULTING - Dipl.-Inf. Ibrahim Canakci' },
         { property: 'og:type', content: 'website' },
@@ -70,6 +74,76 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      ],
+      script: [
+        {
+          type: 'application/ld+json',
+          innerHTML: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            '@id': 'https://ic-resulting.de',
+            name: 'IC-RESULTING',
+            alternateName: 'IC-RESULTING - Dipl.-Inf. Ibrahim Canakci',
+            description: 'Resulting statt Beratung – IT-Projektleitung, Softwareentwicklung, Webseiten, KI-Automatisierung und Cloud-Lösungen für Unternehmen in Wiesbaden, Mainz, Frankfurt und Rhein-Main. PRINCE2, ITIL, SÜ2-zertifiziert.',
+            url: 'https://ic-resulting.de',
+            telephone: '+49-176-61865980',
+            email: 'info@ic-resulting.de',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Obere Webergasse 58',
+              addressLocality: 'Wiesbaden',
+              postalCode: '65183',
+              addressRegion: 'Hessen',
+              addressCountry: 'DE'
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 50.0782,
+              longitude: 8.2398
+            },
+            areaServed: [
+              { '@type': 'City', name: 'Wiesbaden' },
+              { '@type': 'City', name: 'Mainz' },
+              { '@type': 'City', name: 'Frankfurt am Main' },
+              { '@type': 'City', name: 'Darmstadt' },
+              { '@type': 'Place', name: 'Rhein-Main-Gebiet' }
+            ],
+            openingHoursSpecification: {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+              opens: '09:00',
+              closes: '18:00'
+            },
+            priceRange: '€€€',
+            hasOfferCatalog: {
+              '@type': 'OfferCatalog',
+              name: 'IT-Dienstleistungen',
+              itemListElement: [
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'IT-Projektleitung' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Softwareentwicklung' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Webseiten & CMS' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'KI-Automatisierung' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Cloud-Lösungen' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DevOps' } },
+                { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'DSGVO & IT-Security' } }
+              ]
+            },
+            sameAs: [
+              'https://www.linkedin.com/in/ibrahim-canakci-ic-resulting/',
+              'https://www.xing.com/profile/Ibrahim_Canakci'
+            ],
+            founder: {
+              '@type': 'Person',
+              name: 'Ibrahim Canakci',
+              honorificPrefix: 'Dipl.-Inf.',
+              jobTitle: 'IT-Projektleiter & Software-Unternehmer',
+              sameAs: [
+                'https://www.linkedin.com/in/ibrahim-canakci-ic-resulting/',
+                'https://www.xing.com/profile/Ibrahim_Canakci'
+              ]
+            }
+          })
+        }
       ]
     },
     pageTransition: { name: 'page', mode: 'out-in' }

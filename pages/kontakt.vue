@@ -398,8 +398,8 @@
 <script setup>
 const siteUrl = 'https://ic-resulting.de'
 const pageUrl = `${siteUrl}/kontakt`
-const pageTitle = 'Kontakt zu IC-RESULTING – IT-Beratung & Projektanfrage'
-const pageDescription = 'Kontaktieren Sie IC-RESULTING für IT-Beratung, Projektanfragen und Support. Wir antworten schnell und persönlich!'
+const pageTitle = 'Kontakt zu IC-RESULTING – IT-Projekt anfragen | Wiesbaden'
+const pageDescription = 'Kontaktieren Sie IC-RESULTING für IT-Projekte, Webseiten, KI-Automatisierung und Cloud-Lösungen. Schnelle Antwort, persönlicher Kontakt.'
 
 useSeoMeta({
   title: pageTitle,

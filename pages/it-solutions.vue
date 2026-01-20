@@ -306,8 +306,8 @@
 <script setup>
 const siteUrl = 'https://ic-resulting.de'
 const pageUrl = `${siteUrl}/it-solutions`
-const pageTitle = 'IT Solutions & Managed Services – IC-RESULTING Deutschland'
-const pageDescription = 'IT Solutions, Projektleitung, Managed Services, DevOps & KI für Unternehmen. Ihr Partner für digitale Transformation.'
+const pageTitle = 'IT-Lösungen, Cloud & Managed Services | Deutschland – IC-RESULTING'
+const pageDescription = 'IT-Projektleitung, Managed Services, DevOps, Cloud-Lösungen & KI-Automatisierung für Unternehmen. Ihr Partner für digitale Transformation.'
 
 useSeoMeta({
   title: pageTitle,

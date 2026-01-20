@@ -68,7 +68,7 @@ Wir liefern nicht nur Konzepte, sondern übernehmen die Umsetzungsverantwortung.
 - Performance & SEO-Optimierung
 - DSGVO-konforme Umsetzung
 - Dashboards & Reports
-- E-Commerce & Zahlungssysteme (inkl. Krypto)
+- E-Commerce & Zahlungssysteme
 
 ---
 

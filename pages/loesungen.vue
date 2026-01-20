@@ -23,7 +23,7 @@
 
           <div class="flex flex-wrap gap-4">
             <NuxtLink to="/kontakt" class="btn-white">
-              Beratung anfragen
+              Projekt besprechen
               <Icon name="heroicons:arrow-right" class="w-5 h-5 ml-2" />
             </NuxtLink>
           </div>
@@ -323,12 +323,13 @@
             Webseiten & CMS
           </span>
           <h2 class="section-title mb-6">
-            Schnell online – dauerhaft wartbar und performant
+            Webseiten für Unternehmen in Wiesbaden, Mainz, Frankfurt & Rhein-Main
           </h2>
           <p class="text-dark-500 text-lg max-w-3xl mx-auto leading-relaxed">
-            Professionelle Webseiten mit schnellen CMS-Systemen – von der Konzeption 
-            bis zum Launch. Ob Unternehmenswebseite, Shop oder Kundenportal: Wir liefern performante 
-            Lösungen mit klarem Fokus auf Geschwindigkeit und Nutzerfreundlichkeit. DSGVO-konform.
+            Professionelle Webseiten mit schnellen CMS-Systemen für Unternehmen in Wiesbaden, Mainz, Frankfurt 
+            und dem Rhein-Main-Gebiet – von der Konzeption bis zum Launch. Ob Unternehmenswebseite, 
+            Shop oder Kundenportal: Wir liefern performante Lösungen mit klarem Fokus auf 
+            Geschwindigkeit und Nutzerfreundlichkeit. DSGVO-konform.
           </p>
         </div>
 
@@ -403,11 +404,7 @@
               </li>
               <li class="flex items-start gap-2">
                 <Icon name="heroicons:check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span><strong>Krypto-Zahlungen</strong> (Bitcoin & mehr)</span>
-              </li>
-              <li class="flex items-start gap-2">
-                <Icon name="heroicons:check" class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                <span>SSL & PCI DSS-konform</span>
+                <span>SSL / sichere Zahlungsabwicklung</span>
               </li>
             </ul>
           </div>
@@ -462,7 +459,7 @@
               </div>
               <p class="text-xs text-dark-400 mt-3">
                 <Icon name="heroicons:information-circle" class="w-4 h-4 inline mr-1" />
-                Mit Dashboard, Editor Mode & Crypto-Zahlungen
+                Mit Dashboard & Editor Mode
               </p>
             </div>
           </div>
@@ -529,7 +526,7 @@
           </h2>
           <p class="text-xl text-white/80 mb-10">
             Wir freuen uns auf ein Gespräch mit Ihnen. 
-            Kontaktieren Sie uns für eine unverbindliche Beratung.
+            Kontaktieren Sie uns für ein unverbindliches Erstgespräch.
           </p>
           <NuxtLink to="/kontakt" class="btn-white">
             <Icon name="heroicons:chat-bubble-left-right" class="w-5 h-5 mr-2" />
@@ -544,8 +541,8 @@
 <script setup>
 const siteUrl = 'https://ic-resulting.de'
 const pageUrl = `${siteUrl}/loesungen`
-const pageTitle = 'IT-Lösungen & Digitalisierung – IC-RESULTING für Unternehmen'
-const pageDescription = 'Maßgeschneiderte IT-Lösungen, Digitalisierung, Managed IT & Automatisierung für Unternehmen. Jetzt beraten lassen!'
+const pageTitle = 'IT-Lösungen, KI-Automatisierung & Cloud | Wiesbaden, Mainz, Frankfurt – IC-RESULTING'
+const pageDescription = 'IT-Projektleitung, Softwareentwicklung, KI-Automatisierung, Cloud-Lösungen & Webseiten für Unternehmen in Wiesbaden, Mainz, Frankfurt. Jetzt Projekt besprechen!'
 
 useSeoMeta({
   title: pageTitle,

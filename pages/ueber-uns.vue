@@ -634,8 +634,8 @@
 <script setup>
 const siteUrl = 'https://ic-resulting.de'
 const pageUrl = `${siteUrl}/ueber-uns`
-const pageTitle = 'Über IC-RESULTING – IT-Expertise & Verantwortung aus Wiesbaden'
-const pageDescription = 'IC-RESULTING: IT-Expertise, Projektleitung, Softwareentwicklung, KI & Automatisierung. Ihr Partner für nachhaltige IT-Ergebnisse.'
+const pageTitle = 'Über IC-RESULTING – IT-Experten für Webseiten, KI & Cloud | Wiesbaden'
+const pageDescription = 'IC-RESULTING Wiesbaden: IT-Projektleitung, Softwareentwicklung, Webseiten, KI-Automatisierung & Cloud. Ihr IT-Partner im Rhein-Main-Gebiet.'
 
 useSeoMeta({
   title: pageTitle,

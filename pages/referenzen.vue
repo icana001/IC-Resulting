@@ -473,7 +473,7 @@
           </h2>
           <p class="text-xl text-white/80 mb-10">
             Lassen Sie uns über Ihre Anforderungen sprechen. 
-            Kontaktieren Sie uns für eine unverbindliche Beratung.
+            Kontaktieren Sie uns für ein unverbindliches Gespräch.
           </p>
           <NuxtLink to="/kontakt" class="btn-white">
             <Icon name="heroicons:chat-bubble-left-right" class="w-5 h-5 mr-2" />
@@ -500,8 +500,8 @@ interface WebReference {
 // SEO
 const siteUrl = 'https://ic-resulting.de'
 const pageUrl = `${siteUrl}/referenzen`
-const pageTitle = 'Web-Referenzen & Portfolio – Websites, Shops & Portale | IC-RESULTING'
-const pageDescription = 'Professionelle Webseiten, E-Commerce-Lösungen und Portale: Sehen Sie unsere Web-Referenzen mit Screenshots. Performant, benutzerfreundlich, wartbar.'
+const pageTitle = 'IT-Projekte & Webseiten-Referenzen Wiesbaden | Portfolio – IC-RESULTING'
+const pageDescription = 'IT-Projekte, Webseiten & E-Commerce-Referenzen aus Wiesbaden: Behörden, Industrie, Luftfahrt. Professionelle IT-Lösungen für den DACH-Raum.'
 
 useSeoMeta({
   title: pageTitle,
