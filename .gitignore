@@ -37,6 +37,11 @@ coverage
 deploy.zip
 *.zip
 
+# Server credentials (NEVER commit!)
+server-credentials.env
+*.pem
+id_rsa*
+
 # Marketing export renders (generated)
 marketing/exports/**/rendered/
 marketing/exports/**/*.pdf

@@ -1,0 +1,7 @@
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#F1F5F9"/>
+  <rect x="320" y="145" width="160" height="160" rx="16" fill="#E2E8F0"/>
+  <path d="M360 225L380 205L420 245L440 225L480 265" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="385" cy="195" r="15" fill="#94A3B8"/>
+  <text x="400" y="350" text-anchor="middle" fill="#94A3B8" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="500">Screenshot wird geladen...</text>
+</svg>

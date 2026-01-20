@@ -4,8 +4,9 @@ export default defineEventHandler(async (event) => {
   const body = await readBody(event)
   const { password } = body
 
-  // Admin-Passwort aus Environment-Variable oder Standard für lokales Testen
-  const adminPassword = process.env.ADMIN_PASSWORD || 'admin2024!'
+  // Admin-Passwort aus Runtime Config
+  const config = useRuntimeConfig()
+  const adminPassword = config.adminPassword
 
   if (password !== adminPassword) {
     throw createError({

@@ -72,7 +72,6 @@
               IT-Projektleitung und Dienstekonsolidierung im Behördenumfeld unter erhöhten Sicherheitsanforderungen. 
               Komplexe Digitalisierungsprojekte für den zentralen IT-Dienstleister des Bundes.
             </p>
-            <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
               <img 
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=400&q=80" 
@@ -99,7 +98,6 @@
               Buchungssysteme und Backend-Integrationen für international tätige Airlines und Reiseveranstalter. 
               Entwicklung und Integration von Kundenportalen für führende Unternehmen der Branche.
             </p>
-            <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
               <img 
                 src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&q=80" 
@@ -127,7 +125,6 @@
               im Bereich Heizungs- und Klimatechnik. Integration von Systemen und Prozessoptimierung 
               im industriellen Umfeld.
             </p>
-            <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
               <img 
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&q=80" 
@@ -153,10 +150,8 @@
             <p class="text-dark-500 leading-relaxed">
               Implementierung eines feingliedrigen Freigabeprozesses für Projekte, Change Management 
               während Freigabeprozess und Projektarbeit. Überwachung von Timing und Kosten auf 
-              Projekt-, Portfolio- und Unternehmensebene. Technische Konfiguration nach höchsten 
-              internen IT-Anforderungen.
+              Projekt-, Portfolio- und Unternehmensebene.
             </p>
-            <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
               <img 
                 src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&q=80" 
@@ -184,7 +179,6 @@
               Prozessverbesserung. Prozess- und technische Beratung, Datenmodell-Erstellung, 
               Customizing der Dialoge und Berichte, Coaching in der Anwendung.
             </p>
-            <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
               <img 
                 src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&q=80" 
@@ -209,10 +203,8 @@
             </div>
             <p class="text-dark-500 leading-relaxed">
               PM-Lösung zum Monitoring weltweit laufender Projekte. Entwurf und Implementierung 
-              von Projektfreigabe-Prozessen und Cockpit zur Überwachung von Terminen und Budgets. 
-              Herausforderungen durch Internationalität, sprachliche und methodische Anforderungen.
+              von Projektfreigabe-Prozessen und Cockpit zur Überwachung von Terminen und Budgets.
             </p>
-            <!-- Referenz Bild -->
             <div class="mt-4 rounded-xl overflow-hidden h-32">
               <img 
                 src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&q=80" 
@@ -224,7 +216,6 @@
           </div>
         </div>
 
-        <!-- Weitere Referenzen Hinweis -->
         <div class="text-center mt-12">
           <p class="text-dark-500 text-lg">
             <Icon name="heroicons:information-circle" class="w-5 h-5 inline mr-2 text-primary-600" />
@@ -234,7 +225,7 @@
       </div>
     </section>
 
-    <!-- Weitere PM-Projekte Section -->
+    <!-- Weitere PM-Projekte (Auszug) Section -->
     <section class="py-24 bg-dark-50">
       <div class="container-custom">
         <div class="text-center mb-16">
@@ -245,125 +236,111 @@
             Weitere PM-Projekte (Auszug)
           </h2>
           <p class="section-subtitle mx-auto">
-            Implementierung und Customizing von PM-Lösungen für namhafte Unternehmen 
-            verschiedener Branchen.
+            Implementierung und Customizing von PM-Lösungen für namhafte Unternehmen verschiedener Branchen.
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <!-- Industrieautomation -->
-          <div class="bg-white rounded-2xl p-6 shadow-soft">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
-                <Icon name="heroicons:cog-6-tooth" class="w-6 h-6 text-primary-600" />
+          <div class="bg-white rounded-xl p-6 shadow-soft border border-dark-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                <Icon name="heroicons:cog-6-tooth" class="w-5 h-5 text-primary-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Industrieautomation (Mittelstand)</h3>
-                <span class="text-xs text-dark-400">Industrie / Automatisierung</span>
+                <span class="font-semibold text-dark-800">Industrieautomation (Mittelstand)</span>
+                <p class="text-xs text-dark-400">Industrie / Automatisierung</p>
               </div>
             </div>
-            <p class="text-dark-500 text-sm leading-relaxed mb-4">
-              Einsatz als Multiprojektmanagementsystem. Customizing und Implementierung des 
-              Datenmodells, der Oberflächen, Abläufe und Schnittstellen.
-            </p>
+            <p class="text-dark-500 text-sm mb-3">Einsatz als Multiprojektmanagementsystem. Customizing und Implementierung des Datenmodells, der Oberflächen, Abläufe und Schnittstellen.</p>
             <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Multiprojektmanagement</span>
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Customizing</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Multiprojektmanagement</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Customizing</span>
             </div>
           </div>
 
           <!-- Medizintechnik -->
-          <div class="bg-white rounded-2xl p-6 shadow-soft">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center">
-                <Icon name="heroicons:heart" class="w-6 h-6 text-accent-600" />
+          <div class="bg-white rounded-xl p-6 shadow-soft border border-dark-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-accent-100 flex items-center justify-center">
+                <Icon name="heroicons:heart" class="w-5 h-5 text-accent-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Medizintechnik-Unternehmen</h3>
-                <span class="text-xs text-dark-400">Medizintechnik</span>
+                <span class="font-semibold text-dark-800">Medizintechnik-Unternehmen</span>
+                <p class="text-xs text-dark-400">Medizintechnik</p>
               </div>
             </div>
-            <p class="text-dark-500 text-sm leading-relaxed mb-4">
-              Langjähriger Einsatz der PM-Lösung. Im Rahmen eines Upgrades: Fehlerdiagnose 
-              und -behebung komplexer technischer Probleme.
-            </p>
+            <p class="text-dark-500 text-sm mb-3">Langjähriger Einsatz der PM-Lösung. Im Rahmen eines Upgrades: Fehlerdiagnose und -behebung komplexer technischer Probleme.</p>
             <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Fehlerdiagnose</span>
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Upgrade</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Fehlerdiagnose</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Upgrade</span>
             </div>
           </div>
 
           <!-- Telekommunikation -->
-          <div class="bg-white rounded-2xl p-6 shadow-soft">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
-                <Icon name="heroicons:globe-alt" class="w-6 h-6 text-primary-600" />
+          <div class="bg-white rounded-xl p-6 shadow-soft border border-dark-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                <Icon name="heroicons:signal" class="w-5 h-5 text-primary-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Großer Telekommunikationsanbieter</h3>
-                <span class="text-xs text-dark-400">Telekommunikation / Internet</span>
+                <span class="font-semibold text-dark-800">Großer Telekommunikationsanbieter</span>
+                <p class="text-xs text-dark-400">Telekommunikation / Internet</p>
               </div>
             </div>
-            <p class="text-dark-500 text-sm leading-relaxed mb-4">
-              PM-Lösung für Planung und Kontrolle von Einzelprojekten. Customizing von 
-              Dialogen und Abläufen, Entwurf und Implementierung der SAP-Schnittstelle.
-            </p>
+            <p class="text-dark-500 text-sm mb-3">PM-Lösung für Planung und Kontrolle von Einzelprojekten. Customizing von Dialogen und Abläufen, Entwurf und Implementierung der SAP-Schnittstelle.</p>
             <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">SAP-Schnittstelle</span>
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Customizing</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">SAP-Schnittstelle</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Customizing</span>
             </div>
           </div>
 
-          <!-- Regeltechnik -->
-          <div class="bg-white rounded-2xl p-6 shadow-soft">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-accent-100 flex items-center justify-center">
-                <Icon name="heroicons:wrench-screwdriver" class="w-6 h-6 text-accent-600" />
+          <!-- Mess- & Regeltechnik -->
+          <div class="bg-white rounded-xl p-6 shadow-soft border border-dark-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-accent-100 flex items-center justify-center">
+                <Icon name="heroicons:chart-bar" class="w-5 h-5 text-accent-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Mess- & Regeltechnik (Frankfurt)</h3>
-                <span class="text-xs text-dark-400">Mess- & Regeltechnik</span>
+                <span class="font-semibold text-dark-800">Mess- & Regeltechnik (Frankfurt)</span>
+                <p class="text-xs text-dark-400">Mess- & Regeltechnik</p>
               </div>
             </div>
-            <p class="text-dark-500 text-sm leading-relaxed mb-4">
-              Modernste integrierte Automationssysteme – von Heiz- und Klimatechnik bis 
-              Großchemie. Customizing, Fehlerdiagnose und Support.
-            </p>
+            <p class="text-dark-500 text-sm mb-3">Modernste integrierte Automatisierungssysteme – von Heiz- und Klimatechnik bis Großchemie. Customizing, Fehlerdiagnose und Support.</p>
             <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Automationssysteme</span>
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Support</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Automatisierungssysteme</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Support</span>
             </div>
           </div>
 
           <!-- Energieversorger -->
-          <div class="bg-white rounded-2xl p-6 shadow-soft">
-            <div class="flex items-center gap-3 mb-4">
-              <div class="w-12 h-12 rounded-xl bg-primary-100 flex items-center justify-center">
-                <Icon name="heroicons:bolt" class="w-6 h-6 text-primary-600" />
+          <div class="bg-white rounded-xl p-6 shadow-soft border border-dark-100 hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-primary-100 flex items-center justify-center">
+                <Icon name="heroicons:bolt" class="w-5 h-5 text-primary-600" />
               </div>
               <div>
-                <h3 class="font-display font-bold text-dark-800">Kommunaler Energieversorger</h3>
-                <span class="text-xs text-dark-400">Energieversorgung</span>
+                <span class="font-semibold text-dark-800">Kommunaler Energieversorger</span>
+                <p class="text-xs text-dark-400">Energieversorgung</p>
               </div>
             </div>
-            <p class="text-dark-500 text-sm leading-relaxed mb-4">
-              PM-Software für einen der größten kommunalen Energieversorger. Fehlerdiagnose 
-              und -behebung von technischen Störungen.
-            </p>
+            <p class="text-dark-500 text-sm mb-3">PM-Software für einen der größten kommunalen Energieversorger. Fehlerdiagnose und -behebung von technischen Störungen.</p>
             <div class="flex flex-wrap gap-2">
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Fehlerdiagnose</span>
-              <span class="text-xs px-2 py-1 bg-dark-100 text-dark-600 rounded">Support</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Fehlerdiagnose</span>
+              <span class="text-xs bg-dark-100 text-dark-600 px-2 py-1 rounded">Support</span>
             </div>
           </div>
 
-          <!-- Weitere auf Anfrage -->
-          <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-6 border border-primary-200 flex flex-col justify-center items-center text-center">
-            <Icon name="heroicons:plus-circle" class="w-12 h-12 text-primary-600 mb-4" />
-            <h3 class="font-display font-bold text-dark-800 mb-2">Weitere Projekte</h3>
-            <p class="text-dark-500 text-sm mb-4">
-              Detaillierte Projektbeschreibungen auf Anfrage verfügbar.
-            </p>
-            <NuxtLink to="/kontakt" class="text-primary-600 font-semibold text-sm hover:text-primary-700">
+          <!-- Weitere Projekte -->
+          <div class="bg-gradient-to-br from-primary-50 to-accent-50 rounded-xl p-6 shadow-soft border border-primary-200 hover:shadow-md transition-shadow">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center">
+                <Icon name="heroicons:plus-circle" class="w-5 h-5 text-primary-600" />
+              </div>
+              <span class="font-semibold text-dark-800">Weitere Projekte</span>
+            </div>
+            <p class="text-dark-500 text-sm mb-4">Detaillierte Projektbeschreibungen auf Anfrage verfügbar.</p>
+            <NuxtLink to="/kontakt" class="text-primary-600 font-medium text-sm hover:text-primary-700 inline-flex items-center gap-1">
               Kontakt aufnehmen →
             </NuxtLink>
           </div>
@@ -371,7 +348,7 @@
       </div>
     </section>
 
-    <!-- Webseiten Showcase -->
+    <!-- ========== WEBSEITEN-REFERENZEN SECTION ========== -->
     <section class="py-24 bg-dark-50">
       <div class="container-custom">
         <div class="text-center mb-16">
@@ -382,83 +359,54 @@
             Webseiten-Referenzen
           </h2>
           <p class="section-subtitle mx-auto">
-            Professionelle Webseiten aus unserem Portfolio – 
+            Professionelle Webseiten, E-Commerce-Lösungen und Portale aus unserem Portfolio – 
             schnell, performant und DSGVO-konform.
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <!-- bahnmotors.be -->
-          <a 
-            href="https://bahnmotors.be/" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="card-hover group block"
-          >
-            <div class="aspect-video rounded-xl mb-4 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&q=80" 
-                alt="Automotive Webseite bahnmotors.be – Fahrzeug- und Motorenhandel in Belgien"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-display font-bold text-lg text-dark-800 mb-2 group-hover:text-primary-600 transition-colors">
-              bahnmotors.be
-              <Icon name="heroicons:arrow-top-right-on-square" class="w-4 h-4 inline ml-1" />
-            </h3>
-            <p class="text-dark-500 text-sm">
-              Automotive-Webseite für den belgischen Markt
-            </p>
-          </a>
+        <!-- Websites (Corporate) -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-display font-bold text-dark-800 mb-8 text-center">
+            <Icon name="heroicons:building-office" class="w-6 h-6 inline mr-2 text-primary-600" />
+            Websites (Corporate)
+          </h3>
+          <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <WebReferenceCard 
+              v-for="ref in corporateWebsites" 
+              :key="ref.slug"
+              v-bind="ref"
+            />
+          </div>
+        </div>
 
-          <!-- avanorth.ca -->
-          <a 
-            href="https://avanorth.ca/fr" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="card-hover group block"
-          >
-            <div class="aspect-video rounded-xl mb-4 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80" 
-                alt="Unternehmenswebseite avanorth.ca – Kanadisches Unternehmen mit Berglandschaft"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-display font-bold text-lg text-dark-800 mb-2 group-hover:text-primary-600 transition-colors">
-              avanorth.ca
-              <Icon name="heroicons:arrow-top-right-on-square" class="w-4 h-4 inline ml-1" />
-            </h3>
-            <p class="text-dark-500 text-sm">
-              Mehrsprachige Unternehmenswebseite für Kanada
-            </p>
-          </a>
+        <!-- E-Commerce / Shop-Systeme -->
+        <div class="mb-16">
+          <h3 class="text-2xl font-display font-bold text-dark-800 mb-8 text-center">
+            <Icon name="heroicons:shopping-cart" class="w-6 h-6 inline mr-2 text-primary-600" />
+            E-Commerce / Shop-Systeme
+          </h3>
+          <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <WebReferenceCard 
+              v-for="ref in ecommerceShops" 
+              :key="ref.slug"
+              v-bind="ref"
+            />
+          </div>
+        </div>
 
-          <!-- quattroshopping.com -->
-          <a 
-            href="https://quattroshopping.com/en" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            class="card-hover group block"
-          >
-            <div class="aspect-video rounded-xl mb-4 overflow-hidden">
-              <img 
-                src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=400&q=80" 
-                alt="E-Commerce Webseite quattroshopping.com – Online-Shopping Plattform"
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                loading="lazy"
-              />
-            </div>
-            <h3 class="font-display font-bold text-lg text-dark-800 mb-2 group-hover:text-primary-600 transition-colors">
-              quattroshopping.com
-              <Icon name="heroicons:arrow-top-right-on-square" class="w-4 h-4 inline ml-1" />
-            </h3>
-            <p class="text-dark-500 text-sm">
-              E-Commerce Plattform mit mehrsprachigem Content
-            </p>
-          </a>
+        <!-- Portale / QR Ordering / Partner -->
+        <div>
+          <h3 class="text-2xl font-display font-bold text-dark-800 mb-8 text-center">
+            <Icon name="heroicons:qr-code" class="w-6 h-6 inline mr-2 text-primary-600" />
+            Portale / QR Ordering / Partner
+          </h3>
+          <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <WebReferenceCard 
+              v-for="ref in portals" 
+              :key="ref.slug"
+              v-bind="ref"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -537,11 +485,23 @@
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+// Types
+interface WebReference {
+  title: string
+  description: string
+  url: string
+  tags: string[]
+  slug: string
+  note?: string
+  group?: string
+}
+
+// SEO
 const siteUrl = 'https://ic-resulting.de'
 const pageUrl = `${siteUrl}/referenzen`
-const pageTitle = 'IT-Projekte & Referenzen – IC-RESULTING: Behörden, Industrie, Finance'
-const pageDescription = 'Erfolgreiche IT-Projekte für öffentliche Verwaltung, Industrie, Aviation & Finance. Branchenerfahrung aus namhaften Unternehmen. Details auf Anfrage.'
+const pageTitle = 'Web-Referenzen & Portfolio – Websites, Shops & Portale | IC-RESULTING'
+const pageDescription = 'Professionelle Webseiten, E-Commerce-Lösungen und Portale: Sehen Sie unsere Web-Referenzen mit Screenshots. Performant, benutzerfreundlich, wartbar.'
 
 useSeoMeta({
   title: pageTitle,
@@ -561,4 +521,62 @@ useSeoMeta({
 useHead({
   link: [{ rel: 'canonical', href: pageUrl }]
 })
+
+// References Data
+const corporateWebsites: WebReference[] = [
+  {
+    title: 'BahnMotors (Automotive)',
+    description: 'Moderne Automotive-Website mit schnell ladenden, großformatigen Bildern und strukturierter Bestands-/Fahrzeugdarstellung. Fokus auf UX, Performance und pflegbare Inhalte.',
+    url: 'https://bahnmotors.be/',
+    slug: 'bahnmotors',
+    tags: ['Website', 'Performance', 'UX', 'Automotive'],
+    group: 'corporate'
+  },
+  {
+    title: 'Avanorth (Construction)',
+    description: 'Corporate Website für ein Bauunternehmen (FR/EN) mit imposanter Startseite, klarer Informationsarchitektur und wartbaren Inhaltsseiten für Projekte/Referenzen. Fokus auf Performance und Struktur.',
+    url: 'https://avanorth.ca/fr',
+    slug: 'avanorth',
+    tags: ['Corporate', 'i18n', 'Performance', 'Bau/Industrie'],
+    group: 'corporate'
+  }
+]
+
+const ecommerceShops: WebReference[] = [
+  {
+    title: 'QuattroShopping',
+    description: 'E-Commerce Website mit Produktkatalog, klarer Navigation und responsivem Layout. Fokus auf Performance, UX und skalierbare Weiterentwicklung.',
+    url: 'https://quattroshopping.com/en',
+    slug: 'quattroshopping',
+    tags: ['E-Commerce', 'UX', 'Performance', 'Shop'],
+    group: 'ecommerce'
+  },
+  {
+    title: 'UPSHOP',
+    description: 'Modulares Shop- und Warenwirtschaftssystem: Produktkatalog, Kategorien, Kundenbereiche und Bestandsverwaltung. Von der Artikelpflege bis zur Shop-Ausspielung – inklusive Branchen-Use-Cases (z. B. Textil) und optional KI-gestützter Produktdarstellung.',
+    url: 'https://shop.emanet.in/',
+    slug: 'shopemanet',
+    tags: ['E-Commerce', 'Shop-System', 'Warenwirtschaft', 'KI-Content'],
+    group: 'ecommerce'
+  }
+]
+
+const portals: WebReference[] = [
+  {
+    title: 'QR-Menü & Bestellportal (Restaurant)',
+    description: 'QR-Menü & Bestellportal: Restaurants können nach Registrierung/Login direkt per Tablet starten; Gäste scannen den QR-Code, sehen das Menü mobil und bestellen direkt. Pflege von Menü/Kategorien/Artikeln/Preisen/Verfügbarkeit erfolgt im Portal (ohne Admin-Screenshots).',
+    url: 'https://qr.emanet.in/kahve-yolu',
+    slug: 'qremanet',
+    tags: ['Portal', 'QR Ordering', 'Gastro', 'UX'],
+    group: 'portal'
+  },
+  {
+    title: 'Upcreate (Partner)',
+    description: 'Creative Partner für Grafikdesign, Websites/Software, Digital Content und Advertisement Films. Gemeinsam arbeiten wir außerdem an KI-Portalen (SaaS) für Bildverarbeitung (high-level).',
+    url: 'https://upcreate.art/en',
+    slug: 'upcreate',
+    tags: ['Partner', 'Design', 'Content', 'Film', 'SaaS'],
+    group: 'portal'
+  }
+]
 </script>
