@@ -1,4 +1,7 @@
 // Analytics Datentypen
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs'
+import { join } from 'path'
+
 export interface PageView {
   id: string
   path: string
@@ -29,8 +32,58 @@ export interface AnalyticsStats {
   dailyStats: { date: string; views: number }[]
 }
 
-// In-Memory Storage für lokales Testen
+// Pfad zur JSON-Datei
+const DATA_DIR = join(process.cwd(), 'data')
+const ANALYTICS_FILE = join(DATA_DIR, 'analytics.json')
+
+// In-Memory Storage
 const pageViews: PageView[] = []
+
+// Datei-Operationen
+function ensureDataDir() {
+  if (!existsSync(DATA_DIR)) {
+    mkdirSync(DATA_DIR, { recursive: true })
+  }
+}
+
+function loadFromFile(): void {
+  ensureDataDir()
+  if (existsSync(ANALYTICS_FILE)) {
+    try {
+      const data = readFileSync(ANALYTICS_FILE, 'utf-8')
+      const views: PageView[] = JSON.parse(data)
+      pageViews.length = 0 // Clear array
+      pageViews.push(...views)
+      console.log(`[Analytics] ${views.length} Einträge aus ${ANALYTICS_FILE} geladen`)
+    } catch (error) {
+      console.error('[Analytics] Fehler beim Laden:', error)
+    }
+  }
+}
+
+function saveToFile(): void {
+  ensureDataDir()
+  try {
+    // Nur die letzten 10.000 Einträge speichern
+    const dataToSave = pageViews.slice(-10000)
+    writeFileSync(ANALYTICS_FILE, JSON.stringify(dataToSave, null, 2), 'utf-8')
+  } catch (error) {
+    console.error('[Analytics] Fehler beim Speichern:', error)
+  }
+}
+
+// Debounce für Speichern (nicht bei jedem Page View sofort speichern)
+let saveTimeout: ReturnType<typeof setTimeout> | null = null
+function debouncedSave(): void {
+  if (saveTimeout) clearTimeout(saveTimeout)
+  saveTimeout = setTimeout(() => {
+    saveToFile()
+    console.log(`[Analytics] ${pageViews.length} Einträge gespeichert`)
+  }, 5000) // Alle 5 Sekunden speichern wenn Änderungen
+}
+
+// Beim Import initialisieren
+loadFromFile()
 
 // Hilfsfunktionen
 function parseUserAgent(ua: string): { device: 'mobile' | 'tablet' | 'desktop'; browser: string; os: string } {
@@ -89,10 +142,13 @@ export function trackPageView(data: {
 
   pageViews.push(pageView)
   
-  // Nur die letzten 10.000 Einträge behalten (für lokales Testen)
+  // Nur die letzten 10.000 Einträge behalten
   if (pageViews.length > 10000) {
     pageViews.splice(0, pageViews.length - 10000)
   }
+
+  // Speichern (mit Debounce)
+  debouncedSave()
 
   return pageView
 }
@@ -173,7 +229,9 @@ export function getRecentPageViews(limit: number = 50): PageView[] {
 export function generateDemoData(): void {
   if (pageViews.length > 0) return // Nur einmal generieren
   
-  const paths = ['/', '/loesungen', '/ueber-uns', '/kontakt', '/referenzen', '/karriere', '/it-solutions']
+  console.log('[Analytics] Generiere Demo-Daten...')
+  
+  const paths = ['/', '/loesungen', '/ueber-uns', '/kontakt', '/referenzen', '/karriere', '/it-solutions', '/blog']
   const referrers = ['', 'https://google.com', 'https://linkedin.com', 'https://xing.com', 'https://facebook.com']
   const userAgents = [
     'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -192,17 +250,25 @@ export function generateDemoData(): void {
     const timestamp = thirtyDaysAgo + Math.random() * (now - thirtyDaysAgo)
     const sessionId = `demo_${Math.floor(i / 3)}_${Math.random().toString(36).substr(2, 6)}`
     
-    trackPageView({
+    const { device, browser, os } = parseUserAgent(userAgents[Math.floor(Math.random() * userAgents.length)])
+    
+    pageViews.push({
+      id: generateId(),
       path: paths[Math.floor(Math.random() * paths.length)],
+      timestamp,
       userAgent: userAgents[Math.floor(Math.random() * userAgents.length)],
-      referrer: referrers[Math.floor(Math.random() * referrers.length)],
+      device,
+      browser,
+      os,
+      referrer: referrers[Math.floor(Math.random() * referrers.length)] || 'Direct',
       sessionId
     })
-    
-    // Timestamp überschreiben für Demo
-    pageViews[pageViews.length - 1].timestamp = timestamp
   }
   
   // Nach Timestamp sortieren
   pageViews.sort((a, b) => a.timestamp - b.timestamp)
+  
+  // Sofort speichern
+  saveToFile()
+  console.log(`[Analytics] ${pageViews.length} Demo-Einträge generiert und gespeichert`)
 }

@@ -100,6 +100,13 @@
           >
             Karriere
           </NuxtLink>
+
+          <NuxtLink 
+            to="/blog"
+            :class="[navLinkClass, route.path.startsWith('/blog') ? navLinkActiveClass : '']"
+          >
+            Blog
+          </NuxtLink>
         </div>
 
         <!-- CTA Button -->
@@ -204,6 +211,15 @@
                    hover:bg-primary-50 hover:text-primary-600 transition-all"
           >
             Karriere
+          </NuxtLink>
+
+          <NuxtLink 
+            to="/blog"
+            @click="mobileMenuOpen = false"
+            class="block py-3 px-4 rounded-xl font-medium text-dark-700 
+                   hover:bg-primary-50 hover:text-primary-600 transition-all"
+          >
+            Blog
           </NuxtLink>
           
           <NuxtLink 

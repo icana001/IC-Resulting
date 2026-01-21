@@ -42,6 +42,9 @@ server-credentials.env
 *.pem
 id_rsa*
 
+# Data directory (Blog-Beiträge etc. - auf Server separat sichern)
+data/
+
 # Marketing export renders (generated)
 marketing/exports/**/rendered/
 marketing/exports/**/*.pdf

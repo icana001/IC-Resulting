@@ -84,6 +84,7 @@ const router = useRouter()
 const navigation = [
   { label: 'Dashboard', path: '/admin', icon: 'heroicons:home' },
   { label: 'Analytics', path: '/admin/analytics', icon: 'heroicons:chart-bar' },
+  { label: 'Blog', path: '/admin/blog', icon: 'heroicons:newspaper' },
   { label: 'Content Editor', path: '/admin/editor', icon: 'heroicons:pencil-square' },
   { label: 'Seiten', path: '/admin/pages', icon: 'heroicons:document-text' },
   { label: 'Einstellungen', path: '/admin/settings', icon: 'heroicons:cog-6-tooth' }
