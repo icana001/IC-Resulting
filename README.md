@@ -60,7 +60,9 @@ ic-resulting/
 ├── pages/
 │   ├── index.vue             # Homepage
 │   ├── it-solutions.vue      # IT Solutions page
-│   ├── travel-solutions.vue  # Travel Solutions page
+│   ├── loesungen.vue         # Solutions overview
+│   ├── referenzen.vue        # References & clients
+│   ├── blog/                 # Blog section
 │   ├── kontakt.vue           # Contact page
 │   ├── karriere.vue          # Careers page
 │   ├── ueber-uns.vue         # About page
@@ -89,7 +91,9 @@ The website uses a professional blue color palette:
 |------|-------|-------------|
 | Homepage | `/` | Main landing page |
 | IT Solutions | `/it-solutions` | IT services & capabilities |
-| Travel Solutions | `/travel-solutions` | Travel industry solutions |
+| Solutions | `/loesungen` | Solution overview |
+| References | `/referenzen` | Clients & projects |
+| Blog | `/blog` | News & articles |
 | Contact | `/kontakt` | Contact form & info |
 | Careers | `/karriere` | Job opportunities |
 | About | `/ueber-uns` | Company information |
