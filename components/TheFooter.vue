@@ -84,15 +84,20 @@
         <div>
           <h4 class="font-display font-semibold text-lg mb-6">Kontakt</h4>
           <div class="space-y-4">
-            <div class="flex items-start gap-3">
-              <div class="w-10 h-10 rounded-lg bg-dark-800 flex items-center justify-center flex-shrink-0">
-                <Icon name="heroicons:map-pin" class="w-5 h-5 text-primary-400" />
+            <a 
+              href="https://maps.app.goo.gl/VjSwQbav4LYxgv8P6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="flex items-start gap-3 group"
+            >
+              <div class="w-10 h-10 rounded-lg bg-dark-800 group-hover:bg-primary-600 flex items-center justify-center flex-shrink-0 transition-colors duration-300">
+                <Icon name="heroicons:map-pin" class="w-5 h-5 text-primary-400 group-hover:text-white" />
               </div>
-              <div class="text-dark-300">
+              <div class="text-dark-300 group-hover:text-primary-400 transition-colors">
                 <p>Obere Webergasse 58</p>
                 <p>65183 Wiesbaden</p>
               </div>
-            </div>
+            </a>
             <div class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-lg bg-dark-800 flex items-center justify-center flex-shrink-0">
                 <Icon name="heroicons:phone" class="w-5 h-5 text-primary-400" />

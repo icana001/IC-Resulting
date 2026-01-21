@@ -52,7 +52,16 @@
               <p class="text-dark-500 text-sm mt-1">IT-Projektleiter & Software-Unternehmer</p>
             </div>
 
-           
+            <div class="card mb-8">
+              <h3 class="text-xl font-display font-bold text-dark-800 mb-4">Steuerliche Angaben</h3>
+              <div class="flex items-center gap-3 text-dark-600">
+                <Icon name="heroicons:document-text" class="w-5 h-5 text-primary-600 flex-shrink-0" />
+                <div>
+                  <p class="text-dark-500 text-sm">Steuernummer</p>
+                  <p class="font-medium">040 809 05418</p>
+                </div>
+              </div>
+            </div>
 
             <div class="card">
               <h3 class="text-xl font-display font-bold text-dark-800 mb-4">Haftungsausschluss</h3>

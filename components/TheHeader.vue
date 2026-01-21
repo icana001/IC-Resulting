@@ -1,7 +1,6 @@
 <template>
   <header 
-    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-    :class="scrolled ? 'glass shadow-soft py-3' : 'bg-transparent py-5'"
+    class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass shadow-soft py-3"
   >
     <div class="container-custom">
       <nav class="flex items-center justify-between">
@@ -15,18 +14,10 @@
             />
           </div>
           <div class="flex flex-col">
-            <span :class="[
-              'font-display font-bold text-xl transition-colors',
-              scrolled 
-                ? 'text-dark-900 group-hover:text-primary-600' 
-                : 'text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)] group-hover:text-white/80'
-            ]">
+            <span class="font-display font-bold text-xl transition-colors text-slate-800 group-hover:text-blue-600">
               IC-RESULTING
             </span>
-            <span :class="[
-              'text-xs tracking-wide transition-colors',
-              scrolled ? 'text-dark-400' : 'text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]'
-            ]">
+            <span class="text-xs tracking-wide transition-colors text-slate-600">
               Resulting statt Beratung
             </span>
           </div>
@@ -122,18 +113,12 @@
         <!-- Mobile Menu Button -->
         <button 
           @click="mobileMenuOpen = !mobileMenuOpen"
-          :class="[
-            'lg:hidden p-2 rounded-lg transition-colors',
-            scrolled ? 'hover:bg-dark-100' : 'hover:bg-white/20'
-          ]"
+          class="lg:hidden p-2 rounded-lg transition-colors hover:bg-dark-100"
           aria-label="Toggle menu"
         >
           <Icon 
             :name="mobileMenuOpen ? 'heroicons:x-mark' : 'heroicons:bars-3'" 
-            :class="[
-              'w-6 h-6 transition-colors',
-              scrolled ? 'text-dark-700' : 'text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]'
-            ]"
+            class="w-6 h-6 transition-colors text-dark-700"
           />
         </button>
       </nav>
@@ -241,16 +226,10 @@ const mobileMenuOpen = ref(false)
 const mobileSubMenuOpen = ref(false)
 const showDropdown = ref(false)
 
-// Dynamische Navigation-Klassen basierend auf Scroll-Status
-const navLinkClass = computed(() => 
-  scrolled.value 
-    ? 'nav-link' 
-    : 'relative font-medium transition-colors duration-200 text-white hover:text-white/80 drop-shadow-[0_1px_2px_rgba(0,0,0,0.3)]'
-)
+// Navigation-Klassen - direkte Tailwind-Klassen für dunkle Schrift
+const navLinkClass = 'relative font-medium transition-colors duration-200 text-slate-900 hover:text-blue-600'
 
-const navLinkActiveClass = computed(() =>
-  scrolled.value ? 'text-primary-600' : 'text-white font-bold'
-)
+const navLinkActiveClass = computed(() => 'text-blue-600')
 
 const solutions = [
   { name: 'IT-Verantwortung', path: '/loesungen#it-verantwortung', icon: 'heroicons:cog-6-tooth', description: 'Managed IT & Operating Model' },

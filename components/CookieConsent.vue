@@ -1,5 +1,21 @@
 <template>
   <div>
+    <!-- Blocking Overlay - verhindert Interaktion mit der Seite -->
+    <Transition
+      enter-active-class="transition-opacity duration-300"
+      enter-from-class="opacity-0"
+      enter-to-class="opacity-100"
+      leave-active-class="transition-opacity duration-200"
+      leave-from-class="opacity-100"
+      leave-to-class="opacity-0"
+    >
+      <div 
+        v-if="showBanner && !showSettings" 
+        class="fixed inset-0 z-[99] bg-dark-900/70 backdrop-blur-sm"
+        @click.stop
+      ></div>
+    </Transition>
+
     <!-- Cookie Banner -->
     <Transition
       enter-active-class="transition-all duration-300 ease-out"
@@ -23,11 +39,29 @@
                 <h3 class="text-xl font-display font-bold text-dark-800 mb-2">
                   Wir respektieren Ihre Privatsphäre
                 </h3>
-                <p class="text-dark-500 text-sm leading-relaxed">
-                  Wir verwenden Cookies und ähnliche Technologien, um Ihnen die bestmögliche Nutzererfahrung zu bieten. 
-                  Einige Cookies sind technisch notwendig, andere helfen uns, unsere Website zu verbessern und Ihnen 
-                  personalisierte Inhalte anzuzeigen. Sie können Ihre Einstellungen jederzeit anpassen.
+                <p class="text-dark-500 text-sm leading-relaxed mb-4">
+                  Wir verwenden Cookies und externe Dienste, um Ihnen die bestmögliche Nutzererfahrung zu bieten. 
+                  Einige sind technisch notwendig, andere helfen uns, unsere Website zu verbessern.
                 </p>
+                
+                <!-- Service List Preview -->
+                <div class="space-y-2 text-sm">
+                  <div class="flex items-center gap-2 text-dark-600">
+                    <Icon name="heroicons:check" class="w-4 h-4 text-green-600" />
+                    <span class="font-medium">Cloudflare Turnstile</span>
+                    <span class="text-dark-400">– DSGVO-konformer Spam-Schutz für das Kontaktformular</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-dark-600">
+                    <Icon name="heroicons:check" class="w-4 h-4 text-green-600" />
+                    <span class="font-medium">STRATO E-Mail (SSL)</span>
+                    <span class="text-dark-400">– Sicherer E-Mail-Versand über deutschen Server</span>
+                  </div>
+                  <div class="flex items-center gap-2 text-dark-600">
+                    <Icon name="heroicons:check" class="w-4 h-4 text-green-600" />
+                    <span class="font-medium">Google Maps</span>
+                    <span class="text-dark-400">– Anzeige unseres Standorts auf der Kontaktseite</span>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -118,10 +152,53 @@
                   </div>
                 </div>
               </div>
-              <p class="text-dark-500 text-sm">
-                Diese Cookies sind für den Betrieb der Website unbedingt erforderlich und ermöglichen 
-                grundlegende Funktionen wie Seitennavigation und Zugriff auf sichere Bereiche.
+              <p class="text-dark-500 text-sm mb-3">
+                Diese Dienste sind für den Betrieb der Website unbedingt erforderlich.
               </p>
+              <div class="space-y-2 text-xs text-dark-600 bg-white rounded-lg p-3">
+                <div class="flex items-start gap-2">
+                  <Icon name="heroicons:check" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span class="font-medium">Cloudflare Turnstile</span>
+                    <p class="text-dark-400">DSGVO-konformer Spam-Schutz für das Kontaktformular (keine Cookies, kein Tracking)</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-2">
+                  <Icon name="heroicons:check" class="w-4 h-4 text-green-600 flex-shrink-0 mt-0.5" />
+                  <div>
+                    <span class="font-medium">STRATO E-Mail (SSL)</span>
+                    <p class="text-dark-400">Sicherer E-Mail-Versand über deutschen Server (IONOS/STRATO)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Externe Medien / Google Maps -->
+            <div class="p-4 border border-dark-200 rounded-xl">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-3">
+                  <Icon name="heroicons:map" class="w-5 h-5 text-accent-600" />
+                  <h4 class="font-semibold text-dark-800">Google Maps</h4>
+                </div>
+                <button 
+                  @click="toggleCategory('googleMaps')"
+                  class="w-12 h-6 rounded-full relative transition-colors"
+                  :class="settings.googleMaps ? 'bg-primary-600' : 'bg-dark-300'"
+                >
+                  <div 
+                    class="absolute top-1 w-4 h-4 bg-white rounded-full transition-all"
+                    :class="settings.googleMaps ? 'right-1' : 'left-1'"
+                  ></div>
+                </button>
+              </div>
+              <p class="text-dark-500 text-sm mb-3">
+                Anzeige unseres Standorts auf der Kontaktseite mit interaktiver Karte.
+              </p>
+              <div class="text-xs text-dark-400 bg-dark-50 rounded-lg p-3">
+                <p><strong>Anbieter:</strong> Google Ireland Limited</p>
+                <p><strong>Zweck:</strong> Standortanzeige und Routenplanung</p>
+                <p><strong>Datenschutz:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" class="text-primary-600 hover:underline">Google Datenschutzerklärung</a></p>
+              </div>
             </div>
 
             <!-- Statistik/Analyse -->
@@ -167,32 +244,7 @@
                 </button>
               </div>
               <p class="text-dark-500 text-sm">
-                Diese Cookies werden verwendet, um Werbung relevanter für Sie und Ihre Interessen zu gestalten. 
-                Sie können auch verwendet werden, um die Häufigkeit zu begrenzen, mit der Sie eine Anzeige sehen.
-              </p>
-            </div>
-
-            <!-- Externe Medien -->
-            <div class="p-4 border border-dark-200 rounded-xl">
-              <div class="flex items-center justify-between mb-2">
-                <div class="flex items-center gap-3">
-                  <Icon name="heroicons:play-circle" class="w-5 h-5 text-accent-600" />
-                  <h4 class="font-semibold text-dark-800">Externe Medien</h4>
-                </div>
-                <button 
-                  @click="toggleCategory('externalMedia')"
-                  class="w-12 h-6 rounded-full relative transition-colors"
-                  :class="settings.externalMedia ? 'bg-primary-600' : 'bg-dark-300'"
-                >
-                  <div 
-                    class="absolute top-1 w-4 h-4 bg-white rounded-full transition-all"
-                    :class="settings.externalMedia ? 'right-1' : 'left-1'"
-                  ></div>
-                </button>
-              </div>
-              <p class="text-dark-500 text-sm">
-                Inhalte von externen Plattformen wie YouTube, Vimeo oder Google Maps werden standardmäßig blockiert. 
-                Wenn Sie diese Inhalte laden möchten, aktivieren Sie diese Option.
+                Diese Cookies werden verwendet, um Werbung relevanter für Sie und Ihre Interessen zu gestalten.
               </p>
             </div>
           </div>
@@ -233,9 +285,9 @@ const showSettings = ref(false)
 
 const settings = reactive({
   necessary: true, // Always true
+  googleMaps: false,
   analytics: false,
-  marketing: false,
-  externalMedia: false
+  marketing: false
 })
 
 onMounted(() => {
@@ -271,25 +323,29 @@ function saveSettings() {
 }
 
 function acceptAll() {
+  settings.googleMaps = true
   settings.analytics = true
   settings.marketing = true
-  settings.externalMedia = true
   localStorage.setItem('cookie-consent', JSON.stringify(settings))
   showSettings.value = false
   showBanner.value = false
 }
 
 function rejectAll() {
+  settings.googleMaps = false
   settings.analytics = false
   settings.marketing = false
-  settings.externalMedia = false
   localStorage.setItem('cookie-consent', JSON.stringify(settings))
   showSettings.value = false
   showBanner.value = false
 }
 
+// Provide consent state for other components
+provide('cookieConsent', settings)
+
 // Expose method to open settings from outside (e.g., footer link)
 defineExpose({
-  openSettings
+  openSettings,
+  settings
 })
 </script>

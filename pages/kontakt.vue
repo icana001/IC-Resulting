@@ -370,19 +370,61 @@
         </div>
 
         <div class="bg-white rounded-3xl shadow-soft overflow-hidden">
-          <!-- Map Info -->
-          <div class="relative h-64 bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
-            <div class="text-center">
+          <!-- Google Maps Embed (nur wenn Consent gegeben) -->
+          <div v-if="mapsConsent" class="relative h-96 group cursor-pointer">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2558.8736087669743!2d8.244388877029096!3d50.08182117152453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bdbf939feae045%3A0x9dff4c8f39e1bb95!2sIC-RESULTING!5e0!3m2!1sde!2sde!4v1737453600000!5m2!1sde!2sde"
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              class="absolute inset-0 pointer-events-none"
+              title="IC-RESULTING Standort auf Google Maps"
+            ></iframe>
+            <!-- Klickbarer Overlay über die gesamte Karte -->
+            <a 
+              href="https://maps.app.goo.gl/VjSwQbav4LYxgv8P6" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="absolute inset-0 z-10 flex items-center justify-center bg-transparent hover:bg-dark-900/20 transition-colors duration-300"
+              title="In Google Maps öffnen"
+            >
+              <span class="opacity-0 group-hover:opacity-100 bg-white px-6 py-3 rounded-xl shadow-xl text-primary-600 font-semibold flex items-center gap-2 transition-opacity duration-300">
+                <Icon name="heroicons:arrow-top-right-on-square" class="w-5 h-5" />
+                In Google Maps öffnen
+              </span>
+            </a>
+          </div>
+          
+          <!-- Placeholder wenn kein Consent -->
+          <div v-else class="relative h-96 bg-gradient-to-br from-primary-100 to-accent-100 flex items-center justify-center">
+            <div class="text-center max-w-md px-6">
               <div class="w-20 h-20 rounded-full bg-primary-600 flex items-center justify-center mx-auto mb-4 shadow-glow">
                 <Icon name="heroicons:map-pin" class="w-10 h-10 text-white" />
               </div>
               <h3 class="font-display font-bold text-xl text-dark-800 mb-2">IC-RESULTING</h3>
-              <p class="text-dark-500">Obere Webergasse 58, 65183 Wiesbaden</p>
+              <p class="text-dark-500 mb-4">Obere Webergasse 58, 65183 Wiesbaden</p>
+              
+              <div class="bg-white/80 backdrop-blur-sm rounded-xl p-4 mb-4">
+                <p class="text-sm text-dark-600 mb-3">
+                  <Icon name="heroicons:shield-check" class="w-4 h-4 inline mr-1 text-primary-600" />
+                  Um die interaktive Karte zu sehen, aktivieren Sie bitte Google Maps in den Cookie-Einstellungen.
+                </p>
+                <button 
+                  @click="enableGoogleMaps"
+                  class="btn-primary text-sm !py-2"
+                >
+                  Google Maps aktivieren
+                </button>
+              </div>
+              
               <a 
-                href="https://maps.google.com/?q=Obere+Webergasse+58+65183+Wiesbaden" 
+                href="https://maps.app.goo.gl/VjSwQbav4LYxgv8P6" 
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 mt-4 text-primary-600 hover:text-primary-700 font-medium"
+                class="inline-flex items-center gap-2 text-primary-600 hover:text-primary-700 font-medium"
               >
                 <Icon name="heroicons:arrow-top-right-on-square" class="w-4 h-4" />
                 In Google Maps öffnen
@@ -442,8 +484,14 @@ const errorMessage = ref('')
 const turnstileToken = ref('')
 const turnstileWidgetId = ref(null)
 
+// Google Maps Consent
+const mapsConsent = ref(false)
+
 // Turnstile Widget laden
 onMounted(() => {
+  // Check Google Maps consent
+  checkMapsConsent()
+  
   // Turnstile Script laden falls noch nicht vorhanden
   if (!document.getElementById('turnstile-script')) {
     const script = document.createElement('script')
@@ -486,6 +534,29 @@ function resetTurnstile() {
     window.turnstile.reset(turnstileWidgetId.value)
     turnstileToken.value = ''
   }
+}
+
+// Check Google Maps consent from localStorage
+function checkMapsConsent() {
+  const consent = localStorage.getItem('cookie-consent')
+  if (consent) {
+    const settings = JSON.parse(consent)
+    mapsConsent.value = settings.googleMaps === true
+  }
+}
+
+// Enable Google Maps consent
+function enableGoogleMaps() {
+  const consent = localStorage.getItem('cookie-consent')
+  let settings = { necessary: true, googleMaps: true, analytics: false, marketing: false }
+  
+  if (consent) {
+    settings = JSON.parse(consent)
+    settings.googleMaps = true
+  }
+  
+  localStorage.setItem('cookie-consent', JSON.stringify(settings))
+  mapsConsent.value = true
 }
 
 async function submitForm() {
