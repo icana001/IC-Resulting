@@ -44,8 +44,8 @@ export default defineNuxtConfig({
       to: process.env.MAIL_TO
     },
     turnstileSecret: process.env.TURNSTILE_SECRET_KEY,
-    // Admin-Konfiguration
-    adminPassword: process.env.ADMIN_PASSWORD || 'admin2024!',
+    // Admin-Konfiguration (Passwort MUSS via Environment gesetzt werden!)
+    adminPassword: process.env.ADMIN_PASSWORD || '',
     // Public keys - im Client verfügbar (NUR nicht-sensible Daten!)
     public: {
       turnstileSiteKey: process.env.TURNSTILE_SITE_KEY || ''
