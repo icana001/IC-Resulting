@@ -25,7 +25,7 @@
       <!-- Article Header -->
       <article>
         <header class="bg-gradient-to-br from-slate-50 via-white to-primary-50/30 pt-32 pb-12">
-          <div class="container">
+          <div class="container-custom">
             <div class="max-w-4xl mx-auto">
               <!-- Breadcrumb -->
               <nav class="flex items-center gap-2 text-sm text-slate-500 mb-8">
@@ -82,7 +82,7 @@
         </header>
 
         <!-- Featured Image -->
-        <div v-if="data.post.image" class="container py-8">
+        <div v-if="data.post.image" class="container-custom py-8">
           <div class="max-w-4xl mx-auto">
             <img 
               :src="data.post.image" 
@@ -93,7 +93,7 @@
         </div>
 
         <!-- Article Content -->
-        <div class="container py-12">
+        <div class="container-custom py-12">
           <div class="max-w-4xl mx-auto">
             <div class="lg:flex lg:gap-12">
               <!-- Main Content -->
@@ -188,7 +188,7 @@
 
       <!-- Related Posts -->
       <section v-if="data.relatedPosts?.length" class="py-20 bg-slate-50">
-        <div class="container">
+        <div class="container-custom">
           <h2 class="text-2xl font-display font-bold text-slate-900 mb-8 text-center">
             Weitere Beiträge
           </h2>
@@ -224,7 +224,7 @@
 
       <!-- CTA Section -->
       <section class="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <div class="container">
+        <div class="container-custom">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-6">
               Bereit für Ihr nächstes IT-Projekt?

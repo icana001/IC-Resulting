@@ -2,7 +2,7 @@
   <div>
     <!-- Hero Section -->
     <section class="bg-gradient-to-br from-slate-50 via-white to-primary-50/30 pt-32 pb-20">
-      <div class="container">
+      <div class="container-custom">
         <div class="max-w-3xl mx-auto text-center">
           <span class="inline-block px-4 py-2 bg-primary-100 text-primary-700 rounded-full text-sm font-medium mb-6">
             Wissen & Insights
@@ -20,7 +20,7 @@
 
     <!-- Tags Filter -->
     <section class="py-8 border-b border-slate-200 bg-white sticky top-16 z-40">
-      <div class="container">
+      <div class="container-custom">
         <div class="flex flex-wrap items-center gap-3 justify-center">
           <NuxtLink 
             to="/blog" 
@@ -52,7 +52,7 @@
 
     <!-- Blog Posts Grid -->
     <section class="py-20 bg-white">
-      <div class="container">
+      <div class="container-custom">
         <!-- Loading State -->
         <div v-if="pending" class="flex items-center justify-center py-20">
           <div class="text-center">
@@ -134,7 +134,7 @@
 
     <!-- CTA Section -->
     <section class="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-      <div class="container">
+      <div class="container-custom">
         <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-3xl md:text-4xl font-display font-bold text-white mb-6">
             Sie haben ein konkretes Projekt?
