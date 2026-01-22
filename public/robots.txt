@@ -1,12 +1,12 @@
 # robots.txt for IC-RESULTING
 # https://ic-resulting.de
-# Letzte Aktualisierung: 2026-01-20
+# Letzte Aktualisierung: 2026-01-22
 
 User-agent: *
 Allow: /
 
-# Sitemap-Referenz (saubere Version ohne Admin-Seiten)
-Sitemap: https://ic-resulting.de/sitemap-clean.xml
+# Sitemap-Referenz (dynamisch mit Blog)
+Sitemap: https://ic-resulting.de/sitemap.xml
 
 # Interne Bereiche blockieren
 Disallow: /api/

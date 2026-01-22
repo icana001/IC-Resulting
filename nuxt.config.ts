@@ -23,6 +23,7 @@ export default defineNuxtConfig({
       { loc: '/referenzen', changefreq: 'monthly', priority: 0.9 },
       { loc: '/kontakt', changefreq: 'monthly', priority: 0.9 },
       { loc: '/ueber-uns', changefreq: 'monthly', priority: 0.8 },
+      { loc: '/blog', changefreq: 'weekly', priority: 0.8 },
       { loc: '/karriere', changefreq: 'monthly', priority: 0.7 },
       { loc: '/it-solutions', changefreq: 'monthly', priority: 0.7 },
       { loc: '/impressum', changefreq: 'yearly', priority: 0.3 },
