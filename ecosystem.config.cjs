@@ -1,3 +1,6 @@
+// Lade .env Datei für Umgebungsvariablen
+require('dotenv').config()
+
 module.exports = {
   apps: [
     {
@@ -9,7 +12,19 @@ module.exports = {
       env: {
         NODE_ENV: 'production',
         NITRO_PORT: 3000,
-        NITRO_HOST: '127.0.0.1'
+        NITRO_HOST: '127.0.0.1',
+        // Turnstile
+        TURNSTILE_SITE_KEY: process.env.TURNSTILE_SITE_KEY,
+        TURNSTILE_SECRET_KEY: process.env.TURNSTILE_SECRET_KEY,
+        // SMTP
+        SMTP_HOST: process.env.SMTP_HOST,
+        SMTP_PORT: process.env.SMTP_PORT,
+        SMTP_USER: process.env.SMTP_USER,
+        SMTP_PASS: process.env.SMTP_PASS,
+        MAIL_FROM: process.env.MAIL_FROM,
+        MAIL_TO: process.env.MAIL_TO,
+        // Admin
+        ADMIN_PASSWORD: process.env.ADMIN_PASSWORD
       },
       // Automatischer Neustart bei Absturz
       autorestart: true,

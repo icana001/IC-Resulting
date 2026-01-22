@@ -155,13 +155,25 @@
 <script setup lang="ts">
 import type { BlogPost } from '~/server/utils/blog'
 
+// Canonical URL for SEO
+useHead({
+  link: [
+    { rel: 'canonical', href: 'https://ic-resulting.de/blog' }
+  ]
+})
+
 // SEO Meta
 useSeoMeta({
   title: 'Blog & Beiträge | IC-RESULTING',
   description: 'Praxiswissen aus IT-Projektleitung, Software-Entwicklung und KI-Automatisierung. Erfahrungen aus über 20 Jahren IT-Projekten.',
   ogTitle: 'Blog & Beiträge | IC-RESULTING',
   ogDescription: 'Praxiswissen aus IT-Projektleitung, Software-Entwicklung und KI-Automatisierung.',
-  ogType: 'website'
+  ogType: 'website',
+  ogUrl: 'https://ic-resulting.de/blog',
+  ogImage: 'https://ic-resulting.de/logo/logo.jpeg',
+  twitterCard: 'summary_large_image',
+  twitterTitle: 'Blog & Beiträge | IC-RESULTING',
+  twitterDescription: 'Praxiswissen aus IT-Projektleitung, Software-Entwicklung und KI-Automatisierung.'
 })
 
 // Get selected tag from route
